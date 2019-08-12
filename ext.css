@@ -1,3 +1,13 @@
+html, body {
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    background: #01061C; 
+}
+  
+body {
+    overflow-x: hidden; 
+}
  /* For bgimg */
  #img {
     background: url("img/BGImg.webp") no-repeat top center fixed;
@@ -5,22 +15,28 @@
     height: 100vh;
     width: 100%;
     position: fixed;
+    z-index: 1;
 }
 
 canvas {
 
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: transparent;
+    z-index: 2;
 }
 
+#front {
+    height:100vh;
+}
 /* for Logo Load bar */
 #layers {
 
     width: 500px;
     height: 500px;
     position: sticky;
+    z-index: 3;
     /* top: 30%;
     left: 10%; */
 
@@ -81,6 +97,30 @@ height: 100vh;
 width: 1px;
 position: fixed;
 opacity: 1; }
+
+#navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100px;
+    width: 100vw;
+    padding: 0px 10vw;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    -webkit-align-items: center;
+            align-items: center;
+    z-index: 998;
+    transition: -webkit-transform 0.1s linear;
+    transition: transform 0.1s linear;
+    transition: transform 0.1s linear, -webkit-transform 0.1s linear; }
+    #navbar #links2 {
+      display: none;
+      transition: all 0.5s ease;
+      opacity: 0; }
+      #navbar #links2 #close-events {
+        cursor: pointer; }
 
 #nav {
 position: fixed;
@@ -174,3 +214,10 @@ font-size: 20px;
 position: absolute;
 left: -40px;
 opacity: 0; }
+
+.hero1 ,.hero2 , .hero3, .hero4, .hero5, .hero6{
+    background-attachment: fixed; 
+    position: relative;
+    z-index: 5;
+    min-height: 100vh;
+}
