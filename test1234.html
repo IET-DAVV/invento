@@ -1,156 +1,127 @@
 <!DOCTYPE html>
 
 <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style>
-        #img {
-            background: url("img/BGImg.webp") no-repeat top center fixed;
-            background-size: 100%;
-            height: 100vh;
-            width: 100%;
-        }
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
-        canvas {
 
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color:transparent;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="ext.css">
+
 </head>
 
 <body>
-    <div id="img"></div>
-    <canvas id=c style="opacity:0.5;"></canvas>
+    <div>
+        <div id="img"></div>
+        <canvas id=c style="opacity:0.5;"></canvas>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2">
+                    <!-- For side nav bar -->
+                    <div id="nav" class="desktop-only">
+                        <div class="nav-item nav-link nav-active" data-to="home">
+                            <div class="bar active-bar"></div>
+                            <div class="nav-number-primary nav-link" style="opacity: 0;">01</div>
+                            <span class="nav-hover-text">&nbsp;&nbsp;&nbsp;Home</span>
+                            <div class="nav-number-secondary" style="opacity: 1;">01</div>
+                            <div class="nav-text" style="opacity: 1; z-index: 5;">Home</div>
+                        </div>
+                        <div class="nav-item">
+                            <div class="bar"></div>
+                            <div class="nav-number-primary" style="opacity: 1;">02
+                            </div>
+                            <span class="nav-hover-text">&nbsp;&nbsp;&nbsp;About</span>
+                            <div class="nav-number-secondary" style="opacity: 0;">02</div>
+                            <div class="nav-text" style="opacity: 0; z-index: 4;">About</div>
+                        </div>
+                        <div class="nav-item">
+                            <div class="bar"></div>
+                            <div class="nav-number-primary" style="opacity: 1;">03
+                            </div>
+                            <span class="nav-hover-text">&nbsp;&nbsp;&nbsp;Events</span>
+                            <div class="nav-number-secondary" style="opacity: 0;">03</div>
+                            <div class="nav-text" style="opacity: 0; z-index: 4;">Events</div>
+                        </div>
+                        <div class="nav-item">
+                            <div class="bar"></div>
+                            <div class="nav-number-primary" style="opacity: 1;">04
+                            </div>
+                            <span class="nav-hover-text">&nbsp;&nbsp;&nbsp;Speakers</span>
+                            <div class="nav-number-secondary" style="opacity: 0;">04</div>
+                            <div class="nav-text" style="opacity: 0; z-index: 4;">Speakers</div>
+                        </div>
+                        <div class="nav-item">
+                            <div class="bar"></div>
+                            <div class="nav-number-primary" style="opacity: 1;">05
+                            </div>
+                            <span class="nav-hover-text">&nbsp;&nbsp;&nbsp;Workshops</span>
+                            <div class="nav-number-secondary" style="opacity: 0;">05</div>
+                            <div class="nav-text" style="opacity: 0; z-index: 4;">Workshops</div>
+                        </div>
+                        <div class="nav-item">
+                            <div class="bar"></div>
+                            <div class="nav-number-primary" style="opacity: 1;">06
+                            </div>
+                            <span class="nav-hover-text">&nbsp;&nbsp;&nbsp;Contact</span>
+                            <div class="nav-number-secondary" style="opacity: 0;">06</div>
+                            <div class="nav-text" style="opacity: 0; z-index: 4;">Contact</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-10">
+                    <!-- For Logo & Loader -->
+                    
+                <div class="front">   
+                <div id="layers" class="core-layer" style="text-align: center;">
+                    <div class="layer" id="layer1">
+                        <img src="img/layer1s.png">
+                    </div>
+                    <div class="layer" id="layer2">
+                        <img src="img/layer2s.png">
+                    </div>
+                    <div class="layer" id="layer3">
+                        <img src="img/layer3s.png">
+                    </div>
+                    <div class="layer" id="layer4">
+                        <img src="img/layer4s.png">
+                    </div>
+                </div>
+            </div>
+                
+                        <section class="hero1">
+                            <h3>About Us</h3>
+                            <p align="justify">Invento, The Official Techfest of IET-DAVV, is the biggest in the Central India. We are the students of
+                                IET-DAVV who organizes this mega-event every year giving an opportunity to the all technical enthusiasts to
+                                show their talent. In addition to this, Techfest aims at reaching out to all the students and promoting the
+                                vision of Technology and Science among the students.
+                            </p>
+                            <p align="justify"></p>
+                        </section>
+                        <section class="hero2"></section>
+                        <section class="hero3"></section>
+                        <section class="hero4"></section>
+                        <section class="hero5"></section>
+                        <section class="hero6"></section>
+                   
+            </div>
+        </div>
+
+    
+    
+    </div>
+    </div>
 </body>
-<script>
-var w = c.width = window.innerWidth,
-    h = c.height = window.innerHeight,
-    ctx = c.getContext( '2d' ),
-    
-    opts = {
-      
-      len: 20,
-      count: 50,
-      baseTime: 10,
-      addedTime: 10,
-      dieChance: .05,
-      spawnChance: 1,
-      sparkChance: .1,
-      sparkDist: 10,
-      sparkSize: 2,
-      
-      color: 'hsl(hue,100%,light%)',
-      baseLight: 50,
-      addedLight: 10, // [50-10,50+10]
-      shadowToTimePropMult: 6,
-      baseLightInputMultiplier: .01,
-      addedLightInputMultiplier: .02,
-      
-      cx: w ,
-      cy: h / 2,
-      repaintAlpha: .04,
-      hueChange: .1
-    },
-    
-    tick = 0,
-    lines = [],
-    dieX = w / 2 / opts.len,
-    dieY = h / 2 / opts.len,
-    
-    baseRad = Math.PI * 2 / 6;
-    
-ctx.fillStyle = 'black';
-ctx.fillRect( 0, 0, w, h );
+<script src="test.js"> </script>
 
-function loop() {
-  
-  window.requestAnimationFrame( loop );
-  
-  ++tick;
-  
-  ctx.globalCompositeOperation = 'source-over';
-  ctx.shadowBlur = 0;
-  ctx.fillStyle = 'rgba(0,0,0,alp)'.replace( 'alp', opts.repaintAlpha );
-  ctx.fillRect( 0, 0, w, h );
-  ctx.globalCompositeOperation = 'lighter';
-  
-  if( lines.length < opts.count && Math.random() < opts.spawnChance )
-    lines.push( new Line );
-  
-  lines.map( function( line ){ line.step(); } );
-}
-function Line(){
-  
-  this.reset();
-}
-Line.prototype.reset = function(){
-  
-  this.x = 0;
-  this.y = 0;
-  this.addedX = 0;
-  this.addedY = 0;
-  
-  this.rad = 0;
-  
-  this.lightInputMultiplier = opts.baseLightInputMultiplier + opts.addedLightInputMultiplier * Math.random();
-  
-  this.color = opts.color.replace( 'hue', tick * opts.hueChange );
-  this.cumulativeTime = 0;
-  
-  this.beginPhase();
-}
-Line.prototype.beginPhase = function(){
-  
-  this.x += this.addedX;
-  this.y += this.addedY;
-  
-  this.time = 0;
-  this.targetTime = ( opts.baseTime + opts.addedTime * Math.random() ) |0;
-  
-  this.rad += baseRad * ( Math.random() < .5 ? 1 : -1 );
-  this.addedX = Math.cos( this.rad );
-  this.addedY = Math.sin( this.rad );
-  
-  if( Math.random() < opts.dieChance || this.x > dieX || this.x < -dieX || this.y > dieY || this.y < -dieY )
-    this.reset();
-}
-Line.prototype.step = function(){
-  
-  ++this.time;
-  ++this.cumulativeTime;
-  
-  if( this.time >= this.targetTime )
-    this.beginPhase();
-  
-  var prop = this.time / this.targetTime,
-      wave = Math.sin( prop * Math.PI / 2  ),
-      x = this.addedX * wave,
-      y = this.addedY * wave;
-  
-  ctx.shadowBlur = prop * opts.shadowToTimePropMult;
-  ctx.fillStyle = ctx.shadowColor = this.color.replace( 'light', opts.baseLight + opts.addedLight * Math.sin( this.cumulativeTime * this.lightInputMultiplier ) );
-  ctx.fillRect( opts.cx + ( this.x + x ) * opts.len, opts.cy + ( this.y + y ) * opts.len, 2, 2 );
-  
-  if( Math.random() < opts.sparkChance )
-    ctx.fillRect( opts.cx + ( this.x + x ) * opts.len + Math.random() * opts.sparkDist * ( Math.random() < .5 ? 1 : -1 ) - opts.sparkSize / 2, opts.cy + ( this.y + y ) * opts.len + Math.random() * opts.sparkDist * ( Math.random() < .5 ? 1 : -1 ) - opts.sparkSize / 2, opts.sparkSize, opts.sparkSize )
-}
-loop();
-
-window.addEventListener( 'resize', function(){
-  
-  w = c.width = window.innerWidth;
-  h = c.height = window.innerHeight;
-  ctx.fillStyle = 'black';
-  ctx.fillRect( 0, 0, w, h );
-  
-  opts.cx = w / 2;
-  opts.cy = h / 2;
-  
-  dieX = w / 2 / opts.len;
-  dieY = h / 2 / opts.len;
-});
-</script>
 </html>

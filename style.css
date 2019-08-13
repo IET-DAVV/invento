@@ -358,14 +358,14 @@ body {
     padding: 0;
     font-size: 14px;
     font-weight: 600;
-    color: hsl(0, 0%, 48%);
+    color: #fff;
 }
 
 .lineup-artists-headline .entry-title h2 {
     width: 100%;
     font-size: 48px;
     font-weight: 600;
-    color: hsl(0, 0%, 0%);
+    color: #fff;
 }
 
 /*------------------------------------------------------------
@@ -491,7 +491,7 @@ body {
     padding: 0;
     font-size: 14px;
     font-weight: 600;
-    color: hsl(0, 0%, 48%);
+    color: #fff;
 }
 
 .the-complete-lineup .entry-title h2 {
@@ -499,7 +499,7 @@ body {
     margin: 0;
     font-size: 48px;
     font-weight: 600;
-    color: hsl(0, 0%, 0%);
+    color: #fff;
 }
 
 /*------------------------------------------------------------
@@ -546,7 +546,7 @@ body {
     margin-top: 38px;
     font-size: 24px;
     font-weight: 600;
-    color: hsl(0, 0%, 2%);
+    color: #fff;
     text-align: center;
 }
 
@@ -624,7 +624,7 @@ body {
     padding: 0;
     font-size: 14px;
     font-weight: 600;
-    color: hsl(0, 0%, 48%);
+    color: #fff;
 }
 
 .homepage-next-events .entry-title h2 {
@@ -632,7 +632,7 @@ body {
     margin: 0;
     font-size: 48px;
     font-weight: 600;
-    color: hsl(0, 0%, 0%);
+    color: #fff;
 }
 
 /*------------------------------------------------------------
@@ -733,7 +733,7 @@ body {
     margin: 0;
     font-size: 48px;
     font-weight: 600;
-    color: hsl(0, 0%, 0%);
+    color: #fff;
 }
 
 /*------------------------------------------------------------
@@ -1925,7 +1925,7 @@ body {
     margin: 0;
     font-size: 24px;
     font-weight: 600;
-    color: #050505;
+    color: #fff;
 }
 
 .icon-box .entry-content {
@@ -1950,13 +1950,23 @@ body {
 
 
 
-
-
 canvas {
-  
-  position: absolute;
-  top: 0;
-  left: 0;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 0;
+    height:100vh;
+    opacity:0.5;
 }
 
+#img {
+    background: url("img/BGImg.webp") no-repeat top center fixed;
+    background-size: 100% 100vh;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 0;
+}
 
