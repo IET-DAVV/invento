@@ -328,12 +328,19 @@ body {
 # The Lineup Artists - Headliners
 ------------------------------------------------------------*/
 .content-section {
-    min-height: 4640px;
     width: 100%;
     padding-bottom: 120px;
     background: url("images/middle-cover.jpg") no-repeat;
     background-size: 100% auto;
     padding-top: 120px;
+}
+
+.about-section{
+  width: 100%;
+  padding-bottom: 120px;
+  background: url("images/middle-cover.jpg") no-repeat;
+  background-size: 100% auto;
+  padding-top: 120px;
 }
 
 .content-section .middle-cover {
@@ -1969,4 +1976,3 @@ canvas {
     position: fixed;
     z-index: 0;
 }
-
