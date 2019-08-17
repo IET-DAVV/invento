@@ -231,7 +231,7 @@ body {
 # hero
 -----------------------------------------------------------*/
 .hero-content {
-    background: url("images/InventoBG.png") no-repeat;
+    
     background-size: cover;
     height: 100vh;
 }
