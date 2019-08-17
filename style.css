@@ -231,7 +231,7 @@ body {
 # hero
 -----------------------------------------------------------*/
 .hero-content {
-    
+
     background-size: cover;
     height: 100vh;
 }
@@ -607,7 +607,7 @@ body {
 # see the-complete-lineup button
 ------------------------------------------------------------*/
 .see-complete-lineup {
-    margin-top: 105px
+    margin: 80px
 }
 
 .see-complete-lineup .entry-footer .btn {
