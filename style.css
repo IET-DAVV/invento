@@ -277,6 +277,7 @@ body {
 ------------------------------------------------------------*/
 .countdown {
     margin-top: 40px;
+    text-align: center;
 }
 
 .countdown-holder {
@@ -306,7 +307,6 @@ body {
 ## hero-content entry-footer
 ------------------------------------------------------------*/
 .hero-content .entry-footer {
-    margin-top: 125px;
     text-align: center;
 }
 
@@ -350,7 +350,8 @@ body {
 ## lineup-artists-headline
 ------------------------------------------------------------*/
 .lineup-artists-headline {
-    margin-top: 115px;
+    /* margin-top: 115px; */
+    padding: 15px 0;
 }
 
 .lineup-artists-headline .entry-title p {
@@ -423,7 +424,7 @@ body {
 .lineup-artists-description .entry-title {
     font-size: 30px;
     font-weight: 600;
-    color: hsl(0, 0%, 9%);
+    color: #fff;
 }
 
 .lineup-artists-description .entry-content {
@@ -496,6 +497,7 @@ body {
 ------------------------------------------------------------*/
 .the-complete-lineup {
     margin-top: 115px;
+    padding-top: 15px;
 }
 
 .the-complete-lineup .entry-title p {
@@ -1974,10 +1976,60 @@ canvas {
 }
 
 #img {
-    background: url("img/BGImg.webp") no-repeat top center fixed;
+    background: url("img/bgFinal.jpg") no-repeat top center fixed;
     background-size: 100% 100vh;
     height: 100vh;
     width: 100%;
     position: fixed;
     z-index: 0;
+}
+
+.speaker-container {
+    margin-top: 10%;
+    padding-bottom: 5%;
+}
+
+.scroll-down-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-down-btn a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.scroll-down-btn a:hover {
+    color: white !important;
+    background: transparent !important;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.entry-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.news-title {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:768px) {
+    .scroll-down {
+        bottom: 2%;
+    }
 }
