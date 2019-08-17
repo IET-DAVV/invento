@@ -335,13 +335,6 @@ body {
     padding-top: 120px;
 }
 
-.about-section{
-  width: 100%;
-  padding-bottom: 120px;
-  background: url("images/middle-cover.jpg") no-repeat;
-  background-size: 100% auto;
-  padding-top: 120px;
-}
 
 .content-section .middle-cover {
     margin: 0;
@@ -396,6 +389,18 @@ body {
     max-width: 100%;
 }
 
+
+.about-us .about-us-wrap{
+  margin-top : 20px;
+}
+
+.about-us-description-container{
+  position: relative;
+  padding: 30px;
+  background: hsl(0, 0%, 10%);
+  box-shadow: 50px 40px 115px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
 /*------------------------------------------------------------
 ### lineup-artists-wrap
 ------------------------------------------------------------*/
