@@ -4,25 +4,25 @@ var w = c.width = window.innerWidth,
 
         opts = {
 
-            len: 20,
-            count: 50,
+            len: 30,
+            count: 100,
             baseTime: 10,
             addedTime: 10,
             dieChance: .05,
             spawnChance: 1,
             sparkChance: .1,
-            sparkDist: 10,
-            sparkSize: 2,
+            sparkDist: 50,
+            sparkSize: 1.5,
 
             color: 'hsl(hue,100%,light%)',
-            baseLight: 50,
-            addedLight: 10, // [50-10,50+10]
+            baseLight: 25,
+            addedLight: 25, // [50-10,50+10]
             shadowToTimePropMult: 6,
             baseLightInputMultiplier: .01,
             addedLightInputMultiplier: .02,
 
-            cx: w,
-            cy: h / 2,
+            cx: w/2,
+            cy: h/2,
             repaintAlpha: .04,
             hueChange: .1
         },
