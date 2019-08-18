@@ -231,7 +231,7 @@ body {
 # hero
 -----------------------------------------------------------*/
 .hero-content {
-    background: url("images/InventoBG.png") no-repeat;
+
     background-size: cover;
     height: 100vh;
 }
@@ -277,6 +277,7 @@ body {
 ------------------------------------------------------------*/
 .countdown {
     margin-top: 40px;
+    text-align: center;
 }
 
 .countdown-holder {
@@ -306,7 +307,6 @@ body {
 ## hero-content entry-footer
 ------------------------------------------------------------*/
 .hero-content .entry-footer {
-    margin-top: 125px;
     text-align: center;
 }
 
@@ -328,13 +328,13 @@ body {
 # The Lineup Artists - Headliners
 ------------------------------------------------------------*/
 .content-section {
-    min-height: 4640px;
     width: 100%;
     padding-bottom: 120px;
     background: url("images/middle-cover.jpg") no-repeat;
     background-size: 100% auto;
     padding-top: 120px;
 }
+
 
 .content-section .middle-cover {
     margin: 0;
@@ -350,7 +350,8 @@ body {
 ## lineup-artists-headline
 ------------------------------------------------------------*/
 .lineup-artists-headline {
-    margin-top: 115px;
+    /* margin-top: 115px; */
+    padding: 15px 0;
 }
 
 .lineup-artists-headline .entry-title p {
@@ -389,6 +390,18 @@ body {
     max-width: 100%;
 }
 
+
+.about-us .about-us-wrap{
+  margin-top : 20px;
+}
+
+.about-us-description-container{
+  position: relative;
+  padding: 30px;
+  background: rgba(0,0,0,0.5);
+  box-shadow: 50px 40px 115px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
 /*------------------------------------------------------------
 ### lineup-artists-wrap
 ------------------------------------------------------------*/
@@ -411,7 +424,7 @@ body {
 .lineup-artists-description .entry-title {
     font-size: 30px;
     font-weight: 600;
-    color: hsl(0, 0%, 9%);
+    color: #fff;
 }
 
 .lineup-artists-description .entry-content {
@@ -484,6 +497,7 @@ body {
 ------------------------------------------------------------*/
 .the-complete-lineup {
     margin-top: 115px;
+    padding-top: 15px;
 }
 
 .the-complete-lineup .entry-title p {
@@ -595,7 +609,7 @@ body {
 # see the-complete-lineup button
 ------------------------------------------------------------*/
 .see-complete-lineup {
-    margin-top: 105px
+    margin: 80px
 }
 
 .see-complete-lineup .entry-footer .btn {
@@ -925,7 +939,7 @@ body {
 # about-us
 ------------------------------------------------------------*/
 .about-us {
-    background: url("images/about-us-background.jpg") no-repeat;
+    background: transparent;
     width: 100%;
     height: 100%;
 }
@@ -1962,7 +1976,7 @@ canvas {
 }
 
 #img {
-    background: url("img/BGImg.webp") no-repeat top center fixed;
+    background: url("img/bgFinal.jpg") no-repeat top center fixed;
     background-size: 100% 100vh;
     height: 100vh;
     width: 100%;
@@ -1970,3 +1984,52 @@ canvas {
     z-index: 0;
 }
 
+.speaker-container {
+    margin-top: 10%;
+    padding-bottom: 5%;
+}
+
+.scroll-down-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-down-btn a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.scroll-down-btn a:hover {
+    color: white !important;
+    background: transparent !important;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.entry-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.news-title {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:768px) {
+    .scroll-down {
+        bottom: 2%;
+    }
+}
