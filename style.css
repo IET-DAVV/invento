@@ -1,660 +1,2190 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Invento</title>
-    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- FontAwesome CSS -->
-    <link rel="stylesheet" href="css/fontawesome-all.min.css">
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="css/swiper.min.css">
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
-</head>
-
-<body style="overflow-x: hidden;">
-
-    <div id="img-bg"></div>
-    <canvas id="c"></canvas>
-    <div class="hero-content wow animated flipInX">
-
-        <div class="container">
-
-            <div class="row home-row">
-                <div class="col-12 offset-lg-1 col-lg-10">
-                    <div class="entry-header">
-                        <img src="assets/images/new_logo.png" class="home-logo" alt="">
-
-                        <div class="entry-meta-date">
-                            13.09.019
-                        </div><!-- .entry-meta-date -->
-                    </div><!-- .entry-header -->
-
-                    <div class="countdown flex flex-wrap justify-content-between" data-date="2019/09/13">
-                        <div class="countdown-holder">
-                            <div class="dday"></div>
-                            <label>Days</label>
-                        </div><!-- .countdown-holder -->
-
-                        <div class="countdown-holder">
-                            <div class="dhour"></div>
-                            <label>Hours</label>
-                        </div><!-- .countdown-holder -->
-
-                        <div class="countdown-holder">
-                            <div class="dmin"></div>
-                            <label>Minutes</label>
-                        </div><!-- .countdown-holder -->
-
-                        <div class="countdown-holder">
-                            <div class="dsec"></div>
-                            <label>Seconds</label>
-                        </div><!-- .countdown-holder -->
-                    </div><!-- .countdown -->
-                </div><!-- .col-12 -->
-            </div><!-- row -->
-
-            <div class="row scroll-down">
-                <div class="col-12 ">
-                    <div class="entry-footer">
-                        <div class="scroll-down-btn">
-                            <a href="#content01" class="">
-                                <i class="fas fa-arrow-down"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div><!-- .container -->
-    </div><!-- .hero-content -->
-
-
-    <div class="content-section" id="content01">
-        <div class="container">
-
-
-            <!--About us Section -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="container-fluid wow animated zoomInDown" style=" background-color: rgba(0,0,0,0.5);">
-                        <div class="lineup-artists-headline">
-                            <div class="entry-title">
-                                <p>CENTRAL INDIA'S BIGGEST TECHNICAL EVENT</p>
-                                <h2>ABOUT INVENTO 19</h2>
-                            </div><!-- entry-title -->
-
-                            <div class="about-us">
-                                <div class="about-us-wrap flex flex-wrap">
-
-
-                                    <div class="lineup-artists-description">
-                                        <div class="about-us-description-container">
-                                            <div class="entry-title">
-                                                Invento, The Official Techfest of IET-DAVV
-                                            </div><!-- entry-title -->
-
-                                            <div class="entry-content">
-                                                <p>is the biggest in the Central India. We are the students of IET-DAVV
-                                                    who organizes this mega-event every year giving an opportunity to
-                                                    the all technical enthusiasts to show their talent. In addition to
-                                                    this, Techfest aims at reaching out to all the students and
-                                                    promoting the vision of Technology and Science among the students.
-
-                                                    Year 2016, it ended up as a huge success when it witnessed the
-                                                    footfall of over 7,000 students from all corners of the Central
-                                                    India. Here are some of the glimpses of what was a thrilling 2 day
-                                                    experience for the visitors and the participants.
-
-                                                    Along with Seminars on Trending Technology like 3D Printing, IC
-                                                    engines, WireLess Robotics, Ethical Hacking and Construction Project
-                                                    Management by technical giants Mozilla and Microsoft Group, there
-                                                    were numerous competitions like Roborace, Hackathon, Quiz-Grey
-                                                    Carnage, Assembling-Disassembling and many more. Major Workshops
-                                                    were organized on Android app development, IOT and Cloud Computing.
-                                                    Students filled with enthusiasm participated in every event and fun
-                                                    activity and experienced unforgettable moments.
-
-                                                    Every time, we have a Motivational Speaker Session on the last day
-                                                    of this Fest. Last Year, renowned Mr. Swapnil Kothari made his
-                                                    benign presence to ignite the young minds which resulted to be the
-                                                    best finishing moment for this 3-day fest of amazement.
-                                                </p>
-                                            </div><!-- entry-content -->
-
-                                        </div><!-- lineup-artists-description-container -->
-                                    </div><!-- lineup-artists-description -->
-                                </div><!-- lineup-artists-wrap -->
-
-                            </div><!-- lineup-artists -->
-                        </div><!-- lineup-artists-headline -->
-                    </div>
-                </div><!-- col-12 -->
-            </div><!-- row -->
-
-
-            <!-- About us Section ends here -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="container-fluid speaker-container wow animated zoomInUp"
-                        style=" background-color: rgba(0,0,0,0.5);">
-                        <div class="lineup-artists-headline">
-                            <div class="entry-title">
-                                <p>SEMINARS</p>
-                                <h2>Our Best Speaker</h2>
-                            </div><!-- entry-title -->
-
-                            <div class="lineup-artists">
-                                <div class="lineup-artists-wrap flex flex-wrap wow animated fadeInLeft">
-                                    <figure class="featured-image">
-                                        <a href="#"> <img src="images/speakersPlaceholder.png" alt=""> </a>
-                                    </figure><!-- featured-image -->
-
-                                    <div class="lineup-artists-description">
-                                        <div class="lineup-artists-description-container">
-                                            <div class="entry-title">
-                                                Dr. Awdhesh Singh
-                                            </div><!-- entry-title -->
-
-                                            <div class="entry-content">
-                                                <p>Invento brings to you a motivational session by Dr Awdhesh Singh,
-                                                    director of Awdhesh Academy, a Top Quora writer, author of excellent
-                                                    books like The secret Red book of Leadership, is among the best
-                                                    educator and motivator of our country. </p>
-                                            </div><!-- entry-content -->
-
-                                            <div class="box-link">
-                                                <a href=""><img src="images/box.jpg" alt=""></a>
-                                            </div><!-- box-link -->
-                                        </div><!-- lineup-artists-description-container -->
-                                    </div><!-- lineup-artists-description -->
-                                </div><!-- lineup-artists-wrap -->
-
-                                <div class="lineup-artists-wrap flex flex-wrap wow animated fadeInRight">
-                                    <div class="lineup-artists-description">
-                                        <figure class="featured-image d-md-none">
-                                            <a href="#"> <img src="images/speakersPlaceholder.png" alt=""> </a>
-                                        </figure><!-- featured-image -->
-
-                                        <div class="lineup-artists-description-container">
-                                            <div class="entry-title">
-                                                GDG Indore
-                                            </div><!-- entry-title -->
-
-                                            <div class="entry-content">
-                                                <p>On the technical front, Google Developers Group will enlighten on
-                                                    latest technology trends. This session will be followed by live
-                                                    interaction with industry professionals where you can get all your
-                                                    queries solved. </p>
-                                            </div><!-- entry-content -->
-
-                                            <div class="box-link">
-                                                <a href="#"><img src="images/box.jpg" alt=""></a>
-                                            </div><!-- box-link -->
-                                        </div><!-- lineup-artists-description-container -->
-                                    </div><!-- lineup-artists-description -->
-
-                                    <figure class="featured-image d-none d-md-block">
-                                        <a href="#"> <img src="images/speakersPlaceholder.png" alt=""> </a>
-                                    </figure><!-- featured-image -->
-                                </div><!-- lineup-artists-wrap -->
-
-                                <div class="lineup-artists-wrap flex flex-wrap animated wow animated fadeInLeft">
-                                    <figure class="featured-image">
-                                        <a href="#"> <img src="images/speakersPlaceholder.png" alt=""> </a>
-                                    </figure><!-- featured-image -->
-
-                                    <div class="lineup-artists-description">
-                                        <div class="lineup-artists-description-container">
-                                            <div class="entry-title">
-                                                John Doe
-                                            </div><!-- entry-title -->
-
-                                            <div class="entry-content">
-                                                <p>And many more seminars by established educational institutes and
-                                                    technical groups of city to enlighten on some most trending topics
-                                                    of technology. </p>
-                                            </div><!-- entry-content -->
-
-                                            <div class="box-link">
-                                                <a href="#"> <img src="images/box.jpg" alt=""></a>
-                                            </div><!-- box-link -->
-                                        </div><!-- lineup-artists-description-container -->
-                                    </div><!-- lineup-artists-description -->
-                                </div><!-- lineup-artists-wrap -->
-                            </div><!-- lineup-artists -->
-                        </div><!-- lineup-artists-headline -->
-                    </div>
-                </div><!-- col-12 -->
-            </div><!-- row -->
-
-            <div class="row">
-                <div class="col-12">
-                    <div class="container-fluid wow animated flipInUp" style=" background-color: rgba(0,0,0,0.5);">
-                        <div class="the-complete-lineup">
-                            <div class="entry-title">
-                                <p>THE COMPLETE LINEUP</p>
-                                <h2>EVENTS AND WORKSHOPS</h2>
-                            </div><!-- entry-title -->
-
-                            <div class="row the-complete-lineup-artists">
-                                <div class="col-6 col-md-4 col-lg-3 artist-single wow animated fadeInUp">
-                                    <figure class="featured-image">
-                                        <a href="#"> <img src="images/workshopsPlaceholder.jpg" alt=""> </a>
-                                        <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>
-                                    </figure><!-- featured-image -->
-
-                                    <h2>Robotronics</h2>
-                                </div><!-- artist-single -->
-
-                                <div class="col-6 col-md-4 col-lg-3 artist-single wow animated fadeInUp">
-                                    <figure class="featured-image">
-                                        <a href="#"> <img src="images/workshopsPlaceholder.jpg" alt=""> </a>
-                                        <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>
-                                    </figure><!-- featured-image -->
-
-                                    <h2>Internet of Things</h2>
-                                </div><!-- artist-single -->
-
-                                <div class="col-6 col-md-4 col-lg-3 artist-single wow animated fadeInUp">
-                                    <figure class="featured-image">
-                                        <a href="#"> <img src="images/workshopsPlaceholder.jpg" alt=""> </a>
-                                        <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>
-                                    </figure><!-- featured-image -->
-
-                                    <h2>Android</h2>
-                                </div><!-- artist-single -->
-
-                                <div class="col-6 col-md-4 col-lg-3 artist-single wow animated fadeInUp">
-                                    <figure class="featured-image">
-                                        <a href="#"> <img src="images/workshopsPlaceholder.jpg" alt=""> </a>
-                                        <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>
-                                    </figure><!-- featured-image -->
-
-                                    <h2>Ethical Hacking</h2>
-                                </div><!-- artist-single -->
-
-                                <div class="col-6 col-md-4 col-lg-3 artist-single wow animated fadeInUp">
-                                    <figure class="featured-image">
-                                        <a href="#"> <img src="images/workshopsPlaceholder.jpg" alt=""> </a>
-                                        <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>
-                                    </figure><!-- featured-image -->
-
-                                    <h2>Artificial Intelligence</h2>
-                                </div><!-- artist-single -->
-
-                                <div class="col-6 col-md-4 col-lg-3 artist-single wow animated fadeInUp">
-                                    <figure class="featured-image">
-                                        <a href="#"> <img src="images/workshopsPlaceholder.jpg" alt=""> </a>
-                                        <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>
-                                    </figure><!-- featured-image -->
-
-                                    <h2>Machine Learning</h2>
-                                </div><!-- artist-single -->
-
-                                <div class="col-6 col-md-4 col-lg-3 artist-single wow animated fadeInUp">
-                                    <figure class="featured-image">
-                                        <a href="#"> <img src="images/workshopsPlaceholder.jpg" alt=""> </a>
-                                        <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>
-                                    </figure><!-- featured-image -->
-
-                                    <h2>UI & UX</h2>
-                                </div><!-- artist-single -->
-
-                                <div class="col-6 col-md-4 col-lg-3 artist-single wow animated fadeInUp">
-                                    <figure class="featured-image">
-                                        <a href="#"> <img src="images/workshopsPlaceholder.jpg" alt=""> </a>
-                                        <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>
-                                    </figure><!-- featured-image -->
-
-                                    <h2>Automation</h2>
-                                </div><!-- artist-single -->
-                            </div><!-- the-complete-lineup-artists -->
-
-                            <div class="row justify-content-center wow animated fadeInUp">
-                                <div class="see-complete-lineup">
-                                    <div class="entry-footer">
-                                        <a href="#" class="btn">See all lineup</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- the-complete-lineup -->
-                    </div>
-                </div><!-- col-12 -->
-            </div><!-- row -->
-        </div><!-- container -->
-
-        <div class="homepage-next-events wow animated zoomInUp">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="entry-title">
-                            <p>THROWBACK TO INVENTO 18</p>
-                            <h2>Photo Gallery</h2>
-                        </div><!-- entry-title -->
-                    </div><!-- col-12 -->
-                </div><!-- row -->
-            </div><!-- container -->
-
-            <div class="next-event-slider-wrap">
-                <div class="swiper-container next-event-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="next-event-content">
-                                <figure class="featured-image">
-                                    <img src="images/next-event-1.jpg" alt="">
-
-                                    <a href="#"
-                                        class="entry-content flex flex-column justify-content-center align-items-center">
-                                        <h3>Welcoming Party 2018</h3>
-                                        <p>Green Palace, 22 Street, 23-28, Los Angeles California</p>
-                                    </a>
-                                </figure><!-- featured-image -->
-                            </div><!-- next-event-content -->
-                        </div><!-- swiper-slide" -->
-
-                        <div class="swiper-slide">
-                            <div class="next-event-content">
-                                <figure class="featured-image">
-                                    <img src="images/next-event-2.jpg" alt="">
-
-                                    <a href="#"
-                                        class="entry-content flex flex-column justify-content-center align-items-center">
-                                        <h3>Welcoming Party 2018</h3>
-                                        <p>Green Palace, 22 Street, 23-28, Los Angeles California</p>
-                                    </a>
-                                </figure><!-- featured-image -->
-                            </div><!-- next-event-content -->
-                        </div><!-- swiper-slide" -->
-
-                        <div class="swiper-slide">
-                            <div class="next-event-content">
-                                <figure class="featured-image">
-                                    <img src="images/next-event-3.jpg" alt="">
-
-                                    <a href="#"
-                                        class="entry-content flex flex-column justify-content-center align-items-center">
-                                        <h3>Welcoming Party 2018</h3>
-                                        <p>Green Palace, 22 Street, 23-28, Los Angeles California</p>
-                                    </a>
-                                </figure><!-- featured-image -->
-                            </div><!-- next-event-content -->
-                        </div><!-- swiper-slide" -->
-
-                        <div class="swiper-slide">
-                            <div class="next-event-content">
-                                <figure class="featured-image">
-                                    <img src="images/next-event-1.jpg" alt="">
-
-                                    <a href="#"
-                                        class="entry-content flex flex-column justify-content-center align-items-center">
-                                        <h3>Welcoming Party 2018</h3>
-                                        <p>Green Palace, 22 Street, 23-28, Los Angeles California</p>
-                                    </a>
-                                </figure><!-- featured-image -->
-                            </div><!-- next-event-content -->
-                        </div><!-- swiper-slide" -->
-
-                        <div class="swiper-slide">
-                            <div class="next-event-content">
-                                <figure class="featured-image">
-                                    <img src="images/next-event-2.jpg" alt="">
-
-                                    <a href="#"
-                                        class="entry-content flex flex-column justify-content-center align-items-center">
-                                        <h3>Welcoming Party 2018</h3>
-                                        <p>Green Palace, 22 Street, 23-28, Los Angeles California</p>
-                                    </a>
-                                </figure><!-- featured-image -->
-                            </div><!-- next-event-content -->
-                        </div><!-- swiper-slide" -->
-
-                        <div class="swiper-slide">
-                            <div class="next-event-content">
-                                <figure class="featured-image">
-                                    <img src="images/next-event-3.jpg" alt="">
-
-                                    <a href="#"
-                                        class="entry-content flex flex-column justify-content-center align-items-center">
-                                        <h3>Welcoming Party 2018</h3>
-                                        <p>Green Palace, 22 Street, 23-28, Los Angeles California</p>
-                                    </a>
-                                </figure><!-- featured-image -->
-                            </div><!-- next-event-content -->
-                        </div><!-- swiper-slide" -->
-                    </div><!-- .swiper-wrapper -->
-                </div><!-- .swiper-container -->
-
-                <div class="swiper-button-next">
-                    <img src="images/button.png" alt="">
-                </div><!-- .slider-button -->
-            </div><!-- .next-event-slider-wrap -->
-        </div><!-- homepage-next-events -->
-
-        <div class="home-page-last-news">
-            <div class="container" style="background-color: rgba(0,0,0,0.5);">
-                <div class="home-page-last-news-wrap">
-                    <div class="row">
-                        <div class="col-md-12 news-title">
-                            <div class="entry-title">
-                                <p style="color:white">JUST THE BEST</p>
-                                <h2>Our Last News</h2>
-                            </div><!-- entry-title -->
-                        </div>
-                        <div class="col-12 col-md-6 wow animated zoomInRight">
-                            <figure class="featured-image">
-                                <a href="#"> <img src="images/news-image-1.jpg" alt="fesival+celebration"> </a>
-                            </figure><!-- featured-image -->
-
-                            <div class="box-link-date">
-                                <a href="#">03.12.18</a>
-                            </div>
-
-                            <div class="content-wrapper">
-                                <div class="entry-content">
-                                    <div class="entry-header">
-                                        <h2><a href="#">10 Festival Tips</a></h2>
-                                    </div><!-- entry-header -->
-
-                                    <div class="entry-meta">
-                                        <span class="author-name"><a href="#"> By James Williams</a></span>
-                                        <span class="space">|</span>
-                                        <span class="comments-count"><a href="#">3 comments</a></span>
-                                    </div><!-- entry-meta -->
-
-                                    <div class="entry-description">
-                                        <p>Quisque at erat eu libero consequat tempus.
-                                            Quisque mole stie convallis tempus.
-                                            Ut semper purus metus, a euismod sapien sodales ac.
-                                            Duis viverra eleifend fermentum.</p>
-                                    </div><!-- entry-description -->
-                                </div><!-- entry-content -->
-                            </div><!-- content-wrapper -->
-                        </div><!-- .col-6 -->
-
-                        <div class="col-12 col-md-6 wow animated zoomInRight">
-                            <figure class="featured-image">
-                                <a href="#"> <img src="images/news-image-1.jpg" alt="fesival+celebration"> </a>
-                            </figure><!-- featured-image -->
-
-                            <div class="box-link-date">
-                                <a href="">03.12.18</a>
-                            </div>
-
-                            <div class="content-wrapper">
-                                <div class="entry-content">
-                                    <div class="entry-header">
-                                        <h2><a href="#">New event calendar for this year</a></h2>
-                                    </div><!-- entry-header -->
-
-                                    <div class="entry-meta">
-                                        <span class="author-name"><a href="#">By James Williams</a></span>
-                                        <span class="space">|</span>
-                                        <span class="comments-count"><a href="#">3 comments</a></span>
-                                    </div><!-- entry-meta -->
-
-                                    <div class="entry-description">
-                                        <p>Quisque at erat eu libero consequat tempus.
-                                            Quisque mole stie convallis tempus.
-                                            Ut semper purus metus, a euismod sapien sodales ac.
-                                            Duis viverra eleifend fermentum.</p>
-                                    </div><!-- entry-description -->
-                                </div><!-- entry-content -->
-                            </div><!-- .content-wrapper -->
-                        </div><!-- col-6 -->
-                    </div><!-- row -->
-                </div><!-- home-page-last-news-wrap -->
-            </div><!-- container -->
-        </div><!-- home-page-last-news -->
-        <section class="our-team-section" style="background-color: rgba(0,0,0,0.5); margin-top:50px;">
-            <div class="container">
-                <div class="entry-title">
-
-                    <center>
-                        <h2>Meet Developer Team</h2>
-                    </center>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-12">
-                        <div class="our-team">
-                            <div class="pic">
-                                <img src="https://i.ibb.co/8x9xK4H/team.jpg">
-                            </div>
-                            <div class="team-content">
-                                <h3 class="title">Aaditya Shrivastava</h3>
-                            </div>
-                            <ul class="social">
-                                <li>
-                                    <a href="https://www.linkedin.com/in/aaditya-shrivastava/"
-                                        class="fab fa-linkedin-in"></a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/aaditya1499" class="fab fa-github"></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/aaditya1499/" class="fab fa-instagram"></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-12">
-                        <div class="our-team">
-                            <div class="pic">
-                                <img src="https://i.ibb.co/8x9xK4H/team.jpg">
-                            </div>
-                            <div class="team-content">
-                                <h3 class="title">Aditya Rajput</h3>
-                            </div>
-                            <ul class="social">
-                                <li>
-                                    <a href="https://www.linkedin.com/in/aditya-singh-rajput/" target="_blank"
-                                        class="fab fa-linkedin-in"></a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/itsadityaraj" target="_blank" class="fab fa-github"></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/aditya_pratap03/" target="_blank"
-                                        class="fab fa-instagram"></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-12">
-                        <div class="our-team">
-                            <div class="pic">
-                                <img src="https://i.ibb.co/8x9xK4H/team.jpg">
-                            </div>
-                            <div class="team-content">
-                                <h3 class="title">Dhananjay Purohit</h3>
-                            </div>
-                            <ul class="social">
-                                <li>
-                                    <a href="https://www.linkedin.com/in/dhananjay-purohit-6b81a2175/" target="_blank"
-                                        class="fab fa-linkedin-in"></a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/DhananjayPurohit" target="_blank"
-                                        class="fab fa-github"></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/dhananjaypurohit7/" target="_blank"
-                                        class="fab fa-instagram"></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-
-        </section>
-
-    </div>
-
-    <footer class="site-footer wow animated fadeInUp">
-        <div class="footer-cover-title flex justify-content-center align-items-center">
-            <h2>INVENTO</h2>
-        </div><!-- .site-footer -->
-
-        <div class="footer-content-wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="entry-title">
-                            <a href="#">INVENTO 2019</a>
-                        </div><!-- entry-title -->
-
-                        <div class="entry-mail">
-                            <a href="#">INVENTO@IETDAVV.EDU.IN</a>
-                        </div><!-- .entry-mail -->
-
-
-
-                        <div class="footer-social">
-                            <ul class="flex justify-content-center align-items-center">
-                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                                <li><a href="https://www.facebook.com/InventoIET/"><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                            </ul>
-                        </div><!-- footer-social -->
-                    </div><!-- col -->
-                </div><!-- row -->
-            </div><!-- container -->
-        </div><!-- footer-content-wrapper -->
-    </footer><!-- site-footer -->
-
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
-    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script type='text/javascript' src='js/jquery.js'></script>
-    <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
-    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
-    <script type='text/javascript' src='js/swiper.min.js'></script>
-    <script type='text/javascript' src='js/jquery.countdown.min.js'></script>
-    <script type='text/javascript' src='js/circle-progress.min.js'></script>
-    <script type='text/javascript' src='js/jquery.countTo.min.js'></script>
-    <script type='text/javascript' src='js/custom.js'></script>
-    <script type="text/javascript" src="js/hexagonBG.js"></script>
-    <script src="test.js"> </script>
-    <!-- <script>
-        AOS.init();
-    </script> -->
-    <script>
-        new WOW().init();
-    </script>
-</body>
-
-</html>
+/*------------------------------------------------------------
+# Global classes
+------------------------------------------------------------*/
+.flex {
+  display: flex;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  color: hsl(0, 0%, 90%);
+}
+
+@font-face {
+  font-family: "mountains";
+  src: url(fonts/beyond_the_mountains.ttf);
+  src: url(fonts/beyond_the_mountains.otf);
+  font-weight: 400;
+}
+
+.d-col-n {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+/*------------------------------------------------------------
+# site-header
+------------------------------------------------------------*/
+.home-page {
+  /*background: url() no-repeat;*/
+}
+
+.site-header {
+  position: relative;
+  width: 100%;
+}
+
+.site-header figure {
+  margin: 0;
+  padding: 0;
+}
+
+.site-header figure img {
+  max-width: 100%;
+}
+
+/*------------------------------------------------------------
+## header-bar
+------------------------------------------------------------*/
+.site-header .header-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.header-bar .site-branding {
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.header-bar .site-branding a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+/*------------------------------------------------------------
+### site-navigation
+------------------------------------------------------------*/
+/*
+  Hamburger Menu
+----------------------------------------*/
+.hamburger-menu {
+  position: relative;
+  width: 100%;
+  max-width: 24px;
+  height: 22px;
+  margin-left: auto;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  opacity: 1;
+  left: 0;
+  transition: 0.25s ease-in-out;
+}
+
+.hamburger-menu span:nth-child(1) {
+  top: 2px;
+}
+
+.hamburger-menu span:nth-child(2),
+.hamburger-menu span:nth-child(3) {
+  top: 10px;
+}
+
+.hamburger-menu span:nth-child(4) {
+  top: 18px;
+}
+
+.hamburger-menu.open span:nth-child(1) {
+  top: 18px;
+  width: 0;
+  left: 50%;
+}
+
+.hamburger-menu.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.hamburger-menu.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.hamburger-menu.open span:nth-child(4) {
+  top: 18px;
+  width: 0;
+  left: 50%;
+}
+
+.site-navigation {
+  position: absolute;
+  top: -11px;
+  right: 15px;
+  z-index: 9999;
+  width: 100%;
+  height: 22px;
+  overflow: hidden;
+  list-style: none;
+  transition: all 0.35s;
+  color: hsl(0, 0%, 100%);
+}
+
+.site-navigation.show {
+  height: auto;
+}
+
+.site-navigation ul {
+  position: fixed;
+  top: 0;
+  left: -320px;
+  z-index: 9999;
+  width: 320px;
+  height: 100vh;
+  overflow-x: scroll;
+  padding: 30px;
+  margin: 0;
+  background: #050505;
+  transition: all 0.35s;
+}
+
+.site-navigation.show ul {
+  left: 0;
+}
+
+.site-navigation ul li {
+  display: block;
+  padding: 15px 0;
+}
+
+.site-navigation ul li a {
+  display: block;
+  color: #fff;
+  transition: all 0.35s;
+  text-decoration: none;
+  font-size: 14px;
+  padding-left: 40px;
+}
+
+@media screen and (min-width: 992px) {
+  .header-bar .site-branding {
+    margin-left: 35px;
+  }
+
+  .site-navigation {
+    position: relative;
+    top: auto;
+    right: auto;
+    height: auto;
+    padding-right: 35px;
+    background: transparent;
+  }
+
+  .site-navigation ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    overflow: auto;
+    background: transparent;
+  }
+
+  .site-navigation ul li {
+    padding: 0;
+  }
+
+  .site-navigation ul li:nth-last-of-type(1) {
+    padding-left: 60px;
+  }
+
+  .site-navigation ul li a {
+    color: #fff;
+  }
+}
+
+/*------------------------------------------------------------
+# hero
+-----------------------------------------------------------*/
+.hero-content {
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero-content .entry-header {
+  position: relative;
+  text-align: center;
+}
+
+.hero-content .entry-header h2 {
+  padding: 50px;
+  margin: 0;
+  font-family: mountains;
+  font-size: 120px;
+  background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-content .entry-header .entry-meta-date {
+  position: absolute;
+  width: 100%;
+  top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: hsl(0, 0%, 90%);
+  text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  .hero-content .entry-header h2 {
+    font-size: 172px;
+  }
+
+  .hero-content .entry-header .entry-meta-date {
+    top: 60px;
+  }
+}
+
+/*------------------------------------------------------------
+## countdown
+------------------------------------------------------------*/
+.countdown {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.countdown-holder {
+  min-width: 150px;
+  margin-bottom: 30px;
+}
+
+.countdown-holder .dday,
+.countdown-holder .dhour,
+.countdown-holder .dmin,
+.countdown-holder .dsec {
+  display: block;
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 1;
+  color: hsl(0, 0%, 100%);
+}
+
+.countdown-holder label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+}
+
+/*------------------------------------------------------------
+## hero-content entry-footer
+------------------------------------------------------------*/
+.hero-content .entry-footer {
+  text-align: center;
+}
+
+.hero-content .entry-footer .btn {
+  background: hsl(0, 0%, 100%);
+  padding: 16px 40px;
+  border-radius: 0;
+  margin-right: 20px;
+  color: hsl(0, 0%, 17%);
+  font-weight: 600;
+}
+
+.hero-content .entry-footer a:hover,
+.hero-content .entry-footer .current {
+  background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+  color: hsl(0, 0%, 0%);
+}
+
+/*------------------------------------------------------------
+# The Lineup Artists - Headliners
+------------------------------------------------------------*/
+.content-section {
+  width: 100%;
+  padding-bottom: 120px;
+  /* background: url("images/middle-cover.jpg") no-repeat; */
+  background-size: 100% auto;
+  padding-top: 120px;
+}
+
+.content-section .middle-cover {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.content-section .middle-cover img {
+  max-width: 100%;
+}
+
+/*------------------------------------------------------------
+## lineup-artists-headline
+------------------------------------------------------------*/
+.lineup-artists-headline {
+  /* margin-top: 115px; */
+  padding: 15px 0;
+}
+
+.lineup-artists-headline .entry-title p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.lineup-artists-headline .entry-title h2 {
+  width: 100%;
+  font-size: 48px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/*------------------------------------------------------------
+## lineup-artists
+------------------------------------------------------------*/
+.lineup-artists {
+  padding-top: 80px;
+}
+
+.lineup-artists .featured-image {
+  margin: 0;
+  padding: 0;
+}
+
+.lineup-artists .featured-image {
+  width: 100%;
+}
+
+.lineup-artists .featured-image img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.about-us .about-us-wrap {
+  margin-top: 20px;
+}
+
+.about-us-description-container {
+  position: relative;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 50px 40px 115px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+/*------------------------------------------------------------
+### lineup-artists-wrap
+------------------------------------------------------------*/
+.lineup-artists .lineup-artists-wrap {
+  margin-top: 80px;
+}
+
+.lineup-artists .lineup-artists-wrap .lineup-artists-description {
+  position: relative;
+  width: 100%;
+}
+
+.lineup-artists .lineup-artists-wrap .lineup-artists-description-container {
+  position: relative;
+  padding: 30px;
+  background: hsl(0, 0%, 100%);
+  box-shadow: 50px 40px 115px rgba(0, 0, 0, 0.1);
+}
+
+.lineup-artists-description .entry-title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.lineup-artists-description .entry-content {
+  margin-top: 20px;
+  font-size: 15px;
+  color: hsl(0, 0%, 60%);
+  line-height: 2;
+}
+
+.lineup-artists-wrap .box-link {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: -24px;
+  right: 50px;
+  z-index: 999;
+}
+
+@media screen and (min-width: 768px) {
+  .lineup-artists .lineup-artists-wrap {
+    margin-top: 30px;
+  }
+
+  .lineup-artists .featured-image {
+    max-width: 360px;
+  }
+
+  .lineup-artists .lineup-artists-wrap .lineup-artists-description {
+    width: calc(100% - 360px);
+  }
+
+  .lineup-artists .lineup-artists-wrap .lineup-artists-description-container {
+    position: absolute;
+    z-index: 99;
+    top: 100px;
+    left: -75px;
+    width: calc(100% + 75px);
+  }
+
+  .lineup-artists
+    .lineup-artists-wrap:nth-of-type(even)
+    .lineup-artists-description-container {
+    right: -75px;
+    left: auto;
+  }
+
+  .lineup-artists .lineup-artists-wrap:nth-of-type(even) .box-link {
+    right: auto;
+    left: 50px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .lineup-artists .lineup-artists-wrap .lineup-artists-description-container {
+    padding: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .lineup-artists .lineup-artists-wrap .lineup-artists-description-container {
+    max-width: 660px;
+  }
+
+  .lineup-artists .lineup-artists-wrap:nth-last-of-type(1) {
+    margin-left: 80px;
+  }
+}
+
+/*------------------------------------------------------------
+# the-complete-lineup
+------------------------------------------------------------*/
+.the-complete-lineup {
+  margin-top: 115px;
+  padding-top: 15px;
+}
+
+.the-complete-lineup .entry-title p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.the-complete-lineup .entry-title h2 {
+  width: 100%;
+  margin: 0;
+  font-size: 48px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/*------------------------------------------------------------
+## the-complete-lineup-artists
+------------------------------------------------------------*/
+.the-complete-lineup-artists {
+  position: relative;
+  margin-top: 110px;
+  height: auto;
+}
+
+.the-complete-lineup-artists .artist-single {
+  margin-bottom: 0px;
+}
+
+.the-complete-lineup-artists .artist-single:nth-of-type(even) {
+  margin-top: 120px;
+}
+
+.the-complete-lineup-artists .artist-single figure {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.the-complete-lineup-artists .artist-single .box-link {
+  position: absolute;
+  top: 15px;
+  left: 232px;
+  cursor: pointer;
+}
+
+.the-complete-lineup-artists .artist-single .featured-image img {
+  max-width: 100%;
+  height: auto;
+  width: 255px;
+}
+
+.the-complete-lineup-artists .artist-single .featured-image a {
+  display: block;
+}
+
+.the-complete-lineup-artists .artist-single h2 {
+  margin-top: 38px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .the-complete-lineup-artists .artist-single:nth-child(6) {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .the-complete-lineup-artists .artist-single:nth-child(1) {
+    margin-top: 2px;
+  }
+
+  .the-complete-lineup-artists .artist-single:nth-child(2) {
+    margin-top: 90px;
+  }
+
+  .the-complete-lineup-artists .artist-single:nth-child(3) {
+    margin-top: 48px;
+  }
+
+  .the-complete-lineup-artists .artist-single:nth-child(4) {
+    margin-top: 0;
+  }
+
+  .the-complete-lineup-artists .artist-single:nth-child(5) {
+    margin-top: 75px;
+  }
+
+  .the-complete-lineup-artists .artist-single:nth-child(6) {
+    margin-top: 165px;
+  }
+
+  .the-complete-lineup-artists .artist-single:nth-child(7) {
+    margin-top: 25px;
+  }
+
+  .the-complete-lineup-artists .artist-single:nth-child(8) {
+    margin-top: 75px;
+  }
+}
+
+/*------------------------------------------------------------
+# see the-complete-lineup button
+------------------------------------------------------------*/
+.see-complete-lineup {
+  margin: 80px;
+}
+
+.see-complete-lineup .entry-footer .btn {
+  padding: 15px 35px;
+  border-radius: 0;
+  margin-right: 20px;
+  background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+  font-weight: 500;
+}
+
+.see-complete-lineup .entry-footer a {
+  font-size: 14px;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+}
+
+/*------------------------------------------------------------
+# homepage-next-events
+------------------------------------------------------------*/
+.homepage-next-events {
+  margin-top: 100px;
+}
+
+.homepage-next-events .entry-title p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.homepage-next-events .entry-title h2 {
+  width: 100%;
+  margin: 0;
+  font-size: 48px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/*------------------------------------------------------------
+## .next-event-slider
+------------------------------------------------------------*/
+.next-event-slider-wrap {
+  position: relative;
+}
+
+.next-event-slider {
+  margin-top: 110px;
+}
+
+.next-event-slider .featured-image {
+  display: block;
+  margin: 0;
+  position: relative;
+}
+
+.next-event-slider .featured-image img {
+  display: block;
+  width: 100%;
+}
+
+.next-event-slider .entry-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.75);
+  text-decoration: none;
+  transition: all 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.next-event-slider .featured-image:hover .entry-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.next-event-slider .entry-content h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+}
+
+.next-event-slider .entry-content p {
+  font-size: 14px;
+  color: hsl(0, 0%, 100%);
+}
+
+.next-event-slider-wrap .swiper-button-next {
+  top: auto;
+  bottom: -21px;
+  right: auto;
+  left: 50%;
+  width: 42px;
+  height: 42px;
+  margin-left: -21px;
+  background: transparent;
+}
+
+.next-event-slider-wrap .swiper-button-next img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .next-event-slider-wrap .swiper-button-next {
+    bottom: -42px;
+    width: 84px;
+    height: 84px;
+    margin-left: -42px;
+  }
+}
+
+/*------------------------------------------------------------
+# home-page-last-news
+------------------------------------------------------------*/
+.home-page-last-news {
+  margin-top: 220px;
+}
+
+.home-page-last-news .entry-title p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: hsl(0, 0%, 48%);
+}
+
+.home-page-last-news .entry-title h2 {
+  width: 100%;
+  margin: 0;
+  font-size: 48px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/*------------------------------------------------------------
+## home-page-last-news-wrap
+------------------------------------------------------------*/
+.home-page-last-news-wrap {
+  margin-top: 110px;
+}
+
+.home-page-last-news-wrap .box-link-date {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  padding: 10px 25px;
+  background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.home-page-last-news-wrap .box-link-date a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+.home-page-last-news-wrap .content-wrapper {
+  background: hsl(0, 0%, 100%);
+  box-shadow: 10px 40px 115px 27px rgba(0, 0, 0, 0.1);
+}
+
+.home-page-last-news-wrap .featured-image {
+  margin: 0;
+  padding: 0;
+  box-shadow: 10px 40px 115px 27px rgba(0, 0, 0, 0.1);
+}
+
+.home-page-last-news-wrap .featured-image img {
+  max-width: 100%;
+}
+
+.home-page-last-news-wrap .entry-content {
+  padding: 35px 45px;
+}
+
+.home-page-last-news-wrap .entry-content .entry-header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: hsl(0, 0%, 9%);
+}
+
+.home-page-last-news-wrap .entry-content .entry-header h2 a {
+  color: hsl(0, 0%, 9%);
+}
+
+.home-page-last-news-wrap .entry-content .entry-meta {
+  margin-top: 6px;
+  font-size: 12px;
+  color: hsl(0, 0%, 9%);
+  font-weight: 500;
+}
+
+.home-page-last-news-wrap .entry-content .entry-meta a {
+  color: hsl(0, 0%, 10%);
+}
+
+.home-page-last-news-wrap .entry-content .entry-description {
+  margin-top: 25px;
+  font-size: 15px;
+  color: hsl(0, 0%, 60%);
+  line-height: 2;
+}
+
+.home-page-last-news-wrap .entry-content .entry-meta span {
+  margin-right: 10px;
+}
+
+/*------------------------------------------------------------
+# site-footer
+------------------------------------------------------------*/
+.site-footer {
+  position: relative;
+  padding: 40px 0 30px;
+  background: url(images/footer-cover.jpg) no-repeat;
+  background-size: cover;
+}
+
+.site-footer::before {
+  position: absolute;
+  content: " ";
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  background: hsla(0, 0%, 5%, 0.7);
+  top: 0;
+  left: 0;
+}
+
+.site-footer .footer-cover-title {
+  min-height: 480px;
+  width: 100%;
+}
+
+.site-footer .footer-cover-title h2 {
+  font-size: 20vw;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  mix-blend-mode: overlay;
+  z-index: 2;
+}
+
+/*------------------------------------------------------------
+## .site-footer footer-content-wrapper
+------------------------------------------------------------*/
+.footer-content-wrapper {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: 4;
+  top: 130px;
+  left: 0;
+  padding: 6px 0;
+  text-align: center;
+}
+
+.footer-content-wrapper .flex {
+  flex-direction: column;
+}
+
+.footer-content-wrapper .entry-title {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.footer-content-wrapper .entry-title a {
+  font-size: 52px;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  line-height: 1;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 576px) {
+  .footer-content-wrapper .entry-title a {
+    font-size: 100px;
+  }
+}
+
+.footer-content-wrapper .entry-mail {
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+
+.footer-content-wrapper .entry-mail a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+.footer-content-wrapper .copyright-info {
+  margin-top: 20px;
+  font-size: 12px;
+  color: hsl(0, 0%, 100%);
+}
+
+.footer-content-wrapper .footer-social {
+  margin-top: 32px;
+}
+
+.footer-content-wrapper .footer-social .flex {
+  flex-direction: row !important;
+}
+
+.footer-content-wrapper .footer-social ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-content-wrapper .footer-social ul a {
+  padding: 5px 16px;
+  font-size: 12px;
+  color: hsl(0, 0%, 100%);
+}
+
+/*------------------------------------------------------------
+# about-us
+------------------------------------------------------------*/
+.about-us {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+}
+
+/*------------------------------------------------------------
+# site-header
+------------------------------------------------------------*/
+.about-us .site-header {
+}
+
+.about-us .site-header figure {
+  margin: 0;
+  padding: 0;
+}
+
+.about-us .site-header figure img {
+  max-width: 100%;
+}
+
+/*------------------------------------------------------------
+## Page Header
+------------------------------------------------------------*/
+.page-header {
+  min-height: 520px;
+  padding-top: 280px;
+  background-size: cover;
+}
+
+.about-us .page-header {
+  background: url("images/about-us-header-background.jpg") no-repeat;
+  background-size: cover;
+}
+
+.page-header .entry-title {
+  font-size: 72px;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.page-header .breadcrumbs {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  list-style: none;
+}
+
+.page-header .breadcrumbs li {
+  position: relative;
+  padding-right: 14px;
+}
+
+.page-header .breadcrumbs li::after {
+  content: "/";
+  position: absolute;
+  top: 3px;
+  right: 0;
+  height: 20px;
+  width: 14px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.page-header .breadcrumbs li:nth-last-of-type(1)::after {
+  display: none;
+}
+
+.page-header .breadcrumbs li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main-content {
+  margin: 120px 0;
+}
+
+.main-content .entry-header .entry-title p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #7a7a7a;
+}
+
+.main-content .entry-header .entry-title h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 48px;
+  font-weight: 600;
+  color: #040608;
+}
+
+.about-us .main-content .entry-content {
+  margin-top: 100px;
+}
+
+.about-us .main-content .entry-content .entry-header h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #040608;
+}
+
+.about-us .main-content .entry-content .entry-description p {
+  margin: 0 !important;
+  padding: 0;
+  margin-top: 25px !important;
+  font-size: 15px;
+  font-weight: 300;
+  color: #989898;
+  line-height: 2;
+  word-break: break-all;
+  hyphens: auto;
+}
+
+.about-us .main-content .featured-image {
+  margin-top: 110px;
+}
+
+.about-us .main-content .featured-image img {
+  max-width: 100%;
+}
+
+.about-us .hero-slider-images {
+  margin-top: 110px;
+}
+
+.about-us .hero-slider-images .featured-images {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.about-us .hero-slider-images .featured-images a {
+  display: block;
+}
+
+.about-us .hero-slider-images .featured-images img {
+  max-width: 100%;
+}
+
+.about-us .hero-slider-images .featured-images .button {
+  position: absolute;
+  top: 43%;
+  left: 47.4%;
+}
+
+.milestones {
+  padding-bottom: 120px;
+}
+
+.milestones .d-col-n {
+  min-width: 150px;
+}
+
+/*------------------------------------------------------------
+# Testimonials
+------------------------------------------------------------*/
+.testimonial-wrap {
+  position: relative;
+  background-image: linear-gradient(
+    to bottom,
+    #0196bf,
+    #00a0bc,
+    #00a9b3,
+    #00b1a4,
+    #1bb791
+  );
+}
+
+.testimonials-container,
+.testimonial-featured-image {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.testimonials-container {
+  padding-bottom: 60px;
+}
+
+.testimonial-content-wrap {
+  padding: 120px 80px 110px 40px;
+}
+
+.testimonial-content-wrap .user-avatar {
+  width: 52px;
+  height: 52px;
+  margin-right: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.testimonial-content {
+  width: calc(100% - 92px);
+}
+
+.testimonial-content-wrap .entry-title {
+  font-size: 36px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.testimonial-content-wrap .entry-content {
+  margin-top: 48px;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
+  color: #fff;
+}
+
+.testimonial-content-wrap .entry-footer {
+  margin-top: 40px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.testimonial-content-wrap .entry-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.testimonials-container .swiper-button-next {
+  top: 50%;
+  right: 15px;
+  width: 42px;
+  height: 42px;
+  margin-top: -21px;
+  background: transparent;
+}
+
+.testimonials-container .swiper-button-next img {
+  width: 100%;
+}
+
+.testimonials-container .swiper-pagination-bullets {
+  padding-left: 292px;
+  text-align: left;
+}
+
+.testimonials-container .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin: 0 6px !important;
+  background: transparent;
+  border: 2px solid #fff;
+  opacity: 1;
+}
+
+.testimonials-container .swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.testimonial-featured-image img {
+  min-width: 100%;
+  width: auto;
+  height: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .testimonials-container,
+  .testimonial-featured-image {
+    width: 50%;
+  }
+
+  .testimonials-container .swiper-button-next {
+    right: -42px;
+    width: 84px;
+    height: 84px;
+    margin-top: -42px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .testimonials-container,
+  .testimonial-featured-image {
+    width: 50%;
+  }
+
+  .testimonial-content-wrap {
+    padding: 120px 80px 110px 100px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .testimonials-container,
+  .testimonial-featured-image {
+    width: 50%;
+  }
+
+  .testimonial-content-wrap {
+    padding: 120px 180px 110px 200px;
+  }
+}
+
+/*------------------------------------------------------------
+# tickets-page
+------------------------------------------------------------*/
+.tickets-page {
+  background: url("images/elements-total-background.jpg") no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+/*------------------------------------------------------------
+# Page Header
+------------------------------------------------------------*/
+.tickets-page .page-header {
+  background: url("images/tickets-page-header-background.jpg") no-repeat;
+}
+
+.tickets-page .tabs {
+  margin-top: 80px;
+}
+
+.tickets-page .tabs ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tickets-page .tabs .active {
+  background: -webkit-linear-gradient(#00d0ff, #25ffbf) !important;
+}
+
+.tabs .tab-nav {
+  padding: 10px 10px;
+  margin-right: 0;
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 500;
+  color: #040608;
+  cursor: pointer;
+}
+
+.tabs .tab-nav:hover {
+  background: -webkit-linear-gradient(#00d0ff, #25ffbf) !important;
+}
+
+.tickets-page .tabs .tabs-container {
+  margin-top: 5px;
+  box-shadow: 13px 26px 139px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.tickets-page .tabs .tab-content {
+  padding: 48px 15px;
+  color: #989898;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+@media screen and (min-width: 576px) {
+  .tabs .tab-nav {
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .tabs .tab-content {
+    padding: 48px;
+  }
+
+  .tabs .tab-nav {
+    padding: 20px 60px;
+    margin-right: 10px;
+    font-size: 15px;
+  }
+}
+
+.tickets-page .single-event-details-row {
+  margin-bottom: 30px;
+}
+
+.tickets-page .single-event-details-row:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+
+.single-event-details,
+.single-event-details a,
+.single-event-details label {
+  font-size: 18px;
+  font-weight: 500;
+  color: #040608;
+}
+
+.single-event-details label {
+  display: block;
+  margin-bottom: 0;
+  color: #232127;
+}
+
+.single-event-details p,
+.single-event-details a {
+  color: #989898;
+}
+
+.single-event-details-row p.sold-out {
+  color: #040608;
+}
+
+.single-event-details-row p.sold-out span {
+  color: #ff0000;
+}
+
+.single-event-map {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.single-event-map iframe {
+  width: 100%;
+  height: 460px;
+}
+
+@media screen and (min-width: 768px) {
+  .tickets-page .single-event-heading {
+    width: auto;
+  }
+
+  .single-event-details {
+    width: 220px;
+  }
+
+  .single-event-map {
+    width: calc(100% - 220px);
+    margin: 0;
+  }
+
+  .event-tickets {
+    padding: 40px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .single-event-details {
+    width: 340px;
+  }
+
+  .single-event-map {
+    width: calc(100% - 340px);
+    margin: 0;
+  }
+
+  .event-tickets .ticket-row {
+    margin-bottom: 15px;
+  }
+
+  .ticket-type {
+    width: calc(100% - 400px);
+    margin-bottom: 0;
+  }
+
+  .event-tickets .number-of-ticket {
+    margin-bottom: 0;
+  }
+}
+
+.tickets-page .event-tickets {
+  padding: 72px 48px;
+  background: #fff;
+  box-shadow: 13px 26px 139px rgba(0, 0, 0, 0.1);
+}
+
+.tickets-page .event-tickets .ticket-row {
+  background: #f4f6f7;
+  margin-bottom: 15px;
+}
+
+.tickets-page .event-tickets .ticket-row .ticket-type {
+  padding: 15px 24px;
+  margin-right: 15px;
+}
+
+.tickets-page .event-tickets .ticket-row .entry-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #03070c;
+  width: 235px;
+  margin: 0;
+  padding: 0;
+}
+
+.tickets-page .main-content .event-tickets .ticket-type span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #989898;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+}
+
+.tickets-page .main-content .event-tickets .ticket-price {
+  font-size: 18px;
+  font-weight: 500;
+  color: #03070c;
+  width: 50px;
+}
+
+.tickets-page .event-tickets .number-of-tickets {
+  width: 120px;
+  padding: 15px 24px;
+  margin-right: 25px;
+}
+
+.tickets-page .number-of-tickets .increase-ticket,
+.tickets-page .number-of-tickets .decrease-ticket {
+  font-size: 18px;
+  font-weight: 500;
+  color: #03070c;
+  cursor: pointer;
+}
+
+.tickets-page .number-of-tickets .ticket-count {
+  font-size: 18px;
+  font-weight: 400;
+  color: #03070c;
+  width: 32px;
+  border: 0;
+  text-align: center;
+  background: #f3f8f9;
+}
+
+.tickets-page .clear-ticket-count {
+  font-size: 16px;
+  font-weight: 500;
+  color: #989898;
+  margin-right: 60px;
+  cursor: pointer;
+}
+
+.tickets-page .ticket-row .btn {
+  background: #f3f8f9;
+  width: 100px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ff2630;
+}
+
+/*------------------------------------------------------------
+# Blog
+------------------------------------------------------------*/
+.blog-page {
+  width: 100%;
+  height: 100%;
+  background: url("images/blog-page-background.jpg") no-repeat;
+}
+
+/*------------------------------------------------------------
+# site-header
+------------------------------------------------------------*/
+.blog-page .page-header {
+  background: url("images/blog-header-background.jpg") no-repeat;
+}
+
+.blog-list-page .single-blog-content {
+  display: none;
+}
+
+.blog-list-page .single-blog-content.visible {
+  display: block;
+}
+
+.blog-page .blog-list-page .blog-content {
+  margin-top: 100px;
+  box-shadow: 15px 18px 100px rgba(0, 0, 0, 0.1);
+  transition: 0.35s;
+}
+
+.blog-page .blog-list-page .blog-content:hover {
+  box-shadow: 15px 18px 100px rgba(0, 0, 0, 0.3);
+  transition: 0.35s;
+}
+
+.blog-page .blog-list-page .blog-content .featured-image {
+  margin: 0;
+  padding: 0;
+}
+
+.blog-page .blog-list-page .blog-content .featured-image img {
+  max-width: 100%;
+  position: relative;
+}
+
+.blog-page .blog-list-page .blog-content .box-link-date {
+  position: absolute;
+  top: 135px;
+  left: 0;
+  padding: 10px 25px;
+  background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+  cursor: pointer;
+}
+
+.blog-page .blog-list-page .blog-content .box-link-date a {
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+}
+
+.blog-page .blog-list-page .blog-content .entry-content {
+  padding: 40px 45px;
+  background: white;
+}
+
+.blog-page .blog-list-page .blog-content .entry-content .entry-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #050505;
+}
+
+.blog-page .blog-list-page .blog-content .entry-content .entry-meta {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #050505;
+}
+
+.blog-page .blog-list-page .blog-content .entry-content .entry-meta span {
+  margin-right: 10px;
+}
+
+.blog-page .blog-list-page .blog-content .entry-content .entry-meta span a {
+  color: #050505;
+}
+
+.blog-page .blog-list-page .blog-content .entry-content .entry-description {
+  margin-top: 25px;
+  font-size: 15px;
+  color: #989898;
+  line-height: 2;
+}
+
+.blog-page .blog-list-page .load-more {
+  margin-top: 115px;
+}
+
+.blog-page .blog-list-page .load-more .btn {
+  padding: 15px 35px;
+  border-radius: 0;
+  background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+  font-weight: 500;
+  outline: none;
+}
+
+/*------------------------------------------------------------
+# contact-page
+------------------------------------------------------------*/
+.contact-page {
+  background: url("images/contact-background-image.jpg") no-repeat;
+}
+
+/*------------------------------------------------------------
+# site-header
+------------------------------------------------------------*/
+.contact-page .page-header {
+  background: url("images/contact-header-background.jpg") no-repeat;
+}
+
+.contact-page .main-content {
+  background: #fff;
+  box-shadow: 13px 14px 68px rgba(0, 0, 0, 0.1);
+}
+
+.contact-page-map {
+  width: 100%;
+}
+
+.contact-page-map iframe {
+  width: 100%;
+  height: 660px;
+}
+
+.contact-page .contact-details {
+  margin-top: 70px;
+}
+
+.contact-page .contact-details .contact-medium {
+  padding: 0 20px;
+}
+
+.contact-page .contact-details .contact-medium .contact-icon {
+  padding: 0;
+  margin-right: 20px;
+}
+
+.contact-page .contact-details .contact-medium .contact-icon img {
+  max-width: 100%;
+  height: auto;
+}
+
+.contact-page .contact-details .contact-medium .entry-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #040608;
+}
+
+.contact-page .contact-details .contact-medium .entry-content {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #989898;
+}
+
+.contact-page .get-in-touch {
+  margin-top: 115px;
+  padding: 0 15px;
+}
+
+@media screen and (min-width: 992px) {
+  .contact-page .get-in-touch {
+    padding: 0 100px;
+  }
+}
+
+.contact-page .get-in-touch .entry-header {
+  text-align: center;
+}
+
+.contact-page .get-in-touch .entry-title p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #989898;
+  margin: 0;
+}
+
+.contact-page .get-in-touch .entry-title h2 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #050505;
+  margin: 5px 0 0;
+}
+
+.contact-page .get-in-touch .entry-content {
+  margin-top: 45px;
+}
+
+.contact-page .get-in-touch .entry-content p {
+  font-size: 15px;
+  color: #989898;
+  line-height: 2;
+  text-align: center;
+}
+
+.contact-page .main-content .get-in-touch .contact-form {
+  margin-top: 120px;
+}
+
+.contact-page .contact-form input[type="text"],
+.contact-page .contact-form input[type="email"],
+.contact-page .contact-form textarea {
+  width: 100%;
+  padding: 14px 22px;
+  margin-bottom: 30px;
+  border: 0;
+  background: #f4f6f7;
+  color: #050505;
+  outline: none;
+}
+
+.contact-page .contact-form input[type="text"]::placeholder,
+.contact-page .contact-form input[type="email"]::placeholder,
+.contact-page .contact-form textarea::placeholder {
+  color: #7f7f7f;
+  font-style: italic;
+}
+
+.contact-page .contact-form .submit {
+  margin-top: 15px;
+  margin-bottom: 120px;
+}
+
+.contact-page .contact-form .submit .btn {
+  padding: 15px 30px;
+  margin-right: 20px;
+  border-radius: 0;
+  font-weight: 600;
+  background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+}
+
+/*------------------------------------------------------------
+# elements-page
+------------------------------------------------------------*/
+.elements-page {
+  background: url("images/elements-total-background.jpg") no-repeat;
+}
+
+.elements-page .page-header {
+  background: url("images/elements-header-background.jpg") no-repeat;
+}
+
+.elements-page .elements-wrap {
+  margin-bottom: 110px;
+}
+
+.elements-page .elements-wrap .entry-header h2.entry-title {
+  color: #040608;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.elements-page .elements-wrap h2.entry-title {
+  margin-bottom: 90px;
+}
+
+.elements-page .elements-wrap .entry-content .btn {
+  height: 55px;
+  width: 165px;
+  padding: 10px 20px;
+  margin-right: 20px;
+  border-radius: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #040608;
+}
+
+.elements-page .elements-wrap .entry-content .gradient {
+  background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+}
+
+.elements-page .elements-wrap .entry-content .white {
+  background: white;
+  box-shadow: 0 13px 50px 9px rgba(0, 0, 0, 0.1);
+}
+
+.elements-page .elements-wrap .entry-content .border-blu {
+  border: 2px solid #0de7e4;
+}
+
+.elements-page .elements-wrap .entry-content .color-border {
+  border: 2px solid #0de7e4;
+  padding: 6px;
+  background: #0de7e4;
+  background-clip: content-box;
+}
+
+.counter-box {
+  text-align: center;
+}
+
+.counter-box .start-counter {
+  font-size: 60px;
+  font-weight: 500;
+  color: #040608;
+}
+
+.counter-box .start-counter,
+.counter-box .counter-k {
+  font-size: 60px;
+  font-weight: 600;
+  color: #040608;
+  text-align: center;
+}
+
+.counter-box .entry-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #989898;
+}
+
+.tabs ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tabs ul .active {
+  background: -webkit-linear-gradient(#00d0ff, #25ffbf) !important;
+}
+
+.tabs ul .tab-nav {
+  padding: 15px 40px;
+  line-height: 1;
+  color: #040608;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tabs-container {
+  background: #f3f8f9;
+  box-shadow: 5px 14px 100px rgba(0, 0, 0, 0.1);
+}
+
+.tabs-container .tab-content {
+  display: block;
+  padding: 48px;
+  background: #fff;
+}
+
+.tabs-container .tab-content .entry-header {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: 500;
+  color: #040608;
+}
+
+.tabs-container .tab-content p {
+  margin-top: 35px;
+  color: #989898;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2;
+}
+
+.accordion-and-tabs-wrap .accordion-wrap {
+  position: relative;
+}
+
+.accordion-and-tabs-wrap .accordion-wrap .entry-title {
+  width: 445px;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 16px;
+  color: #040608;
+  cursor: pointer;
+}
+
+.accordion-and-tabs-wrap .accordion-wrap .entry-title .arrow-d::before {
+  content: "-";
+}
+
+.accordion-and-tabs-wrap .accordion-wrap .entry-title .arrow-r::before {
+  content: "+";
+}
+
+.accordion-and-tabs-wrap .accordion-wrap .active {
+  background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+}
+
+.accordion-and-tabs-wrap .accordion-wrap .entry-content {
+  display: none;
+  width: 100%;
+  height: auto;
+  padding: 0 12px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #989898;
+  line-height: 2;
+}
+
+.accordion-and-tabs-wrap .accordion-wrap .accordion-active {
+  display: block;
+  margin-top: 0;
+}
+
+.circular-progress-bar {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.circular-progress-bar .circle {
+  position: relative;
+  width: 210px;
+  height: 210px;
+}
+
+.circular-progress-bar .circle strong {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  width: 100%;
+  font-size: 60px;
+  color: #050505;
+}
+
+.circular-progress-bar .entry-title {
+  position: absolute;
+  top: 145px;
+  left: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #989898;
+  text-align: center;
+  width: 100%;
+}
+
+.icon-box .entry-header {
+  position: relative;
+  margin: 0;
+}
+
+.icon-box .entry-header::before {
+  position: absolute;
+  content: "01.";
+  top: -18px;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1;
+  background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.icon-box .entry-header .entry-title {
+  padding-left: 84px;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.icon-box .entry-content {
+  margin-top: 30px;
+  color: #989898;
+  font-size: 15px;
+  line-height: 2;
+  word-break: break-all;
+}
+
+.icon-box-1 .entry-header::before {
+  content: "01.";
+}
+
+.icon-box-2 .entry-header::before {
+  content: "02.";
+}
+
+.icon-box-3 .entry-header::before {
+  content: "03.";
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 0;
+  height: 100vh;
+  opacity: 0.5;
+}
+
+#img-bg {
+  background: url("img/bgFinal.jpg") no-repeat top center fixed;
+  background-size: 100% 100vh;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  position: fixed;
+  z-index: 0;
+}
+
+.speaker-container {
+  margin-top: 10%;
+  padding-bottom: 5%;
+}
+
+.scroll-down-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid white;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-down-btn a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.scroll-down-btn a:hover {
+  color: white !important;
+  background: transparent !important;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.entry-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.news-title {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .scroll-down {
+    bottom: 2%;
+  }
+
+  .home-logo {
+    width: 100% !important;
+    margin-top: 10% !important;
+  }
+
+  .home-row {
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+    padding-top: 10%;
+  }
+
+  .countdown {
+    margin-top: 0 !important;
+  }
+
+  .dday,
+  .dhour,
+  .dmin,
+  .dsec {
+    font-size: 50px !important;
+  }
+}
+
+.home-logo {
+  width: 60%;
+  margin-top: 5%;
+}
+
+/* Team */
+.our-team-section {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.our-team-section:before {
+  position: absolute;
+  top: -0;
+  left: 0;
+  content: " ";
+  background: url(img/service-section-bottom.png);
+  background-size: 100% 100px;
+  width: 100%;
+  height: 100px;
+  float: left;
+  z-index: 99;
+}
+.our-team {
+  padding: 30px 0 40px;
+  background: #f9f9f9;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 5px solid #00325a;
+}
+.our-team:hover{
+  border-bottom: 5px solid #2f2f2f;
+}
+
+.our-team .pic{
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
+}
+.our-team .pic:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #2f2f2f;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 1;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+.our-team:hover .pic:before{
+height: 100%;
+  background: #2f2f2f; 
+}
+.our-team .pic:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #ffffff00;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.3s linear 0s;
+}
+.our-team:hover .pic:after{
+  background: -webkit-linear-gradient(#00d0ff, #25ffbf);;
+}
+.our-team .pic img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+  box-shadow: 0 0 0 14px #f7f5ec;
+  transform: scale(0.7);
+  position: relative;
+  z-index: 2;
+}
+.our-team:hover .pic img{
+  box-shadow: 0 0 0 14px #f7f5ec;
+  transform: scale(0.7);
+}
+.our-team .team-content{ margin-bottom: 30px; }
+.our-team .title{
+  font-size: 22px;
+  font-weight: 700;
+  color: #4e5052;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+.our-team .post{
+  display: block;
+  font-size: 15px;
+  color: #4e5052;
+  text-transform:capitalize;
+}
+.our-team .social{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #2f2f2f;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+.our-team:hover .social{ bottom: 0; }
+.our-team .social li{ display: inline-block; }
+.our-team .social li a{
+  display: block;
+  padding: 10px;
+  font-size: 30px;
+  color: #fff;
+  transition: all 0.3s ease 0s;
+}
+.our-team .social li a:hover{
+  color: #2f2f2f;
+  background: #f7f5ec;
+}
+@media only screen and (max-width: 990px){
+  .our-team{ margin-bottom: 30px; }
+}
