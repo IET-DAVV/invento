@@ -441,7 +441,7 @@ input.input100 {
 
 /*---------------------------------------------*/
 .wrap-pic1 {
-  width: 50%;
+  width: 80%;
 }
 .wrap-pic1 img {
   max-width: 100%;
@@ -814,4 +814,14 @@ input.input100 {
     width: 130px !important;
     height: 130px !important;
   }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
 }
