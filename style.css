@@ -2094,7 +2094,7 @@ canvas {
   text-align: center;
   overflow: hidden;
   position: relative;
-  border-bottom: 5px solid #00325a;
+  border-bottom: 5px solid  #25ffbf;
 }
 .our-team:hover{
   border-bottom: 5px solid #2f2f2f;
@@ -2139,7 +2139,7 @@ height: 100%;
   transition: all 0.3s linear 0s;
 }
 .our-team:hover .pic:after{
-  background: -webkit-linear-gradient(#00d0ff, #25ffbf);;
+  background: -webkit-linear-gradient(#00d0ff, #25ffbf);
 }
 .our-team .pic img {
   width: 100%;
@@ -2177,11 +2177,11 @@ height: 100%;
   margin: 0;
   background: #2f2f2f;
   position: absolute;
-  bottom: -100px;
+  bottom: 0px;
   left: 0;
   transition: all 0.5s ease 0s;
 }
-.our-team:hover .social{ bottom: 0; }
+
 .our-team .social li{ display: inline-block; }
 .our-team .social li a{
   display: block;
