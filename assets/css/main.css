@@ -441,7 +441,7 @@ input.input100 {
 
 /*---------------------------------------------*/
 .wrap-pic1 {
-  width: 50%;
+  width: 80%;
 }
 .wrap-pic1 img {
   max-width: 100%;
@@ -814,4 +814,37 @@ input.input100 {
     width: 130px !important;
     height: 130px !important;
   }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.bginst {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+
+.bgln {
+  background: #4875b4;
+}
+
+.bgtw {
+  background: #33ccff;
+}
+
+.bgm {
+  background: #c63d2d;
 }
