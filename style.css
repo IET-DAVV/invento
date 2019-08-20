@@ -751,9 +751,9 @@ body {
 /*------------------------------------------------------------
 ## home-page-last-news-wrap
 ------------------------------------------------------------*/
-.home-page-last-news-wrap {
+/* .home-page-last-news-wrap {
   margin-top: 110px;
-}
+} */
 
 .home-page-last-news-wrap .box-link-date {
   position: absolute;
@@ -786,7 +786,7 @@ body {
 }
 
 .home-page-last-news-wrap .entry-content {
-  padding: 35px 45px;
+  padding: 18px 0 18px 45px;
 }
 
 .home-page-last-news-wrap .entry-content .entry-header h2 {
@@ -2054,6 +2054,15 @@ canvas {
   .dsec {
     font-size: 50px !important;
   }
+  .contact-form-div {
+    margin-top: 100px;
+  }
+  .contact-form-div .entry-content, .contact-details .entry-content{
+    padding-left: 0;
+  }
+  .news-div {
+    margin-top: 50px;
+  }
 }
 
 .home-logo {
@@ -2191,20 +2200,6 @@ height: 100%;
 
 
 
-input,textarea {
-  border: 10px solid #fdfdfd;
-  border-radius: 40px;
-  box-shadow: inset 0 -1px 0 rgba(255,255,255,1), inset 0 -3px 35px rgba(200,200,200,0.1), inset 0 20px 45px rgba(100,100,100,0.1), inset 0 2px 2px rgba(0,0,0,0.2), inset 0 1px 0 rgba(0,0,0,0.1), 0 0 1px rgba(0,0,0,0.3), 0 1px 1px rgba(0,0,0,0.2);
-  width: 100%;
-  height: 80px;
-  outline:none;
-  padding: 0 0 0 20px;
-  font-size: 20px;
-  color: #008081;
-  
-  transition: box-shadow 0.3s ease;
-  margin-bottom: 30px;
-}
-input,textarea:focus {
-  box-shadow: inset 0 -1px 0 rgba(255,255,255,1), inset 0 -3px 35px rgba(150,150,150,0.1), inset 0 20px 45px rgba(100,100,100,0.1), inset 0 2px 2px rgba(0,0,0,0.2), inset 0 1px 0 rgba(0,0,0,0.1), 0 0 1px rgba(0,0,0,0.3), 0 1px 1px rgba(0,0,0,0.2), 0 0 10px rgba(232,48,208,0.5);
+.button-div {
+  width: 50%;
 }
