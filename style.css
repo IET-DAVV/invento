@@ -1610,7 +1610,7 @@ body {
 
 .contact-page-map iframe {
   width: 100%;
-  height: 660px;
+  height: 60vh;
 }
 
 .contact-page .contact-details {
@@ -2115,7 +2115,7 @@ canvas {
 }
 .our-team:hover .pic:before{
 height: 100%;
-  background: #2f2f2f; 
+  background: #2f2f2f;
 }
 .our-team .pic:after {
   content: "";
@@ -2187,4 +2187,24 @@ height: 100%;
 }
 @media only screen and (max-width: 990px){
   .our-team{ margin-bottom: 30px; }
+}
+
+
+
+input,textarea {
+  border: 10px solid #fdfdfd;
+  border-radius: 40px;
+  box-shadow: inset 0 -1px 0 rgba(255,255,255,1), inset 0 -3px 35px rgba(200,200,200,0.1), inset 0 20px 45px rgba(100,100,100,0.1), inset 0 2px 2px rgba(0,0,0,0.2), inset 0 1px 0 rgba(0,0,0,0.1), 0 0 1px rgba(0,0,0,0.3), 0 1px 1px rgba(0,0,0,0.2);
+  width: 100%;
+  height: 80px;
+  outline:none;
+  padding: 0 0 0 20px;
+  font-size: 20px;
+  color: #008081;
+  
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 30px;
+}
+input,textarea:focus {
+  box-shadow: inset 0 -1px 0 rgba(255,255,255,1), inset 0 -3px 35px rgba(150,150,150,0.1), inset 0 20px 45px rgba(100,100,100,0.1), inset 0 2px 2px rgba(0,0,0,0.2), inset 0 1px 0 rgba(0,0,0,0.1), 0 0 1px rgba(0,0,0,0.3), 0 1px 1px rgba(0,0,0,0.2), 0 0 10px rgba(232,48,208,0.5);
 }
