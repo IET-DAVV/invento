@@ -21,18 +21,19 @@
     <link rel="stylesheet" type="text/css" href="assets/css/util.css" />
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
 </head>
-
 <body style="overflow-x: hidden;">
-
+    <div class="loader-wrapper">
+        <img class="loading-gif" src="assets/images/invento logo with text.gif" alt="">
+    </div>
     <div id="img-bg"></div>
     <canvas id="c"></canvas>
-    <div class="hero-content wow animated flipInX">
+    <div class="hero-content">
 
         <div class="container">
 
             <div class="row home-row">
                 <div class="col-12 offset-lg-1 col-lg-10">
-                    <div class="entry-header">
+                    <div class="entry-header wow animated slideInDown">
                         <img src="assets/images/new_logo.png" class="home-logo" alt="">
 
                         <div class="entry-meta-date">
@@ -40,7 +41,7 @@
                         </div><!-- .entry-meta-date -->
                     </div><!-- .entry-header -->
 
-                    <div class="countdown flex flex-wrap justify-content-between" data-date="2019/09/13">
+                    <div class="countdown flex flex-wrap justify-content-between wow animated slideInUp" data-date="2019/09/13">
                         <div class="countdown-holder">
                             <div class="dday"></div>
                             <label>Days</label>
@@ -153,7 +154,7 @@
                                 <h2>Our Best Speaker</h2>
                             </div><!-- entry-title -->
 
-                            <div class="lineup-artists">
+                            <div class="lineup-artists" style="overflow-x:hidden">
                                 <div class="lineup-artists-wrap flex flex-wrap wow animated fadeInLeft">
                                     <figure class="featured-image">
                                         <a href="#"> <img src="images/speakersPlaceholder.png" alt=""> </a>
@@ -450,7 +451,7 @@
                                 <h2>Our Latest News</h2>
                             </div><!-- entry-title -->
                         </div>
-                        <div class="col-12 news-div col-md-6 wow animated zoomInRight">
+                        <div class="col-12 news-div col-md-6 wow animated zoomInLeft">
                             <figure class="featured-image">
                                 <a href="#"> <img src="images/news-image-1.jpg" alt="fesival+celebration"> </a>
                             </figure><!-- featured-image -->
@@ -612,7 +613,7 @@
                                 <h2>CONTACT US</h2>
                             </div><!-- entry-title -->
                         </div>
-                          <div class="col-12 col-md-6 wow animated zoomInRight">
+                          <div class="col-12 col-md-6 wow animated zoomInLeft">
                           <div class="contact-page-map">
                               <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Institute of Engineering & Technology DAVV&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                           </div><!-- map -->
@@ -823,8 +824,13 @@
     </footer><!-- site-footer -->
 
     <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <!--===============================================================================================-->
+    <script src="assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="assets/vendor/bootstrap/js/popper.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script type='text/javascript' src='js/jquery.js'></script>
+    <!-- <script type='text/javascript' src='js/jquery.js'></script> -->
     <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
     <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
     <script type='text/javascript' src='js/swiper.min.js'></script>
@@ -839,6 +845,23 @@
     </script> -->
     <script>
         new WOW().init();
+    </script>
+    <script>
+        // $(window).on("load", function() {
+        // $(".loader-wrapper")
+        //     .delay(10050)
+        //     .fadeOut("slow");
+        // });    
+        jQuery('window').load(function () {
+            console.log("assad");
+            $(".loader-wrapper")
+            .delay(150)
+            .fadeOut("slow");
+            $('body').css('overflow-y', 'auto');
+        });
+        $("document").ready( function() {
+            console.log("assad");
+        });
     </script>
 </body>
 
