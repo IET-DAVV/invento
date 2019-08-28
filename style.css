@@ -2227,5 +2227,43 @@ height: 100%;
 }
 
 body {
-  overflow: hidden;
+  /* overflow: hidden; */
+}
+
+.parallax1 {
+  /* The image used */
+  background-image: url("images/blog-header-background.jpg");
+  height:100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 1200px) {
+  .blog-page .lineup-artists .lineup-artists-wrap .lineup-artists-description-container {
+    max-width: 1400px;
+  }
+
+  .blog-page .lineup-artists .lineup-artists-wrap:nth-last-of-type(1) {
+    margin-left: 80px;
+  }
+}
+
+.blog-page .lineup-artists-wrap{
+  padding-bottom:200px;
+}
+
+.parallax2 {
+  /* The image used */
+  background-image: url("img/bgFinal.jpg");
+  height:100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
