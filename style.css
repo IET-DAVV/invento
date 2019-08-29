@@ -218,9 +218,9 @@ body {
     padding: 0;
   }
 
-  .site-navigation ul li:nth-last-of-type(1) {
+  /* .site-navigation ul li:nth-last-of-type(1) {
     padding-left: 60px;
-  }
+  } */
 
   .site-navigation ul li a {
     color: #fff;
@@ -2057,7 +2057,8 @@ canvas {
   .contact-form-div {
     margin-top: 100px;
   }
-  .contact-form-div .entry-content, .contact-details .entry-content{
+  .contact-form-div .entry-content,
+  .contact-details .entry-content {
     padding-left: 0;
   }
   .news-div {
@@ -2069,7 +2070,6 @@ canvas {
   .loading-gif {
     width: 100% !important;
   }
-
 }
 
 .home-logo {
@@ -2101,13 +2101,13 @@ canvas {
   text-align: center;
   overflow: hidden;
   position: relative;
-  border-bottom: 5px solid  #25ffbf;
+  border-bottom: 5px solid #25ffbf;
 }
-.our-team:hover{
+.our-team:hover {
   border-bottom: 5px solid #2f2f2f;
 }
 
-.our-team .pic{
+.our-team .pic {
   display: inline-block;
   width: 130px;
   height: 130px;
@@ -2129,8 +2129,8 @@ canvas {
   transform: scale(3);
   transition: all 0.3s linear 0s;
 }
-.our-team:hover .pic:before{
-height: 100%;
+.our-team:hover .pic:before {
+  height: 100%;
   background: #2f2f2f;
 }
 .our-team .pic:after {
@@ -2145,7 +2145,7 @@ height: 100%;
   z-index: 1;
   transition: all 0.3s linear 0s;
 }
-.our-team:hover .pic:after{
+.our-team:hover .pic:after {
   background: -webkit-linear-gradient(#00d0ff, #25ffbf);
 }
 .our-team .pic img {
@@ -2159,12 +2159,14 @@ height: 100%;
   position: relative;
   z-index: 2;
 }
-.our-team:hover .pic img{
+.our-team:hover .pic img {
   box-shadow: 0 0 0 14px #f7f5ec;
   transform: scale(0.7);
 }
-.our-team .team-content{ margin-bottom: 30px; }
-.our-team .title{
+.our-team .team-content {
+  margin-bottom: 30px;
+}
+.our-team .title {
   font-size: 22px;
   font-weight: 700;
   color: #4e5052;
@@ -2172,13 +2174,13 @@ height: 100%;
   text-transform: capitalize;
   margin-bottom: 5px;
 }
-.our-team .post{
+.our-team .post {
   display: block;
   font-size: 15px;
   color: #4e5052;
-  text-transform:capitalize;
+  text-transform: capitalize;
 }
-.our-team .social{
+.our-team .social {
   width: 100%;
   padding: 0;
   margin: 0;
@@ -2189,20 +2191,24 @@ height: 100%;
   transition: all 0.5s ease 0s;
 }
 
-.our-team .social li{ display: inline-block; }
-.our-team .social li a{
+.our-team .social li {
+  display: inline-block;
+}
+.our-team .social li a {
   display: block;
   padding: 10px;
   font-size: 30px;
   color: #fff;
   transition: all 0.3s ease 0s;
 }
-.our-team .social li a:hover{
+.our-team .social li a:hover {
   color: #2f2f2f;
   background: #f7f5ec;
 }
-@media only screen and (max-width: 990px){
-  .our-team{ margin-bottom: 30px; }
+@media only screen and (max-width: 990px) {
+  .our-team {
+    margin-bottom: 30px;
+  }
 }
 
 .button-div {
@@ -2216,7 +2222,7 @@ height: 100%;
   top: 0;
   left: 0;
   background-color: #000;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   z-index: 999;
@@ -2233,7 +2239,7 @@ body {
 .parallax1 {
   /* The image used */
   background-image: url("images/blog-header-background.jpg");
-  height:100vh;
+  height: 100vh;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -2243,7 +2249,10 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .blog-page .lineup-artists .lineup-artists-wrap .lineup-artists-description-container {
+  .blog-page
+    .lineup-artists
+    .lineup-artists-wrap
+    .lineup-artists-description-container {
     max-width: 1400px;
   }
 
@@ -2252,18 +2261,54 @@ body {
   }
 }
 
-.blog-page .lineup-artists-wrap{
-  padding-bottom:200px;
+.blog-page .lineup-artists-wrap {
+  padding-bottom: 200px;
 }
 
 .parallax2 {
   /* The image used */
   background-image: url("img/bgFinal.jpg");
-  height:100vh;
+  height: 100vh;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.blog-page {
+  /* background: linear-gradient(#2c3e50, #bdc3c7, #2c3e50); */
+  background: linear-gradient(#090d18, #0f2027, #000);
+}
+
+.blog-page .entry-title {
+  color: #000;
+}
+
+.blog-page .lineup-artists-description .entry-content {
+  color: #333;
+}
+
+.blog-page .see-complete-lineup {
+  margin: 40px;
+  margin-bottom: 0;
+}
+
+.custom-footer {
+  background: #000;
+  color: white;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .blog-page .lineup-artists-wrap {
+    padding-bottom: 0;
+  }
+  .lineup-artists {
+    padding-top: 0;
+  }
 }
