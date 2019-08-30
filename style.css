@@ -2238,7 +2238,7 @@ body {
 
 .parallax1 {
   /* The image used */
-  background-image: url("images/blog-header-background.jpg");
+  background-image: url("images/Binary-code.jpg");
   height: 100vh;
 
   /* Create the parallax scrolling effect */
@@ -2279,7 +2279,7 @@ body {
 
 .blog-page {
   /* background: linear-gradient(#2c3e50, #bdc3c7, #2c3e50); */
-  background: linear-gradient(#090d18, #0f2027, #000);
+  background: linear-gradient(#141E30, #243B55);
 }
 
 .blog-page .entry-title {
