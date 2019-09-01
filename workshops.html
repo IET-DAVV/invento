@@ -24,6 +24,9 @@
 </head>
 
 <body class="blog-page">
+    <div class="loader-wrapper">
+        <img class="loading-gif" src="assets/images/invento logo with text.gif" alt="">
+    </div>
     <header class="site-header">
         <div class="header-bar">
             <div class="container-fluid">
@@ -760,7 +763,7 @@
     </section>
 
 
-    <script type='text/javascript' src='js/jquery.js'></script>
+    <script src="assets/vendor/jquery/jquery-3.2.1.min.js"></script>
     <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
     <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
     <script type='text/javascript' src='js/swiper.min.js'></script>
@@ -768,6 +771,15 @@
     <script type='text/javascript' src='js/circle-progress.min.js'></script>
     <script type='text/javascript' src='js/jquery.countTo.min.js'></script>
     <script type='text/javascript' src='js/custom.js'></script>
+    <!-- <script>
+        jQuery('window').load(function () {
+            console.log("aaaaaa");
+            $(".loader-wrapper")
+                .delay(150)
+                .fadeOut("slow");
+            $('body').css('overflow-y', 'auto');
+        });
+    </script> -->
 </body>
 
 </html>

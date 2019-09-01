@@ -2232,8 +2232,8 @@ canvas {
   width: 60%;
 }
 
-body {
-  /* overflow: hidden; */
+body.index-page, body.blog-page {
+  overflow: hidden;
 }
 
 .parallax1 {
@@ -2286,17 +2286,32 @@ body {
   background: linear-gradient(#001A23, #141517);
 }
 
-.blog-page .entry-title {
+.index-page .entry-title,.blog-page .entry-title {
   color: #000;
 }
 
-.blog-page .lineup-artists-description .entry-content {
+.index-page .lineup-artists-description .entry-content ,.blog-page .lineup-artists-description .entry-content {
   color: #333;
 }
+
+.about-us-wrap .lineup-artists-description .entry-content, .about-us-wrap .entry-title {
+  color: white;
+}
+
+/* .about-us-wrap .lineup-artists-description .entry-content {
+  color: hsl(0, 0%, 60%);
+} */
 
 .blog-page .see-complete-lineup {
   margin: 40px;
   margin-bottom: 0;
+}
+
+.index-page .custom-footer {
+  position: relative;
+  /* bottom: 0;
+  margin: 0;
+  width: 100%; */
 }
 
 .custom-footer {

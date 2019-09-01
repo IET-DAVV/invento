@@ -1,15 +1,15 @@
-(function($) {
+(function ($) {
   // 'use strict';
 
   // Main Navigation
-  $(".hamburger-menu").on("click", function() {
+  $(".hamburger-menu").on("click", function () {
     $(this).toggleClass("open");
     $(".site-navigation").toggleClass("show");
   });
 
   var countdown_date = $(".countdown").data("date");
 
-  $(".countdown").countdown(countdown_date, function(event) {
+  $(".countdown").countdown(countdown_date, function (event) {
     $(".dday").html(event.strftime("%-D"));
     $(".dhour").html(event.strftime("%-H"));
     $(".dmin").html(event.strftime("%-M"));
@@ -56,7 +56,7 @@
   });
 
   // Buy Tickets Form
-  $(".increase-ticket").click(function() {
+  $(".increase-ticket").click(function () {
     var $n = $(this)
       .parent(".number-of-tickets")
       .parent(".flex")
@@ -65,7 +65,7 @@
     $n.val(Number($n.val()) + 1);
   });
 
-  $(".decrease-ticket").click(function() {
+  $(".decrease-ticket").click(function () {
     var $n = $(this)
       .parent(".number-of-tickets")
       .parent(".flex")
@@ -77,16 +77,16 @@
     }
   });
 
-  $(".clear-ticket-count").on("click", function() {
+  $(".clear-ticket-count").on("click", function () {
     var $count = $(".ticket-count");
     $count.val("1");
   });
 
   // Tabs
-  $(function() {
+  $(function () {
     $(".tab-content:first-child").show();
 
-    $(".tab-nav").bind("click", function(e) {
+    $(".tab-nav").bind("click", function (e) {
       $this = $(this);
       $tabs = $this
         .parent()
@@ -110,7 +110,7 @@
     arrowDclass: "arrow-d"
   });
 
-  $(".accordion-wrap .entry-title").on("click", function() {
+  $(".accordion-wrap .entry-title").on("click", function () {
     $(".accordion-wrap .entry-title").removeClass("active");
     $(this).addClass("active");
   });
@@ -126,7 +126,7 @@
         gradient: ["#00d1ff", "#1effc5"]
       }
     })
-    .on("circle-animation-progress", function(event, progress) {
+    .on("circle-animation-progress", function (event, progress) {
       $(this)
         .find("strong")
         .html(Math.round(75 * progress) + "<span>%</span>");
@@ -142,7 +142,7 @@
         gradient: ["#00d1ff", "#1effc5"]
       }
     })
-    .on("circle-animation-progress", function(event, progress) {
+    .on("circle-animation-progress", function (event, progress) {
       $(this)
         .find("strong")
         .html(Math.round(83 * progress) + "<span>%</span>");
@@ -158,7 +158,7 @@
         gradient: ["#00d1ff", "#1effc5"]
       }
     })
-    .on("circle-animation-progress", function(event, progress) {
+    .on("circle-animation-progress", function (event, progress) {
       $(this)
         .find("strong")
         .html(Math.round(65 * progress) + "<span>%</span>");
@@ -174,18 +174,18 @@
         gradient: ["#00d1ff", "#1effc5"]
       }
     })
-    .on("circle-animation-progress", function(event, progress) {
+    .on("circle-animation-progress", function (event, progress) {
       $(this)
         .find("strong")
         .html(Math.round(100 * progress) + "<span>%</span>");
     });
 
   // Counter
-  $(".start-counter").each(function() {
+  $(".start-counter").each(function () {
     var counter = $(this);
 
     counter.countTo({
-      formatter: function(value, options) {
+      formatter: function (value, options) {
         return value
           .toFixed(options.decimals)
           .replace(/\B(?=(?:\d{3})+(?!\d))/g, ",");
@@ -199,7 +199,7 @@
 
   $item.slice(0, 6).addClass("visible");
 
-  $(".load-more .btn").on("click", function(e) {
+  $(".load-more .btn").on("click", function (e) {
     e.preventDefault();
 
     $(".single-blog-content:hidden")
@@ -211,7 +211,7 @@
   // Back to Top
   if ($(".back-to-top").length) {
     var scrollTrigger = 500, // px
-      backToTop = function() {
+      backToTop = function () {
         var scrollTop = $(window).scrollTop();
         if (scrollTop > scrollTrigger) {
           $(".back-to-top").addClass("show");
@@ -220,10 +220,10 @@
         }
       };
     backToTop();
-    $(window).on("scroll", function() {
+    $(window).on("scroll", function () {
       backToTop();
     });
-    $(".back-to-top").on("click", function(e) {
+    $(".back-to-top").on("click", function (e) {
       e.preventDefault();
       $("html,body").animate(
         {
@@ -234,7 +234,8 @@
     });
   }
 })(jQuery);
-$("document").ready(function() {
+$(window).on("load", function () {
+  console.log("aaaaaa");
   $(".loader-wrapper")
     .delay(600)
     .fadeOut();
