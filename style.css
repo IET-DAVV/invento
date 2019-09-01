@@ -2277,9 +2277,13 @@ body {
   background-size: cover;
 }
 
-.blog-page {
-  /* background: linear-gradient(#2c3e50, #bdc3c7, #2c3e50); */
+/* .blog-page {
+  background: linear-gradient(#2c3e50, #bdc3c7, #2c3e50);
   background: linear-gradient(#141E30, #243B55);
+} */
+
+.main-blog-section {
+  background: linear-gradient(#001A23, #141517);
 }
 
 .blog-page .entry-title {
@@ -2311,4 +2315,9 @@ body {
   .lineup-artists {
     padding-top: 0;
   }
+}
+
+.nav-ul a{
+  font-size: 15px !important;
+  font-weight: bold;
 }
