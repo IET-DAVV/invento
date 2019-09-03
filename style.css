@@ -2336,3 +2336,23 @@ body.index-page, body.blog-page {
   font-size: 15px !important;
   font-weight: bold;
 }
+
+
+
+@media screen and (min-width: 1200px) {
+  .ws{
+    max-width:1000px !important;
+  }
+  .wsp{
+    width:140% !important;
+    max-width:140% !important;
+  }
+}
+@media screen and (min-width: 768px){
+  .wsl{
+    left:40px !important;
+  }
+  .wsr{
+    right:0px !important;
+  }
+}
