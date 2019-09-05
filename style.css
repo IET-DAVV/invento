@@ -267,7 +267,7 @@ body {
   }
 
   .hero-content .entry-header .entry-meta-date {
-    top: 60px;
+    top: 40px;
   }
 }
 
@@ -442,6 +442,13 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .lineup-artists-wrap-3 {
+    margin-top: 100px !important;
+  }
+
+  .complete-workshops{
+    margin-top: 150px !important;
+  }
   .lineup-artists .lineup-artists-wrap {
     margin-top: 30px;
   }
@@ -2045,7 +2052,7 @@ canvas {
   }
 
   .countdown {
-    margin-top: 0 !important;
+    margin-top: 10% !important;
   }
 
   .dday,
@@ -2064,9 +2071,6 @@ canvas {
   .news-div {
     margin-top: 50px;
   }
-  #c {
-    display: none;
-  }
   .loading-gif {
     width: 100% !important;
   }
@@ -2074,7 +2078,7 @@ canvas {
 
 .home-logo {
   width: 60%;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 /* Team */
@@ -2229,7 +2233,7 @@ canvas {
 }
 
 .loading-gif {
-  width: 60%;
+  width: 50%;
 }
 
 body.index-page, body.blog-page {
@@ -2440,6 +2444,12 @@ body.index-page, body.blog-page {
   .glitch {
     font-size: 50px !important;
   }
+  
+  .home-btn {
+    /* font-size: 12px !important; */
+    padding: 15px !important;
+  }
+
 }
 
 
@@ -2605,4 +2615,34 @@ body.index-page, body.blog-page {
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
   animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+.home-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-btn-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-btn {
+  border: 2px solid white;
+  border-radius: 2px;
+  padding: 15px;
+  color: white;
+  transition: ease-in-out transform .2s;
+}
+
+.home-btn:hover {
+  text-decoration: none;
+  color: white;
+  transform: scale(1.1);
+}
+
+body {
+  overflow: hidden;
 }
