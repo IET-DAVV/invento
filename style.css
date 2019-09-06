@@ -793,7 +793,8 @@ body {
 }
 
 .home-page-last-news-wrap .entry-content {
-  padding: 18px 0 18px 45px;
+  padding: 18px 0 18px 0px;
+  color: white;
 }
 
 .home-page-last-news-wrap .entry-content .entry-header h2 {
@@ -2076,6 +2077,9 @@ canvas {
   }
   #img-bg {
     height: 110vh;
+    /* background: url(img/bgFinal.jpg) no-repeat top center fixed; */
+    background-size: 100% 110vh;
+
   }
 }
 
@@ -2450,7 +2454,7 @@ body.index-page, body.blog-page {
 
   .home-btn {
     /* font-size: 12px !important; */
-    padding: 15px !important;
+    padding: 10px !important;
   }
 
 }
