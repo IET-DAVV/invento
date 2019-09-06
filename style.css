@@ -2074,6 +2074,9 @@ canvas {
   .loading-gif {
     width: 100% !important;
   }
+  #img-bg {
+    height: 110vh;
+  }
 }
 
 .home-logo {
