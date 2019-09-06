@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invento Referrals</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+  <div id="message"></div>
+  <div class="container">
+    <h2>Add Referral</h2>
+    <form id="form" method="get">
+      <label for="firstname">
+        <span>First Name</span>
+        <input name="firstname" type="text" placeholder="First Name" required>
+      </label>
+      <label for="lastname">
+        <span>Last Name</span>
+        <input name="lastname" type="text" placeholder="Last Name" required>
+      </label>
+      <label for="college">
+        <span>College</span>
+        <input name="college" type="text" placeholder="College" required>
+      </label>
+      <label for="Year">
+        <span>Year</span>
+        <select name="year" required>
+          <option value="">Choose</option>
+          <option value="1">1st</option>
+          <option value="2">2nd</option>
+          <option value="3">3rd</option>
+          <option value="4">4th</option>
+          <option value="5">5th</option>
+          <option value="6">6th</option>
+          <option value="7">7th</option>
+          <option value="8">8th</option>
+        </select>
+      </label>
+      <label for="branch">
+        <span>Branch</span>
+        <input name="branch" type="text" placeholder="Branch" required>
+      </label>
+      <label for="phone">
+          <span>Phone No.</span>
+          <input name="phone" type="text" placeholder="Phone No." onkeyup="this.value=this.value.replace(/[^\d]/,'')" required>
+        </label>
+      <button type="submit">Add to database</button>
+    </form>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
