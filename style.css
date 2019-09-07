@@ -327,9 +327,13 @@ body {
 /*------------------------------------------------------------
 # The Lineup Artists - Headliners
 ------------------------------------------------------------*/
+.home-page-last-news {
+  padding-bottom: 100px;
+}
+
 .content-section {
   width: 100%;
-  padding-bottom: 120px;
+  padding-bottom: 0;
   /* background: url("images/middle-cover.jpg") no-repeat; */
   background-size: 100% auto;
   padding-top: 120px;
@@ -452,7 +456,7 @@ body {
   }
 
   .complete-workshops{
-    margin-top: 220px !important;
+    margin-top: 300px !important;
   }
   .lineup-artists .lineup-artists-wrap {
     margin-top: 30px;
@@ -1998,6 +2002,7 @@ canvas {
 
 .speaker-container {
   margin-top: 10%;
+  margin-bottom: 5%;
   padding-bottom: 5%;
 }
 
