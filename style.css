@@ -2663,3 +2663,27 @@ body.index-page, body.blog-page {
 body {
   overflow: hidden;
 }
+
+#parallax-hmm {
+  /* The image used */
+  background:url("img/bgFinal.jpg");
+  height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-sect {
+  background: linear-gradient(#01172b, #141517);
+}
+
+.c-test {
+  height: 100vh;
+  position: absolute;
+}
