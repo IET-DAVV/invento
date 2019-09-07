@@ -1,173 +1,803 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
-  <title>Invento 2K19</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!--===============================================================================================-->
-  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
-  <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
-  <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css" />
-  <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="assets/vendor/animate/animate.css" />
-  <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="assets/vendor/select2/select2.min.css" />
-  <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="assets/css/util.css" />
-  <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
-  <!--===============================================================================================-->
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Invento</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/util.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
 </head>
+<body class="index-page">
+    <div class="loader-wrapper">
+        <img class="loading-gif" src="assets/images/loader.gif" alt="" >
+    </div>
+    <div id="img-bg"></div>
+    <canvas id="c"></canvas>
+    <div class="hero-content">
 
-<body>
-  <div class="size1 bg0 where1-parent">
-    <!-- Coutdown -->
-    <div class="flex-c-m bg-img1 size2 where1 overlay1 where2 respon2"
-      style="background-image: url('images/bg01.jpg');">
-      <div class="wsize2 flex-w flex-c-m cd100 js-tilt">
-        <div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-          <span class="l2-txt1 p-b-9 days" id="days">35</span>
-          <span class="s2-txt4">Days</span>
-        </div>
+        <div class="container">
 
-        <div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-          <span class="l2-txt1 p-b-9 hours" id="hours">17</span>
-          <span class="s2-txt4">Hours</span>
-        </div>
+            <div class="row home-row">
+                <div class="col-12 offset-lg-1 col-lg-10">
+                    <div class="entry-header wow animated slideInDown">
+                        <img src="assets/images/new_logo.png" class="home-logo" alt="">
 
-        <div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-          <span class="l2-txt1 p-b-9 minutes" id="minutes">50</span>
-          <span class="s2-txt4">Minutes</span>
-        </div>
+                        <div class="entry-meta-date">
+                            27.09.019
+                        </div><!-- .entry-meta-date -->
+                    </div><!-- .entry-header -->
 
-        <div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-          <span class="l2-txt1 p-b-9 seconds" id="seconds">39</span>
-          <span class="s2-txt4">Seconds</span>
-        </div>
-      </div>
+                    <div class="home-btns col-md-12">
+                        <div class="col-md-4 home-btn-div wow animated slideInLeft">
+                            <a href="#" class="home-btn">Campus Ambassador</a>
+                        </div>
+                        <div class="col-md-4 home-btn-div wow animated slideInUp">
+                            <a href="#" class="home-btn">Register Now</a>
+                        </div>
+                        <div class="col-md-4 home-btn-div wow animated slideInRight">
+                            <a href="#" class="home-btn">Invento Quiz</a>
+                        </div>
+                    </div>
+
+                    <div class="countdown flex flex-wrap justify-content-between wow animated slideInUp" data-date="2019/09/27">
+                        <div class="countdown-holder">
+                            <div class="dday"></div>
+                            <label>Days</label>
+                        </div><!-- .countdown-holder -->
+
+                        <div class="countdown-holder">
+                            <div class="dhour"></div>
+                            <label>Hours</label>
+                        </div><!-- .countdown-holder -->
+
+                        <div class="countdown-holder">
+                            <div class="dmin"></div>
+                            <label>Minutes</label>
+                        </div><!-- .countdown-holder -->
+
+                        <div class="countdown-holder">
+                            <div class="dsec"></div>
+                            <label>Seconds</label>
+                        </div><!-- .countdown-holder -->
+                    </div><!-- .countdown -->
+                </div><!-- .col-12 -->
+            </div><!-- row -->
+
+            <div class="row scroll-down">
+                <div class="col-12 ">
+                    <div class="entry-footer">
+                        <div class="scroll-down-btn">
+                            <a href="#content01" class="">
+                                <i class="fas fa-arrow-down"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- .container -->
+    </div><!-- .hero-content -->
+
+
+    <div class="content-section" id="content01">
+        <div class="container">
+
+
+            <!--About us Section -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="container-fluid" style=" background-color: rgba(0,0,0,0.5);">
+                        <div class="lineup-artists-headline" id="about">
+                            <div class="entry-title">
+                                <p>CENTRAL INDIA'S BIGGEST TECHNICAL EVENT</p>
+                                <h2>ABOUT INVENTO 19</h2>
+                            </div><!-- entry-title -->
+
+                            <div class="about-us">
+                                <div class="about-us-wrap flex flex-wrap">
+
+
+                                    <div class="lineup-artists-description">
+                                        <div class="about-us-description-container">
+                                            <div class="entry-title">
+                                                Invento, The Official Techfest of IET-DAVV
+                                            </div><!-- entry-title -->
+
+                                            <div class="entry-content">
+                                                <p>Invento is the annual technical festival of the Institute Of Engineering And Technology, DAVV which is held in August and September .This festival is the largest technical fest of central India with a huge footfall of students from different colleges of central India. It is one of the huge and highly acknowledged technical fest. It is organized by the students and the members of IET DAVV with their efforts and high technical skills, knowledge and creative minds. The festivals motive is to inspire young minds with renowned technologists and influential thinkers and to communicate to people and students from all over .The event has been growing in prestige and popularity.
+                                                        Invento is a grand two day event on the campus with opportunities for the students to showcase their skill, learn something new and bring up their talents. The event starts with inauguration ceremony with a huge crowd of people gathered together. With a plethora of workshops, competitions, lectures, conferences, exhibitions, performances and various other events, techfest is the place to be for all experts and tech lovers.
+                                                        Come and be a part of this year’s edition.
+                                                </p>
+                                            </div><!-- entry-content -->
+
+                                        </div><!-- lineup-artists-description-container -->
+                                    </div><!-- lineup-artists-description -->
+                                </div><!-- lineup-artists-wrap -->
+
+                            </div><!-- lineup-artists -->
+                        </div><!-- lineup-artists-headline -->
+                    </div>
+                </div><!-- col-12 -->
+            </div><!-- row -->
+
+
+            <!-- About us Section ends here -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="container-fluid speaker-container"
+                        style=" background-color: rgba(0,0,0,0.5);">
+                        <div class="lineup-artists-headline">
+                            <div class="entry-title">
+                                <p>Workshops</p>
+                                <h2>Our Best workshops</h2>
+                            </div><!-- entry-title -->
+
+                            <div class="lineup-artists">
+                                <div class="lineup-artists-wrap flex flex-wrap">
+                                    <figure class="featured-image">
+                                        <a href="workshops.html#workshopAI"> <img src="assets/images/ai.jpg" alt=""> </a>
+                                    </figure><!-- featured-image -->
+
+                                    <div class="lineup-artists-description">
+                                        <div class="lineup-artists-description-container">
+                                            <div class="entry-title">
+                                                AI/ML
+                                            </div><!-- entry-title -->
+
+                                            <div class="entry-content">
+                                                <p>Keeping in mind all the technological advancements in the upcoming years it would be our pleasure ro make you aware of the needs and benefits of AI/ML , IETians this year are coming up with session of AI/ML in INVENTO 2K19 where you will get a chance to interact with one of the best speakers in this field with profound knowledge about AI/ML. Don’t miss this opportunity and make the best out of it. </p>
+                                            </div><!-- entry-content -->
+
+                                            <div class="box-link">
+                                                <a href="workshops.html#workshopAI"><img src="images/box.jpg" alt=""></a>
+                                            </div><!-- box-link -->
+                                        </div><!-- lineup-artists-description-container -->
+                                    </div><!-- lineup-artists-description -->
+                                </div><!-- lineup-artists-wrap -->
+
+                                <div class="lineup-artists-wrap flex flex-wrap" style="margin-top:150px;">
+                                    <div class="lineup-artists-description">
+                                        <figure class="featured-image d-md-none">
+                                            <a href="workshops.html#workshopIC"> <img src="images/speakersPlaceholder.png" alt=""> </a>
+                                        </figure><!-- featured-image -->
+
+                                        <div class="lineup-artists-description-container">
+                                            <div class="entry-title">
+                                                IC Engine
+                                            </div><!-- entry-title -->
+
+                                            <div class="entry-content">
+                                                <p>This workshop mainly focuses on Mechanical, Aeronautical and Automobile Engineering disciplines. It will let you know the importance of automobiles and application in day-to-day life. This workshop will also help you in finding the correct path for your career. We will help you garner the essence of Mechanical, Aeronautical and Automobile Engineering disciplines by arranging the best speakers.</p>
+                                            </div><!-- entry-content -->
+
+                                            <div class="box-link">
+                                                <a href="workshops.html#workshopIC"><img src="images/box.jpg" alt=""></a>
+                                            </div><!-- box-link -->
+                                        </div><!-- lineup-artists-description-container -->
+                                    </div><!-- lineup-artists-description -->
+
+                                    <figure class="featured-image d-none d-md-block">
+                                        <a href="workshops.html#workshopIC"> <img src="images/speakersPlaceholder.png" alt=""> </a>
+                                    </figure><!-- featured-image -->
+                                </div><!-- lineup-artists-wrap -->
+
+                                <div class="lineup-artists-wrap lineup-artists-wrap-3 flex flex-wrap">
+                                    <figure class="featured-image">
+                                        <a href="workshops.html#workhopHacking"> <img src="images/speakersPlaceholder.png" alt=""> </a>
+                                    </figure><!-- featured-image -->
+
+                                    <div class="lineup-artists-description">
+                                        <div class="lineup-artists-description-container">
+                                            <div class="entry-title">
+                                                Ethical Hacking
+                                            </div><!-- entry-title -->
+
+                                            <div class="entry-content">
+                                                <p>Ethical Hacking is an act of intruding or penetrating into system or networks to find out threats, vulnerabilities in those systems which a malicious attacker may find and exploit causing loss of data, financial loss or other major damages. The purpose of ethical hacking is to improve the security of the network. Interact with experts, raise the queries, learn what looks impossible, wander your minds, learn every bit of it, and enjoy the Experience.  </p>
+                                            </div><!-- entry-content -->
+
+                                            <div class="box-link">
+                                                <a href="workshops.html#workshopHacking"> <img src="images/box.jpg" alt=""></a>
+                                            </div><!-- box-link -->
+                                        </div><!-- lineup-artists-description-container -->
+                                    </div><!-- lineup-artists-description -->
+                                </div><!-- lineup-artists-wrap -->
+                            </div><!-- lineup-artists -->
+                            <div class="row justify-content-center">
+                                <div class="see-complete-lineup complete-workshops" style="margin-bottom: 0">
+                                    <div class="entry-footer">
+                                        <a href="workshops.html" class="btn">All Workshops</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- lineup-artists-headline -->
+                    </div>
+                </div><!-- col-12 -->
+            </div><!-- row -->
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="container-fluid" style=" background-color: rgba(0,0,0,0.5);">
+                        <div class="the-complete-lineup">
+                            <div class="entry-title">
+                                <p>THE LINEUP</p>
+                                <h2>VARIOUS EVENTS</h2>
+                            </div><!-- entry-title -->
+
+                            <div class="row the-complete-lineup-artists">
+                                <div class="col-6 col-md-4 col-lg-3 artist-single">
+                                    <figure class="featured-image">
+                                        <a href="events.html#eventHackvento"> <img src="assets/images/hackk.jpg" alt=""> </a>
+                                    <!--    <a href="events.html#eventHackvento" class="box-link"> <img src="images/box.jpg" alt=""> </a> -->
+                                    </figure><!-- featured-image -->
+
+                                    <h2>Hackvento</h2>
+                                </div><!-- artist-single -->
+
+                                <div class="col-6 col-md-4 col-lg-3 artist-single">
+                                    <figure class="featured-image">
+                                        <a href="events.html#eventInternhunt"> <img src="images/workshopsPlaceholder.jpg" alt=""> </a>
+
+                                    </figure><!-- featured-image -->
+
+                                    <h2>InternHunt</h2>
+                                </div><!-- artist-single -->
+
+                                <div class="col-6 col-md-4 col-lg-3 artist-single">
+                                    <figure class="featured-image">
+                                        <a href="events.html#eventQuorameetup"> <img src="assets/images/quora.jpg" alt=""> </a>
+
+                                    </figure><!-- featured-image -->
+
+                                    <h2>Quora Meetup</h2>
+                                </div><!-- artist-single -->
+
+                                <div class="col-6 col-md-4 col-lg-3 artist-single">
+                                    <figure class="featured-image">
+                                        <a href="events.html#eventDigitalpostermaking"> <img src="images/workshopsPlaceholder.jpg" alt=""> </a>
+
+                                    </figure><!-- featured-image -->
+
+                                    <h2>Poster Making</h2>
+                                </div><!-- artist-single -->
+
+                                <div class="col-6 col-md-4 col-lg-3 artist-single">
+                                    <figure class="featured-image">
+                                        <a href="events.html#eventQuizcompetition"> <img src="images/workshopsPlaceholder.jpg" alt=""> </a>
+
+                                    </figure><!-- featured-image -->
+
+                                    <h2>Quiz Competition</h2>
+                                </div><!-- artist-single -->
+
+                                <div class="col-6 col-md-4 col-lg-3 artist-single">
+                                    <figure class="featured-image">
+                                        <a href="events.html#eventCircuitdesign"> <img src="images/workshopsPlaceholder.jpg" alt=""> </a>
+
+                                    </figure><!-- featured-image -->
+
+                                    <h2>Circuit Design</h2>
+                                </div><!-- artist-single -->
+
+                                <div class="col-6 col-md-4 col-lg-3 artist-single">
+                                    <figure class="featured-image">
+                                        <a href="events.html#eventRubixcube"> <img src="assets/images/cube.jpg" alt=""> </a>
+
+                                    </figure><!-- featured-image -->
+
+                                    <h2>Rubix Cube</h2>
+                                </div><!-- artist-single -->
+
+                                <div class="col-6 col-md-4 col-lg-3 artist-single">
+                                    <figure class="featured-image">
+                                        <a href="events.html#eventRoborace"> <img src="assets/images/robot.png" alt=""> </a>
+
+                                    </figure><!-- featured-image -->
+
+                                    <h2>Robo Race</h2>
+                                </div><!-- artist-single -->
+                            </div><!-- the-complete-lineup-artists -->
+
+                            <div class="row justify-content-center">
+                                <div class="see-complete-lineup">
+                                    <div class="entry-footer">
+                                        <a href="events.html" class="btn">See all Events</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- the-complete-lineup -->
+                    </div>
+                </div><!-- col-12 -->
+            </div><!-- row -->
+        </div><!-- container -->
+
+        <div class="homepage-next-events">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="entry-title">
+                            <p>THROWBACK TO INVENTO 18</p>
+                            <h2>Photo Gallery</h2>
+                        </div><!-- entry-title -->
+                    </div><!-- col-12 -->
+                </div><!-- row -->
+            </div><!-- container -->
+
+            <div class="next-event-slider-wrap">
+                <div class="swiper-container next-event-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="next-event-content">
+                                <figure class="featured-image">
+                                    <img src="Invento18/main1.jpg" alt="">
+
+                                    <a
+                                        class="entry-content flex flex-column justify-content-center align-items-center">
+                                        <h3>INVENTO 18's Workshop</h3>
+                                        <p>Line Tracking Robot</p>
+                                    </a>
+                                </figure><!-- featured-image -->
+                            </div><!-- next-event-content -->
+                        </div><!-- swiper-slide" -->
+
+                        <div class="swiper-slide">
+                            <div class="next-event-content">
+                                <figure class="featured-image">
+                                    <img src="Invento18/main2.jpg" alt="">
+
+                                    <a
+                                        class="entry-content flex flex-column justify-content-center align-items-center">
+                                        <h3>INVENTO 18's Ceremony</h3>
+                                        <p>At DAVV Auditorium</p>
+                                    </a>
+                                </figure><!-- featured-image -->
+                            </div><!-- next-event-content -->
+                        </div><!-- swiper-slide" -->
+
+                        <div class="swiper-slide">
+                            <div class="next-event-content">
+                                <figure class="featured-image">
+                                    <img src="Invento18/main3.jpg" alt="">
+
+                                    <a
+                                        class="entry-content flex flex-column justify-content-center align-items-center">
+                                        <h3>INVENTO 18's Competitions</h3>
+                                        <p>Competitve Coding</p>
+                                    </a>
+                                </figure><!-- featured-image -->
+                            </div><!-- next-event-content -->
+                        </div><!-- swiper-slide" -->
+
+                        <div class="swiper-slide">
+                            <div class="next-event-content">
+                                <figure class="featured-image">
+                                    <img src="Invento18/main4.jpg" alt="">
+
+                                    <a
+                                        class="entry-content flex flex-column justify-content-center align-items-center">
+                                          <h3>INVENTO 18's Activities</h3>
+                                        <p>Go Kart Racing</p>
+                                    </a>
+                                </figure><!-- featured-image -->
+                            </div><!-- next-event-content -->
+                        </div><!-- swiper-slide" -->
+
+                        <div class="swiper-slide">
+                            <div class="next-event-content">
+                                <figure class="featured-image">
+                                    <img src="Invento18/main5.jpg" alt="">
+
+                                    <a
+                                        class="entry-content flex flex-column justify-content-center align-items-center">
+                                          <h3>INVENTO 18's Seminar</h3>
+                                        <p>on programming languages</p>
+                                    </a>
+                                </figure><!-- featured-image -->
+                            </div><!-- next-event-content -->
+                        </div><!-- swiper-slide" -->
+
+                        <div class="swiper-slide">
+                            <div class="next-event-content">
+                                <figure class="featured-image">
+                                    <img src="Invento18/main7.jpg" alt="">
+
+                                    <a
+                                        class="entry-content flex flex-column justify-content-center align-items-center">
+                                        <h3>INVENTO 18's Burnout</h3>
+                                        <p>Rain Dance</p>
+                                    </a>
+                                </figure><!-- featured-image -->
+                            </div><!-- next-event-content -->
+                        </div><!-- swiper-slide" -->
+
+
+                    </div><!-- .swiper-wrapper -->
+                </div><!-- .swiper-container -->
+
+                <div class="swiper-button-next">
+                    <img src="images/button.png" alt="">
+                </div><!-- .slider-button -->
+            </div><!-- .next-event-slider-wrap -->
+        </div><!-- homepage-next-events -->
+
+
+        <section class="our-team-section" style="background-color: rgba(0,0,0,0.5); margin-top:150px;">
+                <div class="container">
+                    <div class="entry-title">
+
+                        <center>
+                            <h2 style="color: white;margin-bottom:15px;">Meet Developer Team</h2>
+                        </center>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-12">
+                            <div class="our-team">
+                                <div class="pic">
+                                    <img src="img/developers/adityaShrivastava.jpeg">
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">Aaditya Shrivastava</h3>
+                                </div>
+                                <ul class="social">
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/aaditya-shrivastava/" target="_blank"
+                                            class="fab fa-linkedin-in"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/aaditya1499" target="_blank" class="fab fa-github"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/aaditya1499/" target="_blank" class="fab fa-instagram"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-12">
+                            <div class="our-team">
+                                <div class="pic">
+                                    <img src="img/developers/adityaRajput.jpeg">
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">Aditya Rajput</h3>
+                                </div>
+                                <ul class="social">
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/aditya-singh-rajput/" target="_blank"
+                                            class="fab fa-linkedin-in"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/itsadityaraj" target="_blank" class="fab fa-github"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/aditya_pratap03/" target="_blank"
+                                            class="fab fa-instagram"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12">
+                            <div class="our-team">
+                                <div class="pic">
+                                    <img src="img/developers/dhananjayPurohit.jpeg">
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">Dhananjay Purohit</h3>
+                                </div>
+                                <ul class="social">
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/dhananjay-purohit-6b81a2175/" target="_blank"
+                                            class="fab fa-linkedin-in"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/DhananjayPurohit" target="_blank"
+                                            class="fab fa-github"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/dhananjaypurohit7/" target="_blank"
+                                            class="fab fa-instagram"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </section>
+
+        <!-- Contact us -->
+        <div class="home-page-last-news" style="background-color: rgba(0,0,0,0.5);">
+            <div class="container">
+                <div class="home-page-last-news-wrap">
+                    <div class="row">
+                        <div class="col-md-12 news-title" id="contact">
+                            <div class="entry-title">
+
+                                <h2>CONTACT US</h2>
+                            </div><!-- entry-title -->
+                        </div>
+                          <div class="col-12 col-md-6">
+                          <div class="contact-page-map">
+                            <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Institute%20of%20Engineering%20%26%20Technology%20(DAVV%2C%20Khandwa%20Rd%2C%20Davv%20Takshila%20&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe> 
+                            <!-- <iframe src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=22.6805,75.877679&amp;q=+(IET%20DAVV)&amp;ie=UTF8&amp;t=&amp;z=17&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/coordinates.html">gps coordinates finder</a></iframe>   -->
+                            <!-- <iframe id="gmap_canvas" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=22.6805,75.877679&amp;q=+(IET%20DAVV)&amp;ie=UTF8&amp;t=&amp;z=17&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe> -->
+                          </div><!-- map -->
+
+                          <div class="contact-details" style="color: white;background-color: rgba(0,0,0,0.5);">
+                              <div class="container">
+                                  <div class="row">
+                                      <div class="col-12">
+                                          <div class="contact-medium flex align-items-center">
+                                              <div class="contact-content">
+                                                  <div class="entry-content">
+                                                    <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;
+                                                    Contact our core members - <br>
+                                                    Chirag Vijayvargiya : +91 83196 00253<br>
+                                                    Parth Thakur : +91 78986 87036
+                                                  </div><!-- entry-content -->
+                                              </div><!-- phone-number -->
+                                          </div><!-- contact-phone -->
+                                      </div><!-- col-4 -->
+                                    </div>
+                                    <div class="row">
+
+                                      <div class="col-12">
+                                          <div class="contact-medium flex align-items-center">
+                                              <!-- <figure class="contact-icon">
+                                                  <img src="images/mail.jpg" alt="phone icon">
+                                              </figure>phone-icon -->
+
+                                              <div class="contact-content"><!-- entry-title -->
+                                                  <div class="entry-content">
+                                                    <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;
+                                                    INVENTO@IETDAVV.EDU.IN
+                                                  </div><!-- entry-content -->
+                                              </div><!-- phone-number -->
+                                          </div><!-- contact-phone -->
+                                      </div><!-- col-4 -->
+                                    </div>
+                                      <div class="row">
+                                      <div class="col-12">
+                                          <div class="contact-medium flex align-items-center">
+                                              <!-- <figure class="contact-icon">
+                                                  <img src="images/place.jpg" alt="phone icon">
+                                              </figure>phone-icon -->
+
+                                              <div class="contact-content"><!-- entry-title -->
+                                                  <div class="entry-content">
+                                                    <i class="fa fa-location-arrow" aria-hidden="true"></i>&nbsp;&nbsp;
+                                                    Institute of Engineering & Technology (DAVV) Khandwa Road, Indore
+                                                  </div><!-- entry-content -->
+                                              </div><!-- phone-number -->
+                                          </div><!-- contact-phone -->
+                                      </div><!-- col-4 -->
+                                  </div><!-- row -->
+                                  <div class="row">
+                                    <div class="col-12">
+                                        <div class="contact-medium flex align-items-center">
+                                            <!-- <figure class="contact-icon">
+                                                <img src="images/place.jpg" alt="phone icon">
+                                            </figure>phone-icon -->
+
+                                            <div class="contact-content"><!-- entry-title -->
+                                                <div class="entry-content">
+                                                    <div class="flex-w">
+                                                        <a
+                                                          href="https://www.facebook.com/InventoIET/"
+                                                          target="about_blank"
+                                                          class="flex-c-m size5 bg3 how1 trans-04 m-r-5"
+                                                        >
+                                                          <i class="fa fa-facebook"></i>
+                                                        </a>
+                                                        <a
+                                                          href="https://www.instagram.com/invento_iet/"
+                                                          target="about_blank"
+                                                          class="flex-c-m size5 bginst how1 trans-04 m-r-5"
+                                                        >
+                                                          <i class="fa fa-instagram"></i>
+                                                        </a>
+                                                        <a
+                                                          href="https://www.linkedin.com/in/invento-iet"
+                                                          target="about_blank"
+                                                          class="flex-c-m size5 bgln how1 trans-04 m-r-5"
+                                                        >
+                                                          <i class="fa fa-linkedin"></i>
+                                                        </a>
+                                                        <a
+                                                          href="https://www.twitter.com/Invento_IET"
+                                                          target="about_blank"
+                                                          class="flex-c-m size5 bgtw how1 trans-04 m-r-5"
+                                                        >
+                                                          <i class="fa fa-twitter"></i>
+                                                        </a>
+                                                        <a
+                                                          href="mailto:invento@ietdavv.edu.in"
+                                                          target="about_blank"
+                                                          class="flex-c-m size5 bgm how1 trans-04 m-r-5"
+                                                        >
+                                                          <i class="fa fa-envelope-o"></i>
+                                                        </a>
+                                                      </div>
+                                                </div><!-- entry-content -->
+                                            </div><!-- phone-number -->
+                                        </div><!-- contact-phone -->
+                                    </div><!-- col-4 -->
+                                </div><!-- row -->
+                              </div>
+                          </div><!-- contact-details -->
+
+                        </div><!-- .col-6 -->
+
+                        <div class="col-12 col-md-6 contact-form-div">
+                          <div class="get-in-touch" style="background-color:rgba(0,0,0,0.5);padding: 15px;">
+                              <div class="entry-header">
+                                  <div class="entry-title">
+
+                                      <h2>Get in touch</h2>
+                                  </div><!-- entry-title -->
+                              </div><!-- entry-header -->
+
+                              <div class="entry-content">
+                                  <p>Reach out to us by filling out this form to get all your queries cleared about largest technical fest of central India Invento</p>
+                              </div><!-- entry-content -->
+                              <form class="contact100-form validate-form" id="inquiry-form">
+                                <div
+                                  class="wrap-input100 m-b-10 validate-input"
+                                  data-validate="Name is required"
+                                >
+                                  <input
+                                    class="s2-txt1 placeholder0 input100"
+                                    type="text"
+                                    name="Name"
+                                    placeholder="Your Name"
+                                  />
+                                  <span class="focus-input100"></span>
+                                </div>
+
+                                <div
+                                  class="wrap-input100 m-b-20 validate-input"
+                                  data-validate="Email is required: ex@abc.xyz"
+                                >
+                                  <input
+                                    class="s2-txt1 placeholder0 input100"
+                                    type="email"
+                                    name="Email"
+                                    placeholder="Email Address"
+                                  />
+                                  <span class="focus-input100"></span>
+                                </div>
+                                <div
+                                  class="wrap-input100 m-b-20 validate-input"
+                                  data-validate="Contact no is required"
+                                >
+                                  <input
+                                    class="s2-txt1 placeholder0 input100"
+                                    type="number"
+                                    name="Contact"
+                                    placeholder="Contact No"
+                                  />
+                                  <span class="focus-input100"></span>
+                                </div>
+                                <div
+                                  class="wrap-input100 m-b-20 validate-input"
+                                  data-validate="College Name is required"
+                                >
+                                  <input
+                                    class="s2-txt1 placeholder0 input100"
+                                    type="text"
+                                    name="College"
+                                    placeholder="College Name"
+                                  />
+                                  <span class="focus-input100"></span>
+                                </div>
+                                <div class="wrap-input100 m-b-20">
+                                  <input
+                                    class="s2-txt1 placeholder0 input100"
+                                    type="text"
+                                    name="Queries"
+                                    placeholder="Queries"
+                                  />
+                                  <span class="focus-input100"></span>
+                                </div>
+
+                                <div class="button-div">
+                                  <button class="flex-c-m s2-txt2 size4 bg1 bor1 hov1 trans-04">
+                                    Subscribe
+                                  </button>
+                                </div>
+                              </form>
+                              <!-- <div class="contact-form">
+                                  <div class="row">
+                                      <div class="col-12 col-md-6">
+                                          <input type="text" placeholder="Your name">
+                                      </div>
+
+                                      <div class="col-12 col-md-6">
+                                          <input type="email" placeholder="Your email">
+                                      </div>
+
+                                      <div class="col-12">
+                                          <input type="text" placeholder="Subject">
+                                      </div>
+
+                                      <div class="col-12">
+                                          <textarea name="name" rows="8" cols="80" placeholder="message" style="width : 100%;height :30vh"></textarea>
+                                      </div>
+
+                                      <div class="col-12 submit flex justify-content-center">
+                                          <input type="submit" name="" value="send message" class="btn">
+                                      </div>
+
+                                  </div>
+                              </div> -->
+                          </div><!-- newsletter-subscribe -->
+                        </div><!-- col-6 -->
+                    </div><!-- row -->
+                </div><!-- home-page-last-news-wrap -->
+            </div><!-- container -->
+        </div><!-- home-page-last-news -->
+
+
+        <!-- Contact us ends -->
+
     </div>
 
-    <!-- Form -->
-    <div class="size3 flex-col-sb flex-w p-l-75 p-r-75 p-t-45 p-b-45 respon1">
-      <div class="wrap-pic1">
-        <img src="assets/images/new_logo_black.png" alt="LOGO" />
-      </div>
+    <footer class="custom-footer">
+        All rights reserved | Made with &nbsp;<i class="fa fa-heart" aria-hidden="true"></i>&nbsp; at IET
+    </footer>
 
-      <div class="p-t-50 p-b-60">
-        <p class="m1-txt1 p-b-36">
-          Our website is <span class="m1-txt2">Coming Soon</span>, follow us
-          for update now!
-        </p>
-
-        <form class="contact100-form validate-form" id="inquiry-form">
-          <div class="wrap-input100 m-b-10 validate-input" data-validate="Name is required">
-            <input class="s2-txt1 placeholder0 input100" type="text" name="Name" placeholder="Your Name" />
-            <span class="focus-input100"></span>
-          </div>
-
-          <div class="wrap-input100 m-b-20 validate-input" data-validate="Email is required: ex@abc.xyz">
-            <input class="s2-txt1 placeholder0 input100" type="email" name="Email" placeholder="Email Address" />
-            <span class="focus-input100"></span>
-          </div>
-          <div class="wrap-input100 m-b-20 validate-input" data-validate="Contact no is required">
-            <input class="s2-txt1 placeholder0 input100" type="number" name="Contact" placeholder="Contact No" />
-            <span class="focus-input100"></span>
-          </div>
-          <div class="wrap-input100 m-b-20 validate-input" data-validate="College Name is required">
-            <input class="s2-txt1 placeholder0 input100" type="text" name="College" placeholder="College Name" />
-            <span class="focus-input100"></span>
-          </div>
-          <div class="wrap-input100 m-b-20">
-            <input class="s2-txt1 placeholder0 input100" type="text" name="Queries" placeholder="Queries" />
-            <span class="focus-input100"></span>
-          </div>
-
-          <div class="w-full">
-            <button class="flex-c-m s2-txt2 size4 bg1 bor1 hov1 trans-04">
-              Subscribe
-            </button>
-          </div>
-        </form>
-
-        <p class="s2-txt3 p-t-18">
-          And don’t worry, we hate spam too! You can unsubcribe at anytime.
-        </p>
-      </div>
-
-      <div class="flex-w">
-        <a href="https://www.facebook.com/InventoIET/" target="about_blank"
-          class="flex-c-m size5 bg3 how1 trans-04 m-r-5">
-          <i class="fa fa-facebook"></i>
-        </a>
-        <a href="https://www.instagram.com/invento_iet/" target="about_blank"
-          class="flex-c-m size5 bginst how1 trans-04 m-r-5">
-          <i class="fa fa-instagram"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/invento-iet" target="about_blank"
-          class="flex-c-m size5 bgln how1 trans-04 m-r-5">
-          <i class="fa fa-linkedin"></i>
-        </a>
-        <a href="https://www.twitter.com/Invento_IET" target="about_blank"
-          class="flex-c-m size5 bgtw how1 trans-04 m-r-5">
-          <i class="fa fa-twitter"></i>
-        </a>
-        <a href="mailto:invento@ietdavv.edu.in" target="about_blank" class="flex-c-m size5 bgm how1 trans-04 m-r-5">
-          <i class="fa fa-envelope-o"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!--===============================================================================================-->
-  <script src="assets/vendor/jquery/jquery-3.2.1.min.js"></script>
-  <!--===============================================================================================-->
-  <script src="assets/vendor/bootstrap/js/popper.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-  <!--===============================================================================================-->
-  <script src="assets/vendor/select2/select2.min.js"></script>
-  <!--===============================================================================================-->
-  <script src="assets/vendor/countdowntime/moment.min.js"></script>
-  <script src="assets/vendor/countdowntime/moment-timezone.min.js"></script>
-  <script src="assets/vendor/countdowntime/moment-timezone-with-data.min.js"></script>
-  <script src="assets/vendor/countdowntime/countdowntime.js"></script>
-  <script src="assets/js/formSubmit.js"></script>
-  <script>
-    $(".cd100").countdown100({
-      /*Set Endtime here*/
-      /*Endtime must be > current time*/
-      endtimeYear: 2019,
-      endtimeMonth: 09,
-      endtimeDate: 5,
-      endtimeHours: 20,
-      endtimeMinutes: 00,
-      endtimeSeconds: 00,
-      timeZone: "Asia/Kolkata"
-      // ex:  timeZone: "America/New_York"
-      //go to " http://momentjs.com/timezone/ " to get timezone
-    });
-  </script>
-  <!--===============================================================================================-->
-  <script src="assets/vendor/tilt/tilt.jquery.min.js"></script>
-  <script>
-    $(".js-tilt").tilt({
-      scale: 1.1
-    });
-  </script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145171525-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "UA-145171525-1");
-  </script>
-
-  <!--===============================================================================================-->
-  <script src="assets/js/main.js"></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <!--===============================================================================================-->
+    <script src="assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="assets/vendor/bootstrap/js/popper.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- <script type='text/javascript' src='js/jquery.js'></script> -->
+    <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
+    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+    <script type='text/javascript' src='js/swiper.min.js'></script>
+    <script type='text/javascript' src='js/jquery.countdown.min.js'></script>
+    <script type='text/javascript' src='js/circle-progress.min.js'></script>
+    <script type='text/javascript' src='js/jquery.countTo.min.js'></script>
+    <script type='text/javascript' src='js/custom.js'></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145171525-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "UA-145171525-1");
+    </script>
+    <script src="test.js"> </script>
+    <!-- <script>
+        AOS.init();
+    </script> -->
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
