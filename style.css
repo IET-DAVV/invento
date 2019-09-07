@@ -442,12 +442,17 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+
+  .lineup-artists-wrap-2 {
+    margin-top: 200px !important
+  }
+
   .lineup-artists-wrap-3 {
-    margin-top: 100px !important;
+    margin-top: 180px !important;
   }
 
   .complete-workshops{
-    margin-top: 150px !important;
+    margin-top: 220px !important;
   }
   .lineup-artists .lineup-artists-wrap {
     margin-top: 30px;
