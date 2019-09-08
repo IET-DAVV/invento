@@ -802,7 +802,7 @@ body {
 }
 
 .home-page-last-news-wrap .entry-content {
-  padding: 18px 0 18px 0px;
+  padding: 12px 0 12px 0px;
   color: white;
 }
 
@@ -2689,4 +2689,18 @@ body {
 .c-test {
   height: 100vh;
   position: absolute;
+}
+
+.referral {
+  color: white;
+  display: block;
+  margin-top: 5%;
+}
+
+.referral:hover {
+  color: white;
+}
+
+.contact-link,.contact-link:hover {
+  color: white;
 }
