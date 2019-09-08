@@ -2051,15 +2051,15 @@ canvas {
   }
 
   .home-logo {
-    width: 100% !important;
-    margin-top: 10% !important;
+    width: 90% !important;
+    margin-top: 15% !important;
   }
 
   .home-row {
     justify-content: center;
     /* align-items: center; */
     height: 100vh;
-    padding-top: 10%;
+    padding-top: 0%;
   }
 
   .countdown {
@@ -2097,8 +2097,8 @@ canvas {
 }
 
 .home-logo {
-  width: 60%;
-  margin-top: 2%;
+  width: 40%;
+  margin-top: 7%;
 }
 
 /* Team */
@@ -2703,4 +2703,11 @@ body {
 
 .contact-link,.contact-link:hover {
   color: white;
+}
+
+.home-top-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
 }
