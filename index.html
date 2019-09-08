@@ -21,16 +21,37 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/util.css" />
+    <link rel="stylesheet" type="text/css" href="preloader.css" />
     <link
       rel="stylesheet"
       type="text/css"
       href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css"
     />
+
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
 </head>
 <body class="index-page">
     <div class="loader-wrapper">
-        <img class="loading-gif" src="assets/images/loader.gif" alt="" >
+      <!-- Preloader -->
+      <script src="preloader.js"></script>
+      <div id="preloader">
+          <div class="showbox">
+              <div class="loader">
+                  <svg class="circular" viewBox="25 25 50 50">
+                      <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+                  </svg>
+              </div>
+          </div>
+          <div class="questions-area text-center">
+              <p>Due to our developer's inefficiency you have to wait a while while out website loads, you can personally bash developer in Invento</p>
+              <ul>
+                  <li>Due to our developer's inefficiency you have yo wait a while while the website loads</li>
+                  <li>Invento is Central India'S Biggest Technical Event</li>
+                  <li>Invento18 had more than 20 Workshops</li>
+                  <li>Invento extends over a period of 2 days</li>
+              </ul>
+          </div>
+      </div>
     </div>
     <div id="img-bg"></div>
     <canvas id="c"></canvas>

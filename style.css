@@ -2644,6 +2644,7 @@ body.index-page, body.blog-page {
 }
 
 .home-btn-div {
+  width: 33.3vw;
   display: flex;
   justify-content: center;
   align-items: center;
