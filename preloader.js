@@ -21,5 +21,6 @@
             $nextItem = $firstItem;
         }
         $nextItem.addClass("question-show");
-    }, 5000);
+    }, 500);
+}
 )(jQuery);
