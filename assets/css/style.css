@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
   font-size: 15px;
   font-weight: normal;
   color: hsl(0, 0%, 90%);
@@ -1990,7 +1990,7 @@ canvas {
 }
 
 #img-bg {
-  background: url("img/bgFinal.jpg") no-repeat top center fixed;
+  background: url("../images/bgFinal.jpg") no-repeat top center fixed;
   background-size: 100% 100vh;
   height: 100vh;
   width: 100%;
@@ -2046,19 +2046,19 @@ canvas {
 
 @media screen and (max-width: 768px) {
   .scroll-down {
-    bottom: 2%;
+    bottom: 15%;
   }
 
   .home-logo {
-    width: 100% !important;
-    margin-top: 10% !important;
+    width: 90% !important;
+    margin-top: 15% !important;
   }
 
   .home-row {
     justify-content: center;
     /* align-items: center; */
     height: 100vh;
-    padding-top: 10%;
+    padding-top: 0%;
   }
 
   .countdown {
@@ -2093,11 +2093,15 @@ canvas {
   #parallax-hmm {
     background-size: 100% 100vh !important;
   }
+
+  .team-1st-row {
+    margin-bottom: 0;
+  }
 }
 
 .home-logo {
-  width: 60%;
-  margin-top: 2%;
+  width: 40%;
+  margin-top: 7%;
 }
 
 /* Team */
@@ -2261,7 +2265,7 @@ body.index-page, body.blog-page {
 
 .parallax1 {
   /* The image used */
-  background: linear-gradient(0deg,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("images/Binary-Code.jpg");
+  background: linear-gradient(0deg,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../images/Binary-Code.jpg");
   height: 100vh;
 
   /* Create the parallax scrolling effect */
@@ -2293,7 +2297,7 @@ body.index-page, body.blog-page {
 
 .parallax2 {
   /* The image used */
-  background-image: url("img/bgFinal.jpg");
+  background-image: url("../images/bgFinal.jpg");
   height: 100vh;
 
   /* Create the parallax scrolling effect */
@@ -2643,10 +2647,13 @@ body.index-page, body.blog-page {
 }
 
 .home-btn-div {
-  width: 33.3vw;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.home-top-btn a {
+  font-size: 16px;
 }
 
 .home-btn {
@@ -2655,6 +2662,7 @@ body.index-page, body.blog-page {
   padding: 15px;
   color: white;
   transition: ease-in-out transform .2s;
+  text-align: center;
 }
 
 .home-btn:hover {
@@ -2703,4 +2711,61 @@ body {
 
 .contact-link,.contact-link:hover {
   color: white;
+}
+
+.home-top-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.team-row {
+  padding-top: 5%;
+}
+
+.team-row:nth-child(2) {
+  padding-bottom: 5%;
+}
+
+.team-glitch {
+  text-align: center;
+}
+
+.team-div {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.team-fig {
+  width: 70%;
+  border-radius: 5px;
+}
+
+.team-img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.team-txt {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.team-link{
+  color: white;
+}
+
+.team-link:hover{
+  color: white;
+}
+
+.team-link i:hover{
+  transform: scale(1.2);
+}
+
+.team-1st-row {
+  margin-bottom: 5%;
 }

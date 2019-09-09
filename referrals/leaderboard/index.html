@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="vue.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Invento Leaderboard</title>
+</head>
+<body>
+  <div id="app">
+    <h1>Leaderboard</h1>
+    <div class="card" v-for="card in cards">
+      <p>
+        <b>Referral:</b>
+        {{ card.referral }}
+      </p>
+      <p>
+        <b>Count:</b>
+        {{ card.count }}
+      </p>
+      <p>
+        <b>Name:</b>
+        {{ card.name }}
+      </p>
+      <p>
+        <b>College:</b>
+        {{ card.college }}
+      </p>
+      <p>
+        <b>Branch:</b>
+        {{ card.branch }}
+      </p>
+      <p>
+        <b>Year:</b>
+        {{ card.year }}
+      </p>
+    </div>
+
+    <div>
+      <a href="/referrals/generate_otp">Click here</a>
+      to generate your own referral
+    </div>
+    
+    <h1>IET Leaderboard</h1>
+    <div class="card" v-for="card in iet_cards">
+      <p>
+        <b>Name:</b>
+        {{ card.name }}
+      </p>
+      <p>
+        <b>Count:</b>
+        {{ card.count }}
+      </p>
+    </div>
+  </div>
+  <script src="leaderboard.js"></script>
+</body>
+</html>

@@ -7,13 +7,18 @@
 .container {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 15px;
     width: 30%;
     min-width: 350px;
     border: 1px solid #aaa;
     border-radius: 5px;
-    margin: 15px auto;
+    position: absolute;
     text-align: center;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
 }
 
 .container label {
@@ -40,10 +45,27 @@
     text-indent: 1px;
     text-overflow: '';
 }
+#hint {
+    background-color: rgb(0, 204, 51);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
 
 #message {
     background-color: rgb(31, 177, 87);
     color: white;
+}
+
+#hint {
+    background-color: rgb(0, 204, 51);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
 }
 
 button {
@@ -55,11 +77,3 @@ button {
     margin-top: 15px;
 }
 
-#hint {
-    background-color: rgb(0, 204, 51);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 5px;
-}
