@@ -80,7 +80,9 @@
                             <div class="event-des row" id="workshopAI">
                                 <div class="col-md-6 col-12 event-img">
                                     <a href="#">
-                                        <img src="assets/images/ai.jpg" alt="">
+                                        <img src="images/workshopsPlaceholder.jpg" class="lazy"
+                                            data-src="assets/images/ai.jpg" data-srcset="assets/images/ai.jpg"
+                                            alt="I'm an image!">
                                     </a>
                                 </div>
                                 <div class="col-md-6 col-12 event-des-text edr">
@@ -116,13 +118,17 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12 event-img event-img-r">
-                                    <a href="#"> <img src="assets/images/auto.jpg" alt=""> </a>
+                                    <a href="#"> <img src="images/workshopsPlaceholder.jpg" class="lazy"
+                                            data-src="assets/images/auto.jpg" data-srcset="assets/images/auto.jpg"
+                                            alt="I'm an image!"> </a>
                                 </div>
                             </div>
                             <div class="event-des row" id="workshopHacking">
                                 <div class="col-md-6 col-12 event-img">
                                     <a href="#">
-                                        <img src="assets/images/ethical.jpg" alt="">
+                                        <img src="images/workshopsPlaceholder.jpg" class="lazy"
+                                            data-src="assets/images/ethical.jpg" data-srcset="assets/images/ethical.jpg"
+                                            alt="I'm an image!">
                                     </a>
                                 </div>
                                 <div class="col-md-6 col-12 event-des-text edr">
@@ -154,13 +160,17 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12 event-img event-img-r">
-                                    <a href="#"> <img src="assets/images/iot.jpg" alt=""> </a>
+                                    <a href="#"> <img src="images/workshopsPlaceholder.jpg" class="lazy"
+                                            data-src="assets/images/iot.jpg" data-srcset="assets/images/iot.jpg"
+                                            alt="I'm an image!"> </a>
                                 </div>
                             </div>
                             <div class="event-des row" id="workshopIC">
                                 <div class="col-md-6 col-12 event-img">
                                     <a href="#">
-                                        <img src="assets/images/ic-engine1.jpg" alt="">
+                                        <img src="images/workshopsPlaceholder.jpg" class="lazy"
+                                            data-src="assets/images/ic-engine1.jpg"
+                                            data-srcset="assets/images/ic-engine1.jpg" alt="I'm an image!">
                                     </a>
                                 </div>
                                 <div class="col-md-6 col-12 event-des-text edr">
@@ -209,6 +219,31 @@
         }
         gtag("js", new Date());
         gtag("config", "UA-145171525-1");
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+
+            if ("IntersectionObserver" in window) {
+                let lazyImageObserver = new IntersectionObserver(function (entries, observer) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            let lazyImage = entry.target;
+                            lazyImage.src = lazyImage.dataset.src;
+                            lazyImage.srcset = lazyImage.dataset.srcset;
+                            lazyImage.classList.remove("lazy");
+                            lazyImageObserver.unobserve(lazyImage);
+                        }
+                    });
+                });
+
+                lazyImages.forEach(function (lazyImage) {
+                    lazyImageObserver.observe(lazyImage);
+                });
+            } else {
+                // Possibly fall back to a more compatible method here
+            }
+        });
     </script>
     <!-- <script>
         jQuery('window').load(function () {
