@@ -27,7 +27,7 @@ if (phone && name && password) {
             if (body.success) {
                 hintBox = document.getElementById('hint')
                 hintBox.innerHTML = `
-                    <a href='/invento-referrals/'>
+                    <a href='/referrals/'>
                         Click Here
                     </a>
                     to continue creating your referral
