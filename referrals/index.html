@@ -11,6 +11,13 @@
   <div id="message"></div>
   <div class="container">
     <h2>Add Referral</h2>
+    <div id="hint">
+      <a href="generate_otp">
+        Click here
+      </a>
+      to sign up for the referral program and generate your OTP.
+      <p>If already generated, contact Pradhumna Upadhyay on number 8818887303 to obtain the OTP</p>
+    </div>
     <form id="form" method="get">
       <label for="firstname">
         <span>First Name</span>
@@ -43,9 +50,13 @@
         <input name="branch" type="text" placeholder="Branch" required>
       </label>
       <label for="phone">
-          <span>Phone No.</span>
-          <input name="phone" type="text" placeholder="Phone No." onkeyup="this.value=this.value.replace(/[^\d]/,'')" required>
-        </label>
+        <span>Phone No.</span>
+        <input name="phone" type="text" placeholder="Phone No." onkeyup="this.value=this.value.replace(/[^\d]/,'')" required>
+      </label>
+      <label for="otp">
+        <span>OTP</span>
+        <input name="otp" type="text" placeholder="OTP" required>
+      </label>
       <button type="submit">Add to database</button>
     </form>
   </div>
