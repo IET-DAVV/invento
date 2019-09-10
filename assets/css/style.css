@@ -2769,3 +2769,31 @@ body {
 .team-1st-row {
   margin-bottom: 5%;
 }
+
+.modal-btn-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-btn-div a {
+  padding: 15px;
+  border-radius: 0;
+  background: #001221;
+  font-weight: 500;
+  width: auto;
+  color: white;
+  margin-bottom: 5%;
+  text-align: center;
+  /* border: 2px solid white; */
+}
+
+/* .modal-content {
+  border-radius: 0;
+  background: #001221;
+  color: white;
+}
+
+.modal-footer .btn, .modal-header .close {
+  color: white;
+} */
