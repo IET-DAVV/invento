@@ -630,7 +630,7 @@ body {
   border-radius: 0;
   margin-right: 20px;
   background: -webkit-linear-gradient(#00d0ff, #25ffbf);
-  font-weight: 500;
+  /* font-weight: 500; */
 }
 
 .see-complete-lineup .entry-footer a {
@@ -2097,6 +2097,10 @@ canvas {
   .team-1st-row {
     margin-bottom: 0;
   }
+
+  .play-quiz {
+    margin: 40px 0 0 0;
+  }
 }
 
 .home-logo {
@@ -2550,7 +2554,7 @@ body.index-page, body.blog-page {
   }
 }
 .glitch:after {
-  content: attr(data-text);
+  content: attr("data-text");
   position: absolute;
   left: 2px;
   text-shadow: -1px 0 red;
@@ -2739,7 +2743,7 @@ body {
 }
 
 .team-fig {
-  width: 70%;
+  width: 80%;
   border-radius: 5px;
 }
 
@@ -2760,6 +2764,7 @@ body {
 
 .team-link:hover{
   color: white;
+  text-decoration: none;
 }
 
 .team-link i:hover{
