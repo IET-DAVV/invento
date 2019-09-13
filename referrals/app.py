@@ -66,9 +66,10 @@ def generate_otp():
         (values['phone'],)    
     )
     if exists(query):
+        msg = "Your OTP has already been generated. Contact Pradhyumna Upadhyay for OTP"
         return json.dumps({
             'success': False,
-            'message': "Your OTP has already been generated. Contact Pradhyumna Upadhyay for OTP"
+            'message': msg
         })
     
     otp = random.randint(1000, 9999)
@@ -182,7 +183,9 @@ def add_new_user():
 
 @app.route('/add_admin', methods=['GET'])
 def add_new_user_admin():
-    required_args = ('referral', 'password', 'firstname', 'lastname', 'college', 'year', 'branch', 'phone')
+    required_args = ('referral', 'password', 'firstname', 'lastname',
+                     'college', 'year', 'branch', 'phone')
+
     values = request.args
     for arg in required_args:
         if arg not in values:
@@ -222,9 +225,10 @@ def add_new_user_admin():
 
     conn.commit()
 
+    msg = "Referral Added!\nReferral code: {}".format(values['referral'].upper())
     return json.dumps({
         'success': True,
-        'message': "Referral Added!\nReferral code: {}".format(values['referral'])
+        'message': msg
     })
 
 
@@ -234,7 +238,7 @@ def get_leaderboard():
     global LOAD_TIME
 
     if LEADERBOARD and time.time()-LOAD_TIME < 60:
-        return LEADERBOARD
+        return json.dumps(LEADERBOARD)
 
     LOAD_TIME = time.time()
     global count
@@ -281,6 +285,7 @@ def get_leaderboard():
 
         if referral in IET_REFCODES:
             iet_leaderboard.append({
+                'referral': referral,
                 'name': IET_REFCODES[referral],
                 'count': refcount
             })
@@ -327,10 +332,44 @@ def get_leaderboard():
             })
 
     
-    LEADERBOARD = json.dumps({
+    LEADERBOARD = {
         'referrals': referrals,
         'leaderboard': leaderboard,
         'iet_leaderboard': iet_leaderboard,
         'count': count
+    }
+    return json.dumps(LEADERBOARD)
+
+@app.route('/check', methods=['GET'])
+def check_data():
+    if 'ref' not in request.args:
+        return json.dumps({
+            'success': False,
+            'message': "Invalid request."
+        })
+
+    referral = request.args['ref'].upper()
+
+    result = None
+
+    if LEADERBOARD:
+        for item in LEADERBOARD['leaderboard']:
+            if item['referral'] == referral:
+                result = item
+                break
+        else:
+            for item in LEADERBOARD['iet_leaderboard']:
+                if item['referral'] == referral:
+                    result = item
+    
+    if result:
+        return json.dumps({
+            'success': True,
+            'result': result
+        })
+
+    return json.dumps({
+        'success': False,
+        'message': "Referral not found."
     })
-    return LEADERBOARD
+    
