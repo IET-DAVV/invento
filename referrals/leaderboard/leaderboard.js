@@ -32,6 +32,6 @@ vm = new Vue({
 fetch('https://tusharsadhwani1.pythonanywhere.com/leaderboard')
   .then(res => res.json())
   .then(data => {
-    vm.cards = data.leaderboard
+    vm.cards = data.leaderboard.slice(0, 10)
     vm.iet_cards = data.iet_leaderboard
   })
