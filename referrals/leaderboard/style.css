@@ -7,3 +7,10 @@
     margin: auto;
     margin-bottom: 20px;
 }
+
+.check-points {
+    border-collapse: collapse;
+}
+.check-points td, th{
+    border: 1px solid black;
+}

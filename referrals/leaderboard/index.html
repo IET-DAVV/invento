@@ -37,6 +37,23 @@
       </p>
     </div>
 
+    <h1>Check your Points</h1>
+    <label for="ref">
+      <p>Referral Code:</p>
+      <input id="ref-id" name="ref" type="text" placeholder="Referral Code">
+    </label>
+    <table class="check-points">
+      <tr>
+        <th>Referral Code</th>
+        <th>Points</th>
+      </tr>
+      <tr>
+        <td id="check_ref">&nbsp;</td>
+        <td id="check_points"></td>
+      </tr>
+    </table>
+    <button @click="checkpoints">Check Points</button>
+
     <div>
       <a href="/referrals/generate_otp">Click here</a>
       to generate your own referral
