@@ -1,76 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="vue.js"></script>
   <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   <title>Invento Leaderboard</title>
 </head>
+
 <body>
   <div id="app">
-    <h1>Leaderboard</h1>
+    <center>
+      <h1>Leaderboard</h1>
+    </center>
     <div class="card" v-for="card in cards">
-      <p>
-        <b>Referral:</b>
-        {{ card.referral }}
-      </p>
-      <p>
-        <b>Count:</b>
-        {{ card.count }}
-      </p>
-      <p>
-        <b>Name:</b>
-        {{ card.name }}
-      </p>
-      <p>
-        <b>College:</b>
-        {{ card.college }}
-      </p>
-      <p>
-        <b>Branch:</b>
-        {{ card.branch }}
-      </p>
-      <p>
-        <b>Year:</b>
-        {{ card.year }}
-      </p>
+      <button class="accordion">
+        <p>
+          <b>Referral:</b>
+          {{ card.referral }}
+        </p>
+        <p>
+          <b>Count:</b>
+          {{ card.count }}
+        </p>
+      </button>
+      <div class="panel">
+        <p>
+          <b>Name:</b>
+          {{ card.name }}
+        </p>
+        <p>
+          <b>College:</b>
+          {{ card.college }}
+        </p>
+        <p>
+          <b>Branch:</b>
+          {{ card.branch }}
+        </p>
+        <p>
+          <b>Year:</b>
+          {{ card.year }}
+        </p>
+      </div>
     </div>
 
-    <h1>Check your Points</h1>
-    <label for="ref">
-      <p>Referral Code:</p>
-      <input id="ref-id" name="ref" type="text" placeholder="Referral Code">
-    </label>
+    <center>
+      <h1>Check your Points</h1>
+      <label for="ref">
+        <p class="referral-p">Referral Code:</p>
+        <input id="ref-id" name="ref" type="text" placeholder="Referral Code">
+        <button @click="checkpoints" style="padding:5px;">Check Points</button>
+      </label>
+    </center>
+    <div class="card">
+      <button class="accordion">
+        <p>
+          <b>Referral:</b>
+          <span id="ref"></span>
+        </p>
+        <p>
+          <b>Count:</b>
+          <span id="count"></span>
+        </p>
+      </button>
+      <div class="panel">
+        <p>
+          <b>Name:</b>
+          <span id="ref_name"></span>
+        </p>
+        <p>
+          <b>College:</b>
+          <span id="college"></span>
+        </p>
+        <p>
+          <b>Branch:</b>
+          <span id="branch"></span>
+        </p>
+        <p>
+          <b>Year:</b>
+          <span id="year"></span>
+        </p>
+      </div>
+    </div>
+
+    <center>
+      <div>
+        <a href="/referrals/generate_otp">Click here</a>
+        to generate your own referral
+      </div>
+      <h1>IET Leaderboard</h1>
+    </center>
     <table class="check-points">
       <tr>
-        <th>Referral Code</th>
-        <th>Points</th>
+        <th>Branch</th>
+        <th>Count</th>
       </tr>
-      <tr>
-        <td id="check_ref">&nbsp;</td>
-        <td id="check_points"></td>
+      <tr v-for="card in iet_cards">
+        <td>{{ card.name }}</td>
+        <td>{{ card.count }}</td>
       </tr>
     </table>
-    <button @click="checkpoints">Check Points</button>
-
-    <div>
-      <a href="/referrals/generate_otp">Click here</a>
-      to generate your own referral
-    </div>
-    
-    <h1>IET Leaderboard</h1>
-    <div class="card" v-for="card in iet_cards">
-      <p>
-        <b>Name:</b>
-        {{ card.name }}
-      </p>
-      <p>
-        <b>Count:</b>
-        {{ card.count }}
-      </p>
-    </div>
+    <!-- </div> -->
   </div>
   <script src="leaderboard.js"></script>
 </body>
+
 </html>

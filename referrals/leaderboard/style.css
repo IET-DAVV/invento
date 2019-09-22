@@ -1,16 +1,132 @@
+h1 {
+  margin: auto;
+  width: 50%;
+  margin-bottom: 2%;
+  color: white;
+  margin-top: 6%;
+}
+
+body {
+  background: linear-gradient(0deg,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../../assets/images/Binary-Code.jpg") no-repeat top center fixed;
+  background-size: 100% 100vh;
+  background-position: fixed;
+  font-family: "Montserrat", sans-serif !important;
+  color: white;
+}
+
 .card {
-    width: 50%;
-    min-width: 400px;
-    border-radius: 5px;
-    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
-    padding: 20px;
-    margin: auto;
-    margin-bottom: 20px;
+  width: 50%;
+  min-width: 400px;
+  /* border-radius: 5px; */
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
+  /* padding: 20px; */
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.iet-card {
+    padding: 20px; 
+}
+
+.accordion {
+  background: rgba(0,0,0,0.4);
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.accordion:focus {
+  outline: none;
+  border: none;
+}
+
+.accordion::-moz-focus-inner {
+  outline: none;
+  border: none;
+}
+  
+.active, .accordion:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: left;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  color: black;
+  transition: max-height 0.2s ease-out;
 }
 
 .check-points {
-    border-collapse: collapse;
+  border-collapse: collapse;
+  margin: auto;
+  width: 50%;
+  margin-bottom: 2%;
+  background: rgba(0,0,0,0.4);
 }
+
 .check-points td, th{
-    border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+  /* border: 1px solid #a7a7a7; */
+}
+
+.check-points th{
+  font-size: 24px;
+  border-bottom: 1px solid #a7a7a7;
+}
+
+.referral-p {
+  margin: auto;
+  width: 50%;
+  margin-bottom: 2%;
+}
+
+#ref-id {
+  margin-bottom: 2%;
+}
+
+.iet-card {
+  background-color: rgba(255,255,255,0.4);
+}
+
+#ref-id {
+  padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-size: cover;
+  }
+  .referral-p,h1,.iet-card,.check-points {
+    width: 100%;
+  }
+  h1 {
+    text-align: center;
+  }
+}
+
+a {
+  color: white;
+  text-align: center;
 }

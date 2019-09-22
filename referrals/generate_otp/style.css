@@ -4,6 +4,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url("../../assets/images/Binary-Code.jpg") no-repeat top center fixed;
+    background-size: 100% 100vh;
+    background-position: fixed;
+    font-family: "Montserrat", sans-serif !important;
+    color: white;
+  }
+
 .container {
     display: flex;
     flex-direction: column;
