@@ -26,6 +26,7 @@ count = 0
 LOAD_TIME = time.time()
 
 SPREADSHEETS = {
+    '1kWaZs8OeWgNoUs-V3D0LAJ2_HLcFuTEczNH5-sBYL7A': 7,  # ALL
     '1SWRQGdd5ImD4kHmEgwX1O0wo2Nfhmb5a4YSRi2M15TY': 10, # Contact Info
     '1gO-4hcAuuZxTkgjQKqiRTOx3wQPGp-ArsVYoSNRE5tA': 5,  # IET
     '1UCnwrYmtv4GlrTkRxrIgSbkPJJLDkcUdhChj701LY3k': 7,  # PUBG
@@ -33,7 +34,7 @@ SPREADSHEETS = {
     '15ms-wYhv-j0SaoA96SdNQnT5xbQXkFtqj7P_cMvWBLQ': 7,  # Robotronix Workshop
     '1E2ZXyuuOovN2sN-OLXbY6MX-72qdyT-R2AxnBN-UD5k': 7,  # Robotronix
     '18RL14FgcBW9QBzLDqmVZsFu98umRTDBMVr72egXZApA': 7,  # Techwiz
-    '1EcMnURXGr_C5FysMtr3fnqpeBZ5vuARsXP5SDgfqzQ4': 7,  # coding competition
+    '1EcMnURXGr_C5FysMtr3fnqpeBZ5vuARsXP5SDgfqzQ4': 7,  # Game of Codes
     '1JTyM6jW5QyH6KNcQMQq4wlf_CLgY48mGuAjTjanfqcY': 7,  # Digital Poster
     '1hcqj_6LFuLCgT9Fxn-7eUlsSrkaXMhzUoWLS1sVBU6I': 7,  # Circuit Design
     '1Si78IcdT_Skg6nWB9SGWdiYYAmIncAIZu0G8rQ4JmGM': 7,  # Assemble Disassemble
@@ -41,7 +42,7 @@ SPREADSHEETS = {
     '1DuFXAq8EmlBUwn4QSxZNL_ICd5sRRd915elDJJVqyyE': 7,  # Go Karting
     '1py8p8xsHYb6BG4EBMOXVGhVvee-1GUJQ22EXL_Bo4Ps': 7,  # Graffiti
     '1ZUfY3koFFB86-3j3l7qH2fsbfPziAgk2HybLI83n8k8': 7,  # Quora Meetup
-
+    '1dPalLqZf7Tob206IadYZ93FF5YhlO-p4VwJ8OBH_DUw': 7,  # LAN Gaming
 }
 
 IET_REFCODES = {
@@ -249,7 +250,7 @@ def get_leaderboard():
     global LEADERBOARD
     global LOAD_TIME
 
-    if LEADERBOARD and time.time()-LOAD_TIME < 60:
+    if LEADERBOARD and time.time()-LOAD_TIME < 600:
         return json.dumps(LEADERBOARD)
 
     LOAD_TIME = time.time()
