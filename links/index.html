@@ -5,26 +5,42 @@
         <meta charset = "UTF-8">
         <title>Invento</title>
     </head>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
+        body{
+            background: linear-gradient(0deg,rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url("../../assets/images/Binary-Code.jpg") no-repeat top center fixed;
+            background-size: 100% 100vh;
+            background-position: fixed;
+            font-family: "Montserrat", sans-serif !important;
+            color: white;
+            text-align: center;
+        }
        /* unvisited link */
        a:link {
-        color :rgb(47, 44, 199);
+        color :white;
         }
 
         /* visited link */
         a:visited {
-         color: green;
+         color: white;
         }
 
         /* mouse over link */
         a:hover {
           color: hotpink;
+          text-decoration: none;
         }
 
         /* selected link */
         a:active {
          color: blue;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                background-size: cover;
+            }
         }
      
     </style>
