@@ -58,22 +58,12 @@ body {
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 5px;
     margin: 5px;
 }
 
 #message {
     background-color: rgb(31, 177, 87);
     color: white;
-}
-
-#hint {
-    background-color: rgb(0, 204, 51);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 5px;
 }
 
 button {

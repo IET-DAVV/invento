@@ -26,10 +26,24 @@ count = 0
 LOAD_TIME = time.time()
 
 SPREADSHEETS = {
-    '1SWRQGdd5ImD4kHmEgwX1O0wo2Nfhmb5a4YSRi2M15TY': 10,
-    '1gO-4hcAuuZxTkgjQKqiRTOx3wQPGp-ArsVYoSNRE5tA': 5,
-    '1UCnwrYmtv4GlrTkRxrIgSbkPJJLDkcUdhChj701LY3k': 7,
-    '1AR7xNmKaNqaH7mQSGsZB4GzbNPiEd6E5Ms2zLAxLk8Y': 5
+    '1kWaZs8OeWgNoUs-V3D0LAJ2_HLcFuTEczNH5-sBYL7A': 7,  # ALL
+    '1SWRQGdd5ImD4kHmEgwX1O0wo2Nfhmb5a4YSRi2M15TY': 10, # Contact Info
+    '1gO-4hcAuuZxTkgjQKqiRTOx3wQPGp-ArsVYoSNRE5tA': 5,  # IET
+    '1UCnwrYmtv4GlrTkRxrIgSbkPJJLDkcUdhChj701LY3k': 7,  # PUBG
+    '1AR7xNmKaNqaH7mQSGsZB4GzbNPiEd6E5Ms2zLAxLk8Y': 5,  # Rubiks Cube
+    '15ms-wYhv-j0SaoA96SdNQnT5xbQXkFtqj7P_cMvWBLQ': 7,  # Robotronix Workshop
+    '1E2ZXyuuOovN2sN-OLXbY6MX-72qdyT-R2AxnBN-UD5k': 7,  # Robotronix
+    '18RL14FgcBW9QBzLDqmVZsFu98umRTDBMVr72egXZApA': 7,  # Techwiz
+    '1EcMnURXGr_C5FysMtr3fnqpeBZ5vuARsXP5SDgfqzQ4': 7,  # Game of Codes
+    '1JTyM6jW5QyH6KNcQMQq4wlf_CLgY48mGuAjTjanfqcY': 7,  # Digital Poster
+    '1hcqj_6LFuLCgT9Fxn-7eUlsSrkaXMhzUoWLS1sVBU6I': 7,  # Circuit Design
+    '1Si78IcdT_Skg6nWB9SGWdiYYAmIncAIZu0G8rQ4JmGM': 7,  # Assemble Disassemble
+    '12vqXk9tnyS_Z7A5J7Wnowvf8eWAA5gK9HvdFG94lXSw': 7,  # Intern Hunt
+    '1DuFXAq8EmlBUwn4QSxZNL_ICd5sRRd915elDJJVqyyE': 7,  # Go Karting
+    '1py8p8xsHYb6BG4EBMOXVGhVvee-1GUJQ22EXL_Bo4Ps': 7,  # Graffiti
+    '1ZUfY3koFFB86-3j3l7qH2fsbfPziAgk2HybLI83n8k8': 7,  # Quora Meetup
+    '1dPalLqZf7Tob206IadYZ93FF5YhlO-p4VwJ8OBH_DUw': 7,  # LAN Gaming
+    '1Mn757UszROC4GlEgMFB2TdPHMkSEhqNrn21szASz8E0': 4,  # Passes
 }
 
 IET_REFCODES = {
@@ -63,7 +77,7 @@ def generate_otp():
         select count(*) from Otp
         where phone = ?;
         """,
-        (values['phone'],)    
+        (values['phone'],)
     )
     if exists(query):
         msg = "Your OTP has already been generated. Contact Pradhyumna Upadhyay for OTP"
@@ -71,7 +85,7 @@ def generate_otp():
             'success': False,
             'message': msg
         })
-    
+
     otp = random.randint(1000, 9999)
 
     cursor.execute(
@@ -101,7 +115,7 @@ def get_otps():
         """
     )
     return json.dumps(query.fetchall())
-    
+
 
 @app.route('/add', methods=['GET'])
 def add_new_user():
@@ -119,12 +133,20 @@ def add_new_user():
         select count(*) from User
         where phone = ?;
         """,
-        (values['phone'],)    
+        (values['phone'],)
     )
     if exists(query):
+        query = cursor.execute(
+            """
+            select referral from User
+            where phone = ?;
+            """,
+            (values['phone'],)
+        )
+        referral = query.fetchone()[0]
         return json.dumps({
             'success': False,
-            'message': "A user with this phone number already exists."
+            'message': "A user with this phone number already exists - " + referral
         })
 
     valid_otp = cursor.execute(
@@ -150,7 +172,7 @@ def add_new_user():
             select count(*) from User
             where referral = ?;
             """,
-            (referral,)    
+            (referral,)
         )
         if exists(query):
             counter += 1
@@ -199,7 +221,7 @@ def add_new_user_admin():
         select count(*) from User
         where phone = ?;
         """,
-        (values['phone'],)    
+        (values['phone'],)
     )
     if exists(query):
         return json.dumps({
@@ -237,7 +259,7 @@ def get_leaderboard():
     global LEADERBOARD
     global LOAD_TIME
 
-    if LEADERBOARD and time.time()-LOAD_TIME < 60:
+    if LEADERBOARD and time.time()-LOAD_TIME < 600:
         return json.dumps(LEADERBOARD)
 
     LOAD_TIME = time.time()
@@ -270,9 +292,9 @@ def get_leaderboard():
                     referral += re.findall(r'\d{2}', referral_field)[0]
                 else:
                     continue
-                
+
                 referrals.update({phone: referral})
-    
+
     sorted_referrals = sorted([list(i) for i in Counter(referrals.values()).items()],
                               key=lambda x: x[1],
                               reverse=True)
@@ -321,7 +343,7 @@ def get_leaderboard():
                     year = f'{year_number}th year'
             else:
                 name = college = year = branch = ''
-            
+
             leaderboard.append({
                 'referral': referral,
                 'count': refcount,
@@ -331,7 +353,7 @@ def get_leaderboard():
                 'year': year
             })
 
-    
+
     LEADERBOARD = {
         'referrals': referrals,
         'leaderboard': leaderboard,
@@ -361,7 +383,7 @@ def check_data():
             for item in LEADERBOARD['iet_leaderboard']:
                 if item['referral'] == referral:
                     result = item
-    
+
     if result:
         return json.dumps({
             'success': True,
@@ -372,4 +394,3 @@ def check_data():
         'success': False,
         'message': "Referral not found."
     })
-    

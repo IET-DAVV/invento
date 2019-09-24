@@ -24,15 +24,13 @@ if (phone && name && password) {
         .then(body => {
             messageBox.style.backgroundColor = body.success ? 'rgb(31, 177, 87)' : 'red'
             messageBox.textContent = body.message
-            if (body.success) {
-                hintBox = document.getElementById('hint')
-                hintBox.innerHTML = `
-                    <a href='/referrals/'>
-                        Click Here
-                    </a>
-                    to continue creating your referral
-                `
-            }
+            hintBox = document.getElementById('hint')
+            hintBox.innerHTML = `
+                <a href='/referrals/'>
+                    Click Here
+                </a>
+                to continue creating your referral
+            `
         })
     }
 }
