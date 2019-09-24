@@ -63,7 +63,7 @@ def generate_otp():
         select count(*) from Otp
         where phone = ?;
         """,
-        (values['phone'],)    
+        (values['phone'],)
     )
     if exists(query):
         msg = "Your OTP has already been generated. Contact Pradhyumna Upadhyay for OTP"
@@ -71,7 +71,7 @@ def generate_otp():
             'success': False,
             'message': msg
         })
-    
+
     otp = random.randint(1000, 9999)
 
     cursor.execute(
@@ -101,7 +101,7 @@ def get_otps():
         """
     )
     return json.dumps(query.fetchall())
-    
+
 
 @app.route('/add', methods=['GET'])
 def add_new_user():
@@ -119,7 +119,7 @@ def add_new_user():
         select count(*) from User
         where phone = ?;
         """,
-        (values['phone'],)    
+        (values['phone'],)
     )
     if exists(query):
         return json.dumps({
@@ -150,7 +150,7 @@ def add_new_user():
             select count(*) from User
             where referral = ?;
             """,
-            (referral,)    
+            (referral,)
         )
         if exists(query):
             counter += 1
@@ -199,7 +199,7 @@ def add_new_user_admin():
         select count(*) from User
         where phone = ?;
         """,
-        (values['phone'],)    
+        (values['phone'],)
     )
     if exists(query):
         return json.dumps({
@@ -270,9 +270,9 @@ def get_leaderboard():
                     referral += re.findall(r'\d{2}', referral_field)[0]
                 else:
                     continue
-                
+
                 referrals.update({phone: referral})
-    
+
     sorted_referrals = sorted([list(i) for i in Counter(referrals.values()).items()],
                               key=lambda x: x[1],
                               reverse=True)
@@ -321,7 +321,7 @@ def get_leaderboard():
                     year = f'{year_number}th year'
             else:
                 name = college = year = branch = ''
-            
+
             leaderboard.append({
                 'referral': referral,
                 'count': refcount,
@@ -331,7 +331,7 @@ def get_leaderboard():
                 'year': year
             })
 
-    
+
     LEADERBOARD = {
         'referrals': referrals,
         'leaderboard': leaderboard,
@@ -361,7 +361,7 @@ def check_data():
             for item in LEADERBOARD['iet_leaderboard']:
                 if item['referral'] == referral:
                     result = item
-    
+
     if result:
         return json.dumps({
             'success': True,
@@ -372,4 +372,3 @@ def check_data():
         'success': False,
         'message': "Referral not found."
     })
-    
