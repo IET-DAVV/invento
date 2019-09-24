@@ -43,6 +43,7 @@ SPREADSHEETS = {
     '1py8p8xsHYb6BG4EBMOXVGhVvee-1GUJQ22EXL_Bo4Ps': 7,  # Graffiti
     '1ZUfY3koFFB86-3j3l7qH2fsbfPziAgk2HybLI83n8k8': 7,  # Quora Meetup
     '1dPalLqZf7Tob206IadYZ93FF5YhlO-p4VwJ8OBH_DUw': 7,  # LAN Gaming
+    '1Mn757UszROC4GlEgMFB2TdPHMkSEhqNrn21szASz8E0': 4,  # Passes
 }
 
 IET_REFCODES = {
