@@ -301,6 +301,11 @@ def get_leaderboard():
 
     leaderboard = []
     iet_leaderboard = []
+
+    query = cursor.execute("select * from User;")
+    users = query.fetchall()
+    added_users_refcodes = []
+
     for user in sorted_referrals:
         referral = user[0]
         refcount = user[1]
@@ -352,7 +357,34 @@ def get_leaderboard():
                 'branch': branch,
                 'year': year
             })
+            added_users_refcodes.append(referral)
 
+    for user in users:
+        referral = user[1]
+
+        if referral not in added_users_refcodes:
+            refcount = 0
+            name = f"{user[2].title()} {user[3].title()}"
+            college = user[4]
+            branch = f"{user[6]} branch"
+            year_number = int(user[5])
+            if year_number == 1:
+                year = '1st year'
+            elif year_number == 2:
+                year = '2nd year'
+            elif year_number == 3:
+                year = '3rd year'
+            else:
+                year = f'{year_number}th year'
+
+            leaderboard.append({
+                'referral': referral,
+                'count': refcount,
+                'name': name,
+                'college': college,
+                'branch': branch,
+                'year': year
+            })
 
     LEADERBOARD = {
         'referrals': referrals,
