@@ -48,6 +48,8 @@ vm = new Vue({
 fetch('https://tusharsadhwani1.pythonanywhere.com/leaderboard')
   .then(res => res.json())
   .then(data => {
+    loader = document.getElementById("loader")
+    loader.style.display = "none"
     vm.cards = data.leaderboard.slice(0, 7)
     vm.iet_cards = data.iet_leaderboard
   })
