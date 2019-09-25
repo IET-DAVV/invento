@@ -136,9 +136,17 @@ def add_new_user():
         (values['phone'],)
     )
     if exists(query):
+        query = cursor.execute(
+            """
+            select referral from User
+            where phone = ?;
+            """,
+            (values['phone'],)
+        )
+        referral = query.fetchone()[0]
         return json.dumps({
             'success': False,
-            'message': "A user with this phone number already exists."
+            'message': "A user with this phone number already exists - " + referral
         })
 
     valid_otp = cursor.execute(
