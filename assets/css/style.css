@@ -2269,7 +2269,7 @@ body.index-page, body.blog-page {
 
 .parallax1 {
   /* The image used */
-  background: linear-gradient(0deg,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../images/Binary-Code.jpg");
+  background: linear-gradient(0deg,rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url("../images/Binary-Code.jpg");
   height: 100vh;
 
   /* Create the parallax scrolling effect */
@@ -2814,5 +2814,5 @@ body {
 }
 
 .techwiz-glitch {
-  margin: 10% auto;
+  margin: 20% auto 0;
 }

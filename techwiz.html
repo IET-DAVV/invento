@@ -12,7 +12,7 @@
     India.It is one of the huge and highly acknowledged
     technical fest. invento iet davv">
 
-    <title>Invento | Events</title>
+    <title>Invento | TechWiz</title>
     <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
     <link rel="icon" type="image/png" href="assets/images/favicon.png" />
 
@@ -27,6 +27,40 @@
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <style>
+        a:hover {
+            text-decoration: none;
+        }
+
+        a.play {
+            background: rgba(0, 0, 0, .7);
+        }
+
+        a::-moz-focus-inner {
+            outline: none;
+            border: none;
+        }
+
+        a:focus {
+            outline: none;
+            border: none;
+        }
+        p {
+            font-size: 16px;
+        }
+        @media only screen and (max-width:768px) {
+            p {
+                padding: 15px;
+            }
+        }
+
+        @media only screen and (min-width:768px) {
+            .techwiz-glitch {
+                margin: 20% 0 0 !important;
+                /* margin: 0 auto !important; */
+            }
+        }
+    </style>
 </head>
 
 <body class="blog-page">
@@ -72,34 +106,59 @@
     <div class="parallax1 parallax-counter">
         <div class="glitch techwiz-glitch" data-text="TECHWIZ">TECHWIZ</div>
         <center>
-            <p style="color: white">Techwiz will go live on 26<sup>th</sup> Sept 2019 at 8 PM</p>
-            <p style="color: white">Meanwhile to practice the quiz visit <a style="color: white" href="/quiz">invento2k19.in/quiz</a></p>
+            <p style="color: white">Techwiz will take place in 2 slots on 26<sup>th</sup> Sept 2019. Slot 1 is from
+                <b>12 pm to 3 pm</b> and slot 2 is from <b>6 pm to 10 pm.</b>
+                <br>Click on Play Now during any slot timing to play the quiz.<br><br>
+                <a href="#" class="play" style="color: white;padding: 10px;" data-toggle="modal"
+                    data-target="#notLive">Play Now</a>
+            </p>
+            <p style="color: white">Meanwhile to practice the quiz <a style="color:white;font-size: 19px;"
+                    href="/quiz"> Click Here</a></p>
         </center>
         <div class="countdown flex flex-wrap justify-content-between wow animated slideInUp"
-        data-date="2019/09/26 20:00:00">
-        <div class="countdown-holder">
-            <div class="dday"></div>
-            <label>Days</label>
-        </div><!-- .countdown-holder -->
+            data-date="2019/09/26 12:00:00">
+            <div class="countdown-holder">
+                    <div class="dday"></div>
+                    <label>Days</label>
+                </div><!-- .countdown-holder -->
+            <div class="countdown-holder">
+                <div class="dhour"></div>
+                <label>Hours</label>
+            </div><!-- .countdown-holder -->
 
-        <div class="countdown-holder">
-            <div class="dhour"></div>
-            <label>Hours</label>
-        </div><!-- .countdown-holder -->
+            <div class="countdown-holder">
+                <div class="dmin"></div>
+                <label>Minutes</label>
+            </div><!-- .countdown-holder -->
 
-        <div class="countdown-holder">
-            <div class="dmin"></div>
-            <label>Minutes</label>
-        </div><!-- .countdown-holder -->
-
-        <div class="countdown-holder">
-            <div class="dsec"></div>
-            <label>Seconds</label>
-        </div><!-- .countdown-holder -->
-    </div><!-- .countdown -->
+            <div class="countdown-holder">
+                <div class="dsec"></div>
+                <label>Seconds</label>
+            </div><!-- .countdown-holder -->
+        </div><!-- .countdown -->
     </div>
     <!-- <div id="img-bg"></div> -->
 
+    <div id="notLive" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content" style="color: black;">
+                <div class="modal-header">
+                    <h4 class="modal-title">Invento 2K19</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>No quiz slot is currently active</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
@@ -144,7 +203,7 @@
                 // Possibly fall back to a more compatible method here
             }
         });
-    
+
     </script>
     <script>
         var countdown_date = $(".countdown").data("date");
