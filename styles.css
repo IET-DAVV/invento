@@ -5306,7 +5306,7 @@ figcaption {
 }
 
 .logo-footer {
-	max-height: 35px;
+	max-height: 50px;
 	margin-bottom: 25px;
 }
 
@@ -5350,6 +5350,11 @@ figcaption {
 
 .main-paragraph.size-large {
 	font-size: 2.6em;
+	line-height: 1.25;
+	font-weight: 500;
+}
+.main-footerpara {
+	font-size: 1.3em;
 	line-height: 1.25;
 	font-weight: 500;
 }
@@ -9460,7 +9465,7 @@ figcaption {
 	}
 
 	.logo-footer {
-		max-height: 18px;
+		max-height: 50px;
 		margin-bottom: 10px;
 	}
 
