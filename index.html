@@ -224,11 +224,13 @@
                         <nav class="dropdown-list w-dropdown-list">
                           <div>
                             <a
-                              href=""
+                              href="#goldsponsor"
                               aria-current="page"
                               class="dropdown-link w-dropdown-link w--current"
                               >Gold Sponsors</a
-                            ><a href="" class="dropdown-link w-dropdown-link"
+                            ><a
+                              href="#titlesponsor"
+                              class="dropdown-link w-dropdown-link"
                               >Title Sponsors</a
                             >
                           </div>
@@ -255,10 +257,12 @@
                         data-delay="0"
                         class="dropdown w-dropdown"
                       >
-                        <div class="dropdown-toggle w-dropdown-toggle">
-                          <div class="icon text-white"></div>
-                          <div>About</div>
-                        </div>
+                        <a href="#about">
+                          <div class="dropdown-toggle w-dropdown-toggle">
+                            <div class="icon text-white"></div>
+                            <div>About</div>
+                          </div></a
+                        >
                         <!-- <nav class="dropdown-list w-dropdown-list">
                           <div>
                             <a
@@ -314,15 +318,15 @@
                         </div>
                         <nav class="dropdown-list w-dropdown-list">
                           <a
-                            href="/cms/cms-01"
+                            href="#innovate"
                             class="dropdown-link w-dropdown-link"
                             >Innovate</a
                           ><a
-                            href="/cms/cms-02"
+                            href="#inspire"
                             class="dropdown-link w-dropdown-link"
                             >Inspire</a
                           ><a
-                            href="/cms/cms-03"
+                            href="#ignite"
                             class="dropdown-link w-dropdown-link"
                             >Ignite</a
                           >
@@ -357,24 +361,22 @@
                         </div>
                         <nav class="dropdown-list w-dropdown-list">
                           <a
-                            href="/utility/style-guide"
+                            href="#hackvento"
                             class="dropdown-link w-dropdown-link"
                             style="color: #f4aa00"
                             >Hackvento</a
                           ><a
-                            href="/utility/licenses"
+                            href="#gameofcodes"
                             class="dropdown-link w-dropdown-link"
                             style="color: #3e18d6"
                             >Game of Codes</a
                           ><a
-                            href="/utility/change-log"
+                            href="#robowars"
                             class="dropdown-link w-dropdown-link"
                             style="color: #51c892"
                             >Robowars</a
                           >
-                          <a
-                            href="/utility/change-log"
-                            class="dropdown-link w-dropdown-link"
+                          <a href="#misc" class="dropdown-link w-dropdown-link"
                             >Miscellaneous</a
                           >
                         </nav>
@@ -384,7 +386,7 @@
                   <div class="w-layout-grid grid-buttons nav">
                     <a
                       id="w-node-_703e939d-fb81-d5e3-3360-68b6ba39a3da-ba39a384"
-                      href="/other-pages/form-03"
+                      href="#timeline"
                       class="topnav-button outline w-inline-block"
                       ><div>Timeline</div></a
                     >
@@ -542,6 +544,7 @@
           </div>
         </div>
         <div
+          id="goldsponsor"
           data-w-id="d036e1e5-b9a7-bda4-7181-ed0066098a70"
           class="w-layout-grid main-grid padding-bottom-medium"
         >
@@ -697,7 +700,7 @@
           </div>
         </div>
       </div>
-      <div class="section bg-color wf-section">
+      <div class="section bg-color wf-section" id="about">
         <div class="container top-padding-large w-container">
           <div class="w-layout-grid main-grid padding-bottom-medium">
             <div
@@ -759,7 +762,11 @@
             </div>
           </div>
         </div>
-        <div class="flex-scrolling" style="width: fit-content">
+        <div
+          class="flex-scrolling"
+          style="width: fit-content"
+          id="titlesponsor"
+        >
           <div class="w-layout-grid logo-grid-ticker">
             <div
               data-w-id="27272752-928c-a3c8-b181-a7735b8a7f8b"
@@ -770,7 +777,6 @@
                 loading="lazy"
                 alt=""
                 class="company-logo"
-                style=""
               />
             </div>
             <div class="logo-wrap-ticker">
@@ -966,7 +972,10 @@
           <div class="container w-container">
             <div class="w-layout-grid main-grid">
               <div id="w-node-_28280f35-779c-5cf2-008c-0516b6395e27-0e305478">
-                <div class="content-wrapper padding-bottom-medium">
+                <div
+                  class="content-wrapper padding-bottom-medium"
+                  id="innovate"
+                >
                   <div
                     id="w-node-_9088d6c6-88de-9ea2-c7ed-b2bfa4356cac-0e305478"
                     class="heading-medium text-white margin-bottom-xsmall"
@@ -996,7 +1005,7 @@
                     ></div>
                   </div>
                 </div>
-                <div class="content-wrapper padding-bottom-medium">
+                <div class="content-wrapper padding-bottom-medium" id="inspire">
                   <div
                     id="w-node-_08554a2f-2762-7f3f-016d-3410720612af-0e305478"
                     class="heading-medium text-white margin-bottom-xsmall"
@@ -1027,7 +1036,7 @@
                     ></div>
                   </div>
                 </div>
-                <div class="content-wrapper padding-bottom-medium">
+                <div class="content-wrapper padding-bottom-medium" id="ignite">
                   <div
                     id="w-node-_12b2382e-5e38-aaa8-1ee9-c06ea75b302b-0e305478"
                     class="heading-medium text-white margin-bottom-xsmall"
@@ -1102,6 +1111,7 @@
               ><div class="w-layout-grid grid-card">
                 <div class="center-flex-wrapper-device square">
                   <div
+                    id="robowars"
                     style="
                       width: max-content;
                       object-fit: cover;
@@ -1158,8 +1168,8 @@
             ></div>
           </div>
         </div>
-        <div class="container">
-          <div class="w-layout-grid main-grid">
+        <div class="container" id="gameofcodes">
+          <div class="w-layout-grid main-grid" id="misc">
             <div
               id="w-node-_6e7598f0-4ae8-b765-38bc-ef4f35557c1a-0e305478"
               class="center-wrapper inner-padding-medium"
@@ -1259,7 +1269,7 @@
                             style="color: hsla(208, 95.22%, 68.37%, 1)"
                             class="heading-large no-wrap"
                           >
-                            Game Of Code
+                            DAY 01
                           </div>
                           <div
                             style="
@@ -1288,7 +1298,7 @@
                             style="color: hsla(208, 95.22%, 68.37%, 1)"
                             class="heading-large no-wrap"
                           >
-                            Game Of Code
+                            DAY 01
                           </div>
                           <div
                             style="
@@ -1317,7 +1327,7 @@
                             style="color: hsla(208, 95.22%, 68.37%, 1)"
                             class="heading-large no-wrap"
                           >
-                            Game Of Code
+                            DAY 01
                           </div>
                           <div
                             style="
@@ -1335,7 +1345,7 @@
                             style="color: hsla(208, 95.22%, 68.37%, 1)"
                             class="heading-large no-wrap"
                           >
-                            Game Of Code
+                            Game Of Codes
                           </div>
                           <div
                             style="
@@ -1349,7 +1359,7 @@
                             style="color: hsla(208, 95.22%, 68.37%, 1)"
                             class="heading-large no-wrap"
                           >
-                            Game Of Code
+                            Game Of Codes
                           </div>
                           <div
                             style="
@@ -1363,7 +1373,7 @@
                             style="color: hsla(208, 95.22%, 68.37%, 1)"
                             class="heading-large no-wrap"
                           >
-                            Game Of Code
+                            Game Of Codes
                           </div>
                           <div
                             style="
@@ -1399,7 +1409,7 @@
                             style="color: hsla(208, 95.22%, 68.37%, 1)"
                             class="heading-large no-wrap"
                           >
-                            Game Of Code
+                            12:00 P.M.
                           </div>
                           <div
                             style="
@@ -1428,7 +1438,7 @@
                             style="color: hsla(208, 95.22%, 68.37%, 1)"
                             class="heading-large no-wrap"
                           >
-                            Game Of Code
+                            12:00 P.M.
                           </div>
                           <div
                             style="
@@ -1457,7 +1467,7 @@
                             style="color: hsla(208, 95.22%, 68.37%, 1)"
                             class="heading-large no-wrap"
                           >
-                            Game Of Code
+                            12:00 P.M.
                           </div>
                           <div
                             style="
@@ -1555,7 +1565,7 @@
                             style="color: hsla(29, 100%, 50%, 1)"
                             class="heading-large no-wrap"
                           >
-                            Robo Race
+                            day 01
                           </div>
                           <div
                             style="background-color: hsla(29, 100%, 50%, 1)"
@@ -1582,7 +1592,7 @@
                             style="color: hsla(29, 100%, 50%, 1)"
                             class="heading-large no-wrap"
                           >
-                            Robo Race
+                            day 01
                           </div>
                           <div
                             style="background-color: hsla(29, 100%, 50%, 1)"
@@ -1609,7 +1619,7 @@
                             style="color: hsla(29, 100%, 50%, 1)"
                             class="heading-large no-wrap"
                           >
-                            Robo Race
+                            day 01
                           </div>
                           <div
                             style="background-color: hsla(29, 100%, 50%, 1)"
@@ -1683,7 +1693,7 @@
                             style="color: hsla(29, 100%, 50%, 1)"
                             class="heading-large no-wrap"
                           >
-                            Robo Race
+                            05:00 P.M.
                           </div>
                           <div
                             style="background-color: hsla(29, 100%, 50%, 1)"
@@ -1710,7 +1720,7 @@
                             style="color: hsla(29, 100%, 50%, 1)"
                             class="heading-large no-wrap"
                           >
-                            Robo Race
+                            05:00 P.M.
                           </div>
                           <div
                             style="background-color: hsla(29, 100%, 50%, 1)"
@@ -1737,7 +1747,7 @@
                             style="color: hsla(29, 100%, 50%, 1)"
                             class="heading-large no-wrap"
                           >
-                            Robo Race
+                            05:00 P.M.
                           </div>
                           <div
                             style="background-color: hsla(29, 100%, 50%, 1)"
@@ -1839,7 +1849,7 @@
                             style="color: hsla(24, 92.88%, 69.44%, 1)"
                             class="heading-large no-wrap"
                           >
-                            Quiz
+                            Day 01
                           </div>
                           <div
                             style="
@@ -1868,7 +1878,7 @@
                             style="color: hsla(24, 92.88%, 69.44%, 1)"
                             class="heading-large no-wrap"
                           >
-                            Quiz
+                            Day 01
                           </div>
                           <div
                             style="
@@ -1897,7 +1907,7 @@
                             style="color: hsla(24, 92.88%, 69.44%, 1)"
                             class="heading-large no-wrap"
                           >
-                            Quiz
+                            Day 01
                           </div>
                           <div
                             style="
@@ -1979,7 +1989,7 @@
                             style="color: hsla(24, 92.88%, 69.44%, 1)"
                             class="heading-large no-wrap"
                           >
-                            Quiz
+                            03:00 P.M.
                           </div>
                           <div
                             style="
@@ -2008,7 +2018,7 @@
                             style="color: hsla(24, 92.88%, 69.44%, 1)"
                             class="heading-large no-wrap"
                           >
-                            Quiz
+                            03:00 P.M.
                           </div>
                           <div
                             style="
@@ -2037,7 +2047,7 @@
                             style="color: hsla(24, 92.88%, 69.44%, 1)"
                             class="heading-large no-wrap"
                           >
-                            Quiz
+                            03:00 P.M.
                           </div>
                           <div
                             style="
@@ -2141,7 +2151,7 @@
                             style="color: hsla(24, 92.88%, 69.44%, 1)"
                             class="heading-large no-wrap"
                           >
-                            PUBG Tournament
+                            day 02
                           </div>
                           <div
                             style="
@@ -2170,7 +2180,7 @@
                             style="color: hsla(24, 92.88%, 69.44%, 1)"
                             class="heading-large no-wrap"
                           >
-                            PUBG Tournament
+                            day 02
                           </div>
                           <div
                             style="
@@ -2199,7 +2209,7 @@
                             style="color: hsla(24, 92.88%, 69.44%, 1)"
                             class="heading-large no-wrap"
                           >
-                            PUBG Tournament
+                            day 02
                           </div>
                           <div
                             style="
@@ -2281,7 +2291,7 @@
                             style="color: hsla(24, 92.88%, 69.44%, 1)"
                             class="heading-large no-wrap"
                           >
-                            PUBG Tournament
+                            12:00 P.M.
                           </div>
                           <div
                             style="
@@ -2310,7 +2320,7 @@
                             style="color: hsla(24, 92.88%, 69.44%, 1)"
                             class="heading-large no-wrap"
                           >
-                            PUBG Tournament
+                            12:00 P.M.
                           </div>
                           <div
                             style="
@@ -2339,7 +2349,7 @@
                             style="color: hsla(24, 92.88%, 69.44%, 1)"
                             class="heading-large no-wrap"
                           >
-                            PUBG Tournament
+                            12:00 P.M.
                           </div>
                           <div
                             style="
@@ -2443,7 +2453,7 @@
                             style="color: hsla(24, 92.88%, 69.44%, 1)"
                             class="heading-large no-wrap"
                           >
-                            Speed Cubing
+                            Day 02
                           </div>
                           <div
                             style="
@@ -2472,7 +2482,7 @@
                             style="color: hsla(24, 92.88%, 69.44%, 1)"
                             class="heading-large no-wrap"
                           >
-                            Speed Cubing
+                            Day 02
                           </div>
                           <div
                             style="
@@ -2501,7 +2511,7 @@
                             style="color: hsla(24, 92.88%, 69.44%, 1)"
                             class="heading-large no-wrap"
                           >
-                            Speed Cubing
+                            Day 02
                           </div>
                           <div
                             style="
@@ -2583,7 +2593,7 @@
                             style="color: hsla(24, 92.88%, 69.44%, 1)"
                             class="heading-large no-wrap"
                           >
-                            Speed Cubing
+                            4:30 P.M.
                           </div>
                           <div
                             style="
@@ -2612,7 +2622,7 @@
                             style="color: hsla(24, 92.88%, 69.44%, 1)"
                             class="heading-large no-wrap"
                           >
-                            Speed Cubing
+                            4:30 P.M.
                           </div>
                           <div
                             style="
@@ -2641,7 +2651,7 @@
                             style="color: hsla(24, 92.88%, 69.44%, 1)"
                             class="heading-large no-wrap"
                           >
-                            Speed Cubing
+                            4:30 P.M.
                           </div>
                           <div
                             style="
@@ -3047,7 +3057,7 @@
                             style="color: hsla(24, 92.88%, 69.44%, 1)"
                             class="heading-large no-wrap"
                           >
-                            Technical Debate
+                            day 02
                           </div>
                           <div
                             style="
@@ -3076,7 +3086,7 @@
                             style="color: hsla(24, 92.88%, 69.44%, 1)"
                             class="heading-large no-wrap"
                           >
-                            Technical Debate
+                            day 02
                           </div>
                           <div
                             style="
@@ -3105,7 +3115,7 @@
                             style="color: hsla(24, 92.88%, 69.44%, 1)"
                             class="heading-large no-wrap"
                           >
-                            Technical Debate
+                            day 02
                           </div>
                           <div
                             style="
@@ -3187,7 +3197,7 @@
                             style="color: hsla(24, 92.88%, 69.44%, 1)"
                             class="heading-large no-wrap"
                           >
-                            Technical Debate
+                            04:30 P.M.
                           </div>
                           <div
                             style="
@@ -3216,7 +3226,7 @@
                             style="color: hsla(24, 92.88%, 69.44%, 1)"
                             class="heading-large no-wrap"
                           >
-                            Technical Debate
+                            04:30 P.M.
                           </div>
                           <div
                             style="
@@ -3245,7 +3255,7 @@
                             style="color: hsla(24, 92.88%, 69.44%, 1)"
                             class="heading-large no-wrap"
                           >
-                            BLIND TECH DATE
+                            04:30 P.M.
                           </div>
                           <div
                             style="
@@ -3349,7 +3359,7 @@
                             style="color: hsla(24, 92.88%, 69.44%, 1)"
                             class="heading-large no-wrap"
                           >
-                            LIVE GRAFFITI SHOW
+                            day 01
                           </div>
                           <div
                             style="
@@ -3378,7 +3388,7 @@
                             style="color: hsla(24, 92.88%, 69.44%, 1)"
                             class="heading-large no-wrap"
                           >
-                            LIVE GRAFFITI SHOW
+                            day 01
                           </div>
                           <div
                             style="
@@ -3407,7 +3417,7 @@
                             style="color: hsla(24, 92.88%, 69.44%, 1)"
                             class="heading-large no-wrap"
                           >
-                            LIVE GRAFFITI SHOW
+                            day 01
                           </div>
                           <div
                             style="
@@ -3489,7 +3499,7 @@
                             style="color: hsla(24, 92.88%, 69.44%, 1)"
                             class="heading-large no-wrap"
                           >
-                            LIVE GRAFFITI SHOW
+                            03:30 P.M.
                           </div>
                           <div
                             style="
@@ -3518,7 +3528,7 @@
                             style="color: hsla(24, 92.88%, 69.44%, 1)"
                             class="heading-large no-wrap"
                           >
-                            LIVE GRAFFITI SHOW
+                            03:30 P.M.
                           </div>
                           <div
                             style="
@@ -3547,7 +3557,7 @@
                             style="color: hsla(24, 92.88%, 69.44%, 1)"
                             class="heading-large no-wrap"
                           >
-                            BLIND TECH DATE
+                            03:30 P.M.
                           </div>
                           <div
                             style="
@@ -3598,7 +3608,7 @@
               data-duration="0"
             ></div>
           </div>
-          <div class="w-layout-grid main-grid">
+          <div class="w-layout-grid main-grid" id="timeline">
             <div
               id="w-node-_1783bf35-b007-14db-9815-20711d5e0fab-0e305478"
               class="center-wrapper inner-padding-medium"
@@ -4070,12 +4080,12 @@
               class="w-list-unstyled"
             >
               <li><h4 class="heading-small text-gray">Highlights</h4></li>
-              <li><a href="#hackvanto" class="link-footer">Hackvento</a></li>
+              <li><a href="#hackvento" class="link-footer">Hackvento</a></li>
               <li>
                 <a href="#gameofcode" class="link-footer">Game Of Code</a>
               </li>
               <li><a href="#robowars" class="link-footer">Robowars</a></li>
-              <li><a href="#other" class="link-footer">Others</a></li>
+              <li><a href="#misc" class="link-footer">Others</a></li>
             </ul>
             <ul
               id="w-node-_476684f0-a868-66b7-7616-6ad8bc4dea3a-07bf8e43"
@@ -4084,19 +4094,28 @@
             >
               <li><h4 class="heading-small text-gray">Contact</h4></li>
               <li>
-                <a href="#" class="link-footer">
+                <a
+                  href="https://www.linkedin.com/in/ashwath-arora-a14aa1222/"
+                  class="link-footer"
+                >
                   <h6>Ashwath Arora</h6>
                   <h6>+91 78986 19719</h6>
                 </a>
               </li>
               <li>
-                <a href="#" class="link-footer">
+                <a
+                  href="https://www.linkedin.com/in/rishi-gupta-027298204/"
+                  class="link-footer"
+                >
                   <h6>Rishi Gupta</h6>
                   <h6>+91 87708 56060</h6>
                 </a>
               </li>
               <li>
-                <a href="#" class="link-footer">
+                <a
+                  href="https://www.linkedin.com/in/sanjaysinghrajpoot/"
+                  class="link-footer"
+                >
                   <h6>Sanjay Singh Rajpoot</h6>
                   <h6>+91 99936 75309</h6>
                 </a>
