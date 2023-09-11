@@ -74474,7 +74474,7 @@ Webflow.require("ix2").init({
               config: {
                 delay: 0,
                 easing: "",
-                duration: 8000,
+                duration: 10000,
                 target: {
                   selector: ".hero-flex-ticker",
                   selectorGuids: ["1d976aca-60d1-3cb2-3c3c-c5dc988b17d5"],
@@ -75360,7 +75360,7 @@ Webflow.require("ix2").init({
               config: {
                 delay: 0,
                 easing: "",
-                duration: 500,
+                duration: 1000,
                 target: {
                   selector: ".hero-flex-ticker.reverse",
                   selectorGuids: [
@@ -75384,7 +75384,7 @@ Webflow.require("ix2").init({
               config: {
                 delay: 0,
                 easing: "",
-                duration: 8000,
+                duration: 10000,
                 target: {
                   selector: ".hero-flex-ticker",
                   selectorGuids: ["1d976aca-60d1-3cb2-3c3c-c5dc988b17d5"],
@@ -75401,7 +75401,7 @@ Webflow.require("ix2").init({
               config: {
                 delay: 0,
                 easing: "",
-                duration: 8000,
+                duration: 10000,
                 target: {
                   selector: ".hero-flex-ticker.reverse",
                   selectorGuids: [
