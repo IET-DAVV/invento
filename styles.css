@@ -4731,7 +4731,7 @@ figcaption {
   box-shadow: inset 0 0 0 2px #ffbd52;
   -webkit-transition: background-color 200ms ease;
   transition: background-color 200ms ease;
-  color: #000;
+  color: #fff;
   font-size: 16px;
   font-weight: 500;
   text-align: center;
@@ -4742,7 +4742,7 @@ figcaption {
 .button:hover {
   background-color: #ffbd52;
   box-shadow: none;
-  color: #000 !important;
+  color: #fff !important;
 }
 
 .button.outline {
@@ -4963,7 +4963,7 @@ figcaption {
 .button-tab.w--current {
   background-color: #ffbd52;
   box-shadow: none;
-  color: #000 !important;
+  color: #fff !important;
 }
 
 .box-wrapper {
@@ -8666,6 +8666,9 @@ figcaption {
 
 .label-button {
   font-weight: 500;
+}
+.label-button:hover {
+  color: #fff !important;
 }
 
 .collection-list-grid {
